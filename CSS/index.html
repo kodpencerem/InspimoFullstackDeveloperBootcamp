@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* selectors */
+        div h1[name="head"]{
+            color: brown;
+            font-size: 5rem;
+            border: 10px black;
+            border-style: solid;
+            border-top-right-radius: 50px;
+            border-top-left-radius: 50px;
+            /* background-color: aquamarine !important; */
+        }
+
+        .title{
+            /* background-color: black !important; */
+        }
+
+        #head{
+            /* background-color: blue !important; */
+        }
+
+        [name="head"]{
+            background-color: red !important;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Test</h1>
+    </div>
+    <div>
+        <h1 class="title" name="head" id="head">Hello, world!</h1>
+    </div>
+</body>
+</html>

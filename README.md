@@ -1,6 +1,9 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 13.03.2024 (Gelecek ders)
+## 15.03.2024 (Gelecek ders)
+- CSS
+
+## 13.03.2024
 - CSS
 
 ## 11.03.2024
