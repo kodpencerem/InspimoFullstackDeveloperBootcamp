@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AlicanExample.WebAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+48cb8d2ea0ac462e9f90a5a0d452840f79ad96d1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f138ef22fb7d7c9c7cbbfe8fc15074210cc9c9a6")]
 [assembly: System.Reflection.AssemblyProductAttribute("AlicanExample.WebAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AlicanExample.WebAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

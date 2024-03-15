@@ -3,15 +3,23 @@
   "WorkspaceRootPath": "C:\\InspimoFullstackDeveloperBootcamp\\.NET\\AlicanExample\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F27DA862-84DB-4CEF-9E92-5CAD0D03325F}|AlicanExample.Blazor\\AlicanExample.Blazor.csproj|c:\\inspimofullstackdeveloperbootcamp\\.net\\alicanexample\\alicanexample.blazor\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F27DA862-84DB-4CEF-9E92-5CAD0D03325F}|AlicanExample.Blazor\\AlicanExample.Blazor.csproj|solutionrelative:alicanexample.blazor\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F2ED0B0-C032-4C09-B8F3-8A094A94EC6A}|AlicanExample.MVC\\AlicanExample.MVC.csproj|c:\\inspimofullstackdeveloperbootcamp\\.net\\alicanexample\\alicanexample.mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2F2ED0B0-C032-4C09-B8F3-8A094A94EC6A}|AlicanExample.MVC\\AlicanExample.MVC.csproj|solutionrelative:alicanexample.mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2F2ED0B0-C032-4C09-B8F3-8A094A94EC6A}|AlicanExample.MVC\\AlicanExample.MVC.csproj|c:\\inspimofullstackdeveloperbootcamp\\.net\\alicanexample\\alicanexample.mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2F2ED0B0-C032-4C09-B8F3-8A094A94EC6A}|AlicanExample.MVC\\AlicanExample.MVC.csproj|solutionrelative:alicanexample.mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DA47547-31D4-4AC3-AE08-7C20A5170D71}|AlicanExample.WebAPI\\AlicanExample.WebAPI.csproj|c:\\inspimofullstackdeveloperbootcamp\\.net\\alicanexample\\alicanexample.webapi\\controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5DA47547-31D4-4AC3-AE08-7C20A5170D71}|AlicanExample.WebAPI\\AlicanExample.WebAPI.csproj|C:\\InspimoFullstackDeveloperBootcamp\\.NET\\AlicanExample\\alicanexample.webapi\\controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5DA47547-31D4-4AC3-AE08-7C20A5170D71}|AlicanExample.WebAPI\\AlicanExample.WebAPI.csproj|solutionrelative:alicanexample.webapi\\controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DA47547-31D4-4AC3-AE08-7C20A5170D71}|AlicanExample.WebAPI\\AlicanExample.WebAPI.csproj|c:\\inspimofullstackdeveloperbootcamp\\.net\\alicanexample\\alicanexample.webapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{5DA47547-31D4-4AC3-AE08-7C20A5170D71}|AlicanExample.WebAPI\\AlicanExample.WebAPI.csproj|C:\\InspimoFullstackDeveloperBootcamp\\.NET\\AlicanExample\\alicanexample.webapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{5DA47547-31D4-4AC3-AE08-7C20A5170D71}|AlicanExample.WebAPI\\AlicanExample.WebAPI.csproj|solutionrelative:alicanexample.webapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
@@ -22,11 +30,37 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\InspimoFullstackDeveloperBootcamp\\.NET\\AlicanExample\\AlicanExample.Blazor\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "AlicanExample.Blazor\\Components\\Pages\\Home.razor",
+              "ToolTip": "C:\\InspimoFullstackDeveloperBootcamp\\.NET\\AlicanExample\\AlicanExample.Blazor\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "AlicanExample.Blazor\\Components\\Pages\\Home.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-15T18:03:45.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\InspimoFullstackDeveloperBootcamp\\.NET\\AlicanExample\\AlicanExample.MVC\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "AlicanExample.MVC\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\InspimoFullstackDeveloperBootcamp\\.NET\\AlicanExample\\AlicanExample.MVC\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "AlicanExample.MVC\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-15T18:02:49.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\InspimoFullstackDeveloperBootcamp\\.NET\\AlicanExample\\AlicanExample.WebAPI\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "AlicanExample.WebAPI\\Properties\\launchSettings.json",
@@ -34,25 +68,24 @@
               "RelativeToolTip": "AlicanExample.WebAPI\\Properties\\launchSettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-03-15T17:58:10.595Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-15T17:58:10.595Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\InspimoFullstackDeveloperBootcamp\\.NET\\AlicanExample\\AlicanExample.MVC\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "AlicanExample.MVC\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\InspimoFullstackDeveloperBootcamp\\.NET\\AlicanExample\\AlicanExample.MVC\\Controllers\\HomeController.cs",
               "RelativeToolTip": "AlicanExample.MVC\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAWAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBcAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-15T17:56:52.035Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ValuesController.cs",
               "DocumentMoniker": "C:\\InspimoFullstackDeveloperBootcamp\\.NET\\AlicanExample\\AlicanExample.WebAPI\\Controllers\\ValuesController.cs",
               "RelativeDocumentMoniker": "AlicanExample.WebAPI\\Controllers\\ValuesController.cs",
@@ -60,8 +93,7 @@
               "RelativeToolTip": "AlicanExample.WebAPI\\Controllers\\ValuesController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T17:56:07.469Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-15T17:56:07.469Z"
             }
           ]
         }
