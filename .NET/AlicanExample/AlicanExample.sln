@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34701.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlicanExample.WebAPI", "AlicanExample.WebAPI\AlicanExample.WebAPI.csproj", "{5DA47547-31D4-4AC3-AE08-7C20A5170D71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlicanExample.MVC", "AlicanExample.MVC\AlicanExample.MVC.csproj", "{2F2ED0B0-C032-4C09-B8F3-8A094A94EC6A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5DA47547-31D4-4AC3-AE08-7C20A5170D71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DA47547-31D4-4AC3-AE08-7C20A5170D71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DA47547-31D4-4AC3-AE08-7C20A5170D71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DA47547-31D4-4AC3-AE08-7C20A5170D71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F2ED0B0-C032-4C09-B8F3-8A094A94EC6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F2ED0B0-C032-4C09-B8F3-8A094A94EC6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F2ED0B0-C032-4C09-B8F3-8A094A94EC6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F2ED0B0-C032-4C09-B8F3-8A094A94EC6A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {54E0C344-D30F-43FA-90B7-39A348300249}
+	EndGlobalSection
+EndGlobal

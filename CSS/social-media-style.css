@@ -46,7 +46,7 @@ nav li:hover{
 }
 
 .row .left{
-    width: 30%;
+    width: 20%;
     float: left;
 }
 .row .right{
@@ -54,4 +54,91 @@ nav li:hover{
     width: 70%;
 }
 
+.avatar{
+    border-radius: 50px;
+    width: 50px;
+}
 
+.avatar2{
+    width: 150px;
+    border-radius: 150px;
+}
+
+.profile{
+  padding: 10px;
+  text-align: center;
+  border: 1px solid;
+
+}
+
+input{
+    width: 80%;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+.mt-4{
+    margin-top: 40px;
+}
+
+.f-left{
+    float: left;
+}
+
+.f-right{
+    float: right;
+}
+
+.w-90{
+    width: 90%;
+}
+
+.mt-1{
+    margin-top: 5px;
+}
+
+.mt-2{
+    margin-top: 20px;
+}
+
+.mt-15{
+    margin-top: 15px;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.g-1{
+    gap: 10px;
+}
+
+.show-post{   
+    width: 80%; 
+    padding: 10px;     
+}
+
+.shadow{
+    border-radius: 10px;  
+    border: 1px solid;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19)
+}
+
+button{
+    width: 120px;
+    padding: 7px;
+    border-radius: 10px;
+    border-color: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button:hover{
+    scale: 1.1;
+}
