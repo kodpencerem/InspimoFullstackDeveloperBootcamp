@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+    <h1>Login Page</h1>
+    <div>
+        UserName
+        <input type="text" id="userName">
+    </div>
+    <div>
+        Password
+        <input type="text" id='password'>
+    </div>
+    <div>
+        <button onclick="signIn()">Sign In</button>
+    </div>
+
+
+    <script>
+        function signIn(){
+            const userNameEl = document.getElementById("userName");
+            const passwordEl = document.getElementById("password");
+                      //ctrl + alt + enterın solundaki virgüle iki defa basınca ters tırnak çıkıyor
+
+            console.log(`UserName: ${userNameEl.value}\nPassword: ${passwordEl.value}`);
+        }
+    </script>
+</body>
+</html>

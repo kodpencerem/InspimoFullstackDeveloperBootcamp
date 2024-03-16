@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Start</title>
+</head>
+<body>
+    <h1>JavaScript Start</h1>
+    <h2 id="title">asdasdasd</h2> içerisinde değer olmak zorunda
+    <br>
+    <input id="text1" class="text" type="text"> içerisine değer girilebilen
+    <br>
+    <input id="text2" type="text"> 
+    <br>
+    <input id="text3" type="text">
+    <br>
+    <br>
+    <button onclick="getInput1Value()">Output 1</button>
+    <button onclick="output('Hello Ahmet')">Output 2</button>
+
+    <script>
+        function output(word){ //syntax => Javascript funcitionları böyle yaılır
+            console.log(word); //Konsol'da çıktı verir
+        }
+
+        //const var let => Değişken tipleri
+
+        const name = "Taner Saydam";
+
+        function studentNames(){
+            name;
+        }
+
+
+        const el = document.getElementById("title");
+        console.log(el);
+        el.innerHTML = "Taner Saydam"
+        el.style.color = "red";
+        const h3El = document.createElement("h3");
+        h3El.innerHTML = "Hello, I am h3";
+        el.appendChild(h3El);
+
+        el.innerHTML = "<h1>Deneme1</h1>"
+        el.innerText = "<h1>Deneme1</h1>"
+
+        const inputEl1 = document.querySelector(".text");
+        inputEl1.value = "Taner"
+
+        const inputEl2 = document.querySelector("#text2");
+        inputEl2.value = "Saydam"
+        inputEl2.style.backgroundColor = "red";
+
+        function getInput1Value(){
+            console.log(inputEl1.value);
+        }
+
+        // output("Hello");
+        // output("World");
+        // output("!");
+        // output("Hello 2");
+        //alert("Hello, world!"); //Ekrana çıktı uyarısı atar
+        //confirm("Are you ok?") //Ekrana soru uyarısı atar
+    </script>
+</body>
+</html>

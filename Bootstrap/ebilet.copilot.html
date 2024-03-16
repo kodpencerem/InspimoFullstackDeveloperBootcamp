@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oturma Düzeni</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f7f7f7;
+  }
+  .bus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .row {
+    display: flex;
+  }
+  .seat {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    background-color: #4CAF50; /* Yeşil renkli koltuklar için */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+  }
+  .seat.unavailable {
+    background-color: #F44336; /* Kırmızı renkli dolu koltuklar için */
+  }
+</style>
+</head>
+<body>
+<div class="bus">
+  <!-- Sürücü koltuğu -->
+  <div class="row">
+    <div class="seat">S</div>
+    <div class="seat unavailable"></div>
+  </div>
+  <!-- Oturma düzeni -->
+  <!-- Örnek olarak ilk iki sıra eklendi, geri kalan sıralar benzer şekilde eklenebilir -->
+  <div class="row">
+    <div class="seat">1</div>
+    <div class="seat">2</div>
+    <div class="seat unavailable">3</div>
+    <div class="seat">4</div>
+  </div>
+  <div class="row">
+    <div class="seat">5</div>
+    <div class="seat">6</div>
+    <div class="seat unavailable">7</div>
+    <div class="seat">8</div>
+  </div>
+  <!-- Geri kalan sıralar buraya eklenecek -->
+</div>
+</body>
+</html>

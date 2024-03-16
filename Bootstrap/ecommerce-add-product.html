@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eCommerce With Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .logo {
+            border-radius: 50px;
+        }
+
+        .list-group-item.active {
+            background-color: #212529 !important;
+        }
+
+        .add-product-image-div {
+            width: 380px;
+            height: 100px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .float-right{
+            float: right;
+        }
+
+        @media screen and (max-width:1350px) {
+            .add-product-image-div {
+                width: 320px !important;
+            }
+        }
+
+        @media screen and (max-width:1100px) {
+            .add-product-image-div {
+                width: 420px !important;
+            }
+        }
+
+        @media screen and (max-width:500px) {
+            .add-product-image-div {
+                width: 300px !important;
+            }
+        }
+    </style>
+</head>
+
+<body class="container">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./ecommerce.html">
+                <img class="logo" src="../1-02.jpg" width="32">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./ecommerce.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./ecommerce-add-product.html">Add Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Orders</a>
+                    </li>
+                </ul>
+                <button class="btn btn-outline-dark me-2">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+                <div class="dropdown">
+                    <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="../1-02.jpg" width="32" class="logo">
+                        Taner Saydam
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">My Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="d-flex align-items-center justify-content-between mt-3">
+        <h1>Add Product Page</h1>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="./ecommerce.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Add Product</li>
+            </ol>
+        </nav>
+    </div>
+
+    <!-- Add Product Form -->
+    <div class="row d-flex justify-content-center">
+        <div class="card col-xl-4 col-lg-6 col-md-12 col-12">
+            <div class="card-header">
+                <h5>Add Product Form</h5>
+                <p>Please fill your product information to save</p>
+            </div>
+            <div class="card-body">
+                <form>
+                    <!-- Product Name -->
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="Domates">
+                    </div>
+
+                    <!-- Product Image -->
+                    <div class="form-group mt-2">
+                        <label for="image">
+                            <span>Image</span>
+                            <br>
+                            <div class="add-product-image-div d-flex justify-content-center align-items-center">
+                                <span>Click for add product image</span>
+                            </div>
+                        </label>
+                        <input type="file" style="display: none;" id="image" class="form-control">
+                    </div>
+
+                    <!-- Product Price -->
+                    <div class="form-group mt-2">
+                        <label for="price">Price</label>
+                        <input type="text" id="price" class="form-control" placeholder="10,00 ₺">
+                    </div>
+
+                    <!-- Save Btn -->
+                    <div class="form-group mt-2">
+                        <button class="btn btn-dark float-right">
+                            <i class="fa-solid fa-save me-1"></i>
+                            <span>Save</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/dc59d75dac.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

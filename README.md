@@ -1,6 +1,9 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 16.03.2024 (Gelecek ders)
+## 18.03.2024 (Gelecek ders)
+- JavaScript
+
+## 16.03.2024 
 - Bootstrap
 - JavaScript
 
