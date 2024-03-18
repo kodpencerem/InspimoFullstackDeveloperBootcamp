@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Javascript App</title>
+</head>
+<body>
+    <h1>Todo App</h1>
+
+    <div id="addDiv">
+        Work
+        <input id="work" type="text" autocomplete="off">
+        <button onclick="add()">Save</button>
+    </div>
+
+    <div style="display: none;" id="updateDiv">
+        Update Work
+        <input id="updateWork" type="text" autocomplete="off">
+        <button onclick="update()">Update</button>
+    </div>
+
+    <div>
+        <ol id="olList">
+        </ol>
+    </div>
+
+
+    <script>
+        let id = 0;
+        let updateId = 0;
+
+        function add(){
+            const el = document.getElementById("work");
+            const value = el.value;
+
+            const olElement = document.getElementById("olList");
+            olElement.innerHTML += 
+                            `<li id="${id}">${value} 
+                                <button class="update" onclick='get("${id}")'>
+                                    Güncelle
+                                </button>
+                                <button class="delete" onclick="remove('${id}')">
+                                    Sil
+                                </button>
+                            </li>`
+
+            el.value = "";
+            el.focus();
+
+            id++;
+            //const liElement = document.createElement("li");
+            //liElement.innerText = value;
+            // olElement.appendChild(liElement);
+        }
+    
+        function get(id){
+            const addDivEl = document.getElementById("addDiv");
+            addDivEl.style.display = "none";
+
+            const updateDivEl = document.getElementById("updateDiv");
+            updateDivEl.style.display = "block";
+
+            const updateBtnEls = document.querySelectorAll(".update");
+            for(let index in updateBtnEls){                
+                if(index == "entries") break;
+                    updateBtnEls[index].style.display = "none";
+            }
+
+            const deleteBtnEls = document.querySelectorAll(".delete")
+            for(let index in deleteBtnEls){
+                if(index == "entries") break;
+                deleteBtnEls[index].style.display = "none";
+            }
+            
+            const el = document.getElementById(id);
+            let value = el.innerText;
+
+            value = value.replace(" Güncelle Sil", "");
+            const inputEl = document.getElementById("updateWork");
+            inputEl.value = value;
+
+            updateId = id;
+        }   
+
+        function update(){
+            const el = document.getElementById(updateId);
+            const inputEl = document.getElementById("updateWork");
+            el.innerHTML = `${inputEl.value} 
+                                <button class="update" onclick='get("${updateId}")'>
+                                    Güncelle
+                                </button>
+                                <button class="delete" onclick="remove('${updateId}')">
+                                    Sil
+                                </button>
+                            `
+
+            const addDivEl = document.getElementById("addDiv");
+            addDivEl.style.display = "block";
+
+            const updateDivEl = document.getElementById("updateDiv");
+            updateDivEl.style.display = "none";
+
+            const updateBtnEls = document.querySelectorAll(".update");
+            for(let index in updateBtnEls){                
+                if(index == "entries") break;
+                    updateBtnEls[index].style.display = "inline";
+            }
+
+            const deleteBtnEls = document.querySelectorAll(".delete")
+            for(let index in deleteBtnEls){
+                if(index == "entries") break;
+                deleteBtnEls[index].style.display = "inline";
+            }
+        }
+
+        function remove(id){
+            const el = document.getElementById(id);
+            el.remove();
+        }
+    </script>
+</body>
+</html>
