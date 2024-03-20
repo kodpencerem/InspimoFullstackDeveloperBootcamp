@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <img id="avatar" src="" alt="">
+        <h1 id="title"></h1> <i class="fa-solid fa-edit"></i>        
+    </section>
+
+    <section>
+        <h3>Skills</h3>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+    <section>
+        <h3>About Me</h3>
+        <p></p>
+    </section>
+    
+
+    <script src="https://kit.fontawesome.com/dc59d75dac.js" crossorigin="anonymous"></script>
+
+    <script>
+setAvatarAndTitle()
+
+        function setAvatarAndTitle(){
+            const avatarEl = document.getElementById("avatar");
+            const titleEl = document.getElementById("title");
+
+            avatarEl.src = "../1-02.jpg"
+            avatarEl.style.width = "200px"
+            titleEl.innerText = "Taner Saydam"
+        }
+    </script>
+</body>
+</html>
