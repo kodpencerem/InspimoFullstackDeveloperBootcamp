@@ -1,10 +1,13 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 20.03.2024 (Gelecek ders)
-- JavaScript
+## 22.03.2024 (Gelecek ders)
+- JavaScript (eCommerce ve Portfolio App)
+
+## 20.03.2024
+- JavaScript (Personel App)
 
 ## 18.03.2024
-- JavaScript
+- JavaScript (Başlangıç Örnek Todo App)
 
 ## 16.03.2024 
 - Bootstrap
