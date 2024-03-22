@@ -1,7 +1,16 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 22.03.2024 (Gelecek ders)
-- JavaScript (eCommerce ve Portfolio App)
+## 23.03.2024 (Gelecek ders)
+- JavaScript Devam Ediyoruz
+- eCommerce:
+  * Delete Shopping Card
+  * SweetAlert
+  * Quantity Alanı Ekleyeceğiz
+  * Price Kısmını Masklıyacağız
+  * SPA
+
+## 22.03.2024
+- JavaScript (eCommerce)
 
 ## 20.03.2024
 - JavaScript (Personel App)
