@@ -75,11 +75,57 @@
   </section>
 
   <section class="mt-2">
-    <div class="row" id="shoppingCardsRow">
+    <div class="row">
+      <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12">
+        <div class="row" id="shoppingCardsRow">
      
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
+        <div class="card">
+          <div class="card-haeder">
+            <h5 class="alert alert-success">
+              Total Amount: <span id="totalAmount">₺0,00</span>
+            </h5>            
+          </div>
+          <form onsubmit="payAndCreateOrder(event)">
+            <div class="card-body">
+              <h5>Credit Card Information</h5>
+              <div class="form-group">
+                <label>Owner Name</label>
+                <input type="text" class="form-control" name="creditCardOwner" required minlength="3" value="Taner Saydam">
+              </div>
+
+              <div class="form-group mt-1">
+                <label>Number</label>
+                <input type="text" class="form-control" name="creditCardNumber" required minlength="16" value="4444111122223333">
+              </div>
+
+              <div class="form-group mt-1">
+                <label>Valid Date</label>
+                <input type="month" class="form-control" name="creditCardValidDate" required value="2024-03">
+              </div>
+
+              <div class="form-group mt-1">
+                <label>CCV</label>
+                <input type="text" class="form-control" name="creditCardCCV" required minlength="3" maxlength="3" value="111">
+              </div>
+            </div>
+            <div class="card-header">
+              <button class="btn btn-danger w-100">
+                <i class="bi bi-credit-card"></i>
+                Pay
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
+    
   </section>
 
+  <script src="./shared.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
   <script src="./shopping-card.js"></script>

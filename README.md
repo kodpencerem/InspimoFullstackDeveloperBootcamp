@@ -1,6 +1,15 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
+## 25.03.2024 (Gelecek ders)
+- JavaScript Devam Ediyoruz
+- API İstekleri
+- Axios
+- JSON
+- NPM Kütüphaneleri
+- Json-Server
+- JQuery
+- JQuery Ajax
 
-## 23.03.2024 (Gelecek ders)
+## 23.03.2024
 - JavaScript Devam Ediyoruz
 - eCommerce:
   * Delete Shopping Card

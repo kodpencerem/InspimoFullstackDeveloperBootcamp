@@ -1,7 +1,12 @@
-shoppingCards = [];
+let shoppingCards = [];
+let totalAmount = 0;
 
 if(localStorage.getItem("shoppingCards")){
     shoppingCards = JSON.parse(localStorage.getItem("shoppingCards"));
+
+    for(let card of shoppingCards){
+      totalAmount += +card.price;
+    }
 }
 
 setShoppingCardToHTML();
@@ -14,7 +19,7 @@ function setShoppingCardToHTML(){
     for(const index in shoppingCards){
         const shoppingCard = shoppingCards[index];
         const text = `
-        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mt-1">
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8 col-12 mt-1">
         <div class="card">
           <div class="card-body product-image-div">
             <img src="${shoppingCard.image}" alt="" style="width: 100%; max-height:100%">
@@ -23,10 +28,10 @@ function setShoppingCardToHTML(){
             <h6>${shoppingCard.name.substring(0,84)}</h6>
           </div>
           <div class="card-body text-center">
-            <h4 class="alert alert-danger">
-              ${shoppingCard.price}
+            <h4 class="alert alert-success">
+              ${formatCurrency(shoppingCard.price)}
             </h4>
-            <button onclick="addShoppingCard(${index})" class="btn btn-outline-danger w-100">
+            <button onclick="deleteByIndex(${index},${shoppingCard.id})" class="btn btn-outline-danger w-100">
               <i class="bi bi-trash"></i>
               Delete
             </button>
@@ -38,6 +43,9 @@ function setShoppingCardToHTML(){
             shoppingCardsRowElement.innerHTML += text;
         }
     }
+
+    const totalAmountEl = document.getElementById("totalAmount");
+    totalAmountEl.innerHTML = formatCurrency(totalAmount);
 }
 
 function setShoppingCardCountUsingLocalStorage(){
@@ -49,4 +57,77 @@ function setShoppingCardCountUsingLocalStorage(){
     const shoppingCardCountElement = document.getElementById("shopping-card-count");
 
     shoppingCardCountElement.innerHTML =cards.length;
+}
+
+function deleteByIndex(index, id){
+  Swal.fire({
+    title: 'Delete!',
+    text: 'Do you want to delete',
+    icon: 'question',
+    confirmButtonText: 'Delete',
+    showConfirmButton: true,
+    showCancelButton: true,
+    cancelButtonText: "Cancel"
+  }).then((res)=> {
+    console.log(res);
+    if(res.isConfirmed){
+      this.shoppingCards.splice(index,1);
+
+      localStorage.setItem("shoppingCards", JSON.stringify(this.shoppingCards));
+    
+      const products = JSON.parse(localStorage.getItem("products"));
+
+      const product = products.find(p => p.id === id);
+      product.stock += 1;
+
+      localStorage.setItem("products", JSON.stringify(products));
+
+      setShoppingCardToHTML();
+      setShoppingCardCountUsingLocalStorage();
+    }
+  });
+  
+}
+
+function payAndCreateOrder(e){
+  e.preventDefault();
+  const currentTarget = event.currentTarget;
+
+  Swal.fire({
+    title: 'Pay?',
+    text: 'Do you want to but this products',
+    icon: 'question',
+    confirmButtonText: 'Buy',
+    showConfirmButton: true,
+    showCancelButton: true,
+    cancelButtonText: "Cancel"
+  }).then(res=> {
+    if(res.isConfirmed){  
+      const creditCard ={};
+    
+      for(const el of currentTarget){
+        if(el.name){
+          creditCard[el.name] = el.value;
+        }    
+      }
+    
+      const data = {
+        creditCard: creditCard,
+        totalAmount: totalAmount,
+        products: shoppingCards
+      }
+    
+      shoppingCards = [];
+      localStorage.removeItem("shoppingCards");
+      setShoppingCardToHTML();
+    
+      localStorage.setItem("orders", JSON.stringify(data));
+
+      for(let el of currentTarget){
+        if(el.name){
+          el.value = ""
+        }        
+      }
+    }
+  }) 
 }
