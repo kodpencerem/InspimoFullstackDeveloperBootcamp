@@ -1,13 +1,17 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
-## 25.03.2024 (Gelecek ders)
-- JavaScript Devam Ediyoruz
-- API İstekleri
+
+## 27.03.2024 (Gelecek ders)
+- eCommerce Projesi (Json-Server ve API ile birlikte)
 - Axios
-- JSON
-- NPM Kütüphaneleri
-- Json-Server
 - JQuery
 - JQuery Ajax
+
+## 25.03.2024
+- JavaScript Devam Ediyoruz
+- JSON
+- API İstekleri
+- NPM Kütüphaneleri
+- Json-Server (npm install -g json-server) (json-server dosya_adi.json)
 
 ## 23.03.2024
 - JavaScript Devam Ediyoruz
