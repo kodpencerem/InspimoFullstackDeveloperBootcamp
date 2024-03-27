@@ -1,18 +1,18 @@
-let products = []; //array
-const shoppingCards = [];
-let image = "";
 
-if(localStorage.getItem("products")){
-    products = JSON.parse(localStorage.getItem("products"));
-}
+let products = [];
+let image = "";
 
 setProductToHTML();
 setShoppingCardCountUsingLocalStorage();
 
-function setProductToHTML(){
-    const productsRowElement = document.getElementById("productsRow");
-    productsRowElement.innerHTML = "";
+async function setProductToHTML(){
+  const result = await axios.get("http://localhost:5001/products");
 
+  products = result.data;
+
+  const productsRowElement = $("#productsRow");
+    productsRowElement.html("");
+  let html = "";
     for(const index in products){
         const product = products[index];
 
@@ -50,10 +50,10 @@ function setProductToHTML(){
         </div>
         </div>`
 
-        if(productsRowElement !== null){
-            productsRowElement.innerHTML += text;
-        }
-    }
+        html += text;       
+    };  
+
+    productsRowElement.html(html);
 }
 
 function getImage(e){
@@ -68,64 +68,36 @@ function getImage(e){
   reader.readAsDataURL(file);
 }
 
-function save(event){
-    event.preventDefault();
+async function save(e){
+    e.preventDefault();
     const nameElement = document.getElementById("name");
     const priceElement = document.getElementById("price");    
     const stockElement = document.getElementById("stock");
-    const id = products.length + 1;
+    //const id = products.length + 1;
 
     const product = {
-        id: id,
+        //id: id,
         name: nameElement.value,
         price: priceElement.value,
         image: image,
         stock: stockElement.value
     };
 
-    products.push(product);
-
-    localStorage.setItem("products",JSON.stringify(products));
-
-    nameElement.value = "";
-    priceElement.value = "";
-    stockElement.value = 0;
-
-    const closeBtnElement = document.getElementById("addProductModalCloseBtn");
-    closeBtnElement.click();
-
-    setProductToHTML();
-
-    const toastrOptions = {
-        closeButton: true,
-        progressBar: true,
-        positionClass: "toast-bottom-right"
-    }
-    toastr.options = toastrOptions;
-    toastr.success("Product add is successful");
-    //warning | info | danger | success
+    await axios.post("http://localhost:5001/products", product);
 }
 
-function addShoppingCard(index){
-    const product = products[index]
-    shoppingCards.push(product);
+async function addShoppingCard(index){
+  const product = products[index];
+  await axios.post("http://localhost:5001/shoppingcards", product);
 
-    product.stock -= 1;
-
-    localStorage.setItem("shoppingCards", JSON.stringify(shoppingCards));
-    localStorage.setItem("products", JSON.stringify(products));
-
-    setProductToHTML();
-    setShoppingCardCountUsingLocalStorage();
+  product.stock--;
+  await axios.put("http://localhost:5001/products/" + product.id,product)
 }
 
-function setShoppingCardCountUsingLocalStorage(){
-    let cards = [];
-    if(localStorage.getItem("shoppingCards")){
-        cards = JSON.parse(localStorage.getItem("shoppingCards"));
-    }
+async function setShoppingCardCountUsingLocalStorage(){
+    const result = await axios.get("http://localhost:5001/shoppingcards");
 
-    const shoppingCardCountElement = document.getElementById("shopping-card-count");
+    const val = result.data;
 
-    shoppingCardCountElement.innerHTML =cards.length;
+    $("#shopping-card-count").html(val.length);
 }

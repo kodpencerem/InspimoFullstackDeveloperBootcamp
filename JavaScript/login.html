@@ -16,18 +16,19 @@
         <input type="text" id='password'>
     </div>
     <div>
-        <button onclick="signIn()">Sign In</button>
+        <button id="signInBtn">Sign In</button>
     </div>
 
 
     <script>
-        function signIn(){
+        const el = document.getElementById("signInBtn");
+        el.addEventListener("click",()=> {
             const userNameEl = document.getElementById("userName");
             const passwordEl = document.getElementById("password");
                       //ctrl + alt + enterın solundaki virgüle iki defa basınca ters tırnak çıkıyor
 
             console.log(`UserName: ${userNameEl.value}\nPassword: ${passwordEl.value}`);
-        }
+        })
     </script>
 </body>
 </html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+</head>
+<body>
+    <h1>JQuery</h1>
+    <h2 id="h2El">H2 Elementi</h2>
+    <input type="text">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        //document.querySelector("h2").innerHTML = "123123";
+        $("h2").html("asdasd"); //innerHTML
+        $("#h2El").text("123123"); //innerText
+
+        //document.querySelector("input").value = "asdasdasd";
+        //const value = $("input").val();
+
+        $("input").val("asdasd");
+        $("input").css("color","red");
+        $("input").css("background-color","yellow");
+
+        // $.ajax({
+        //     method: "GET",
+        //     url: "http://localhost:5001/products",
+        //     success: (res)=> {
+        //         console.log(res);
+        //     }
+        // })
+
+        // $.ajax({
+        //     method: "POST",
+        //     url: "http://localhost:5001/products",
+        //     data: JSON.stringify({value: "Taner Saydam"}),
+        //     success: ()=> {
+                
+        //     }
+        // })
+
+
+    </script>
+</body>
+</html>

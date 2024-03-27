@@ -1,10 +1,22 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 27.03.2024 (Gelecek ders)
+## 29.03.2024 (Gelecek ders)
+- Typescript ile CLI yapma
+- Angular Başlangıç
+
+## 27.03.2024
 - eCommerce Projesi (Json-Server ve API ile birlikte)
 - Axios
 - JQuery
 - JQuery Ajax
+NOT: script elementinde js linkleri eklenirken sırası çok önemli. Eğer 11. satırda bir yapı kullanılacaksa bu mutlaka 10. satırda eklenmiş olmalı. Örneğin JQuery script elementi olarak eklenip $ işareti kullanılmak istenirse mutlaka kullanılacağı yerin üstünde eklenmiş olmalı.
+
+Örn: 
+//JQuery Script Elementi
+//JQuery kullanılan kod
+
+- Typescript
+NOT: npm install -g typescript koduyla TypeScript kurmanız gerekiyor. Sonra mevcut klasörde tsc dosyaadi.ts koduyla dosyayı js'e dönüştürmeniz gerekiyor
 
 ## 25.03.2024
 - JavaScript Devam Ediyoruz

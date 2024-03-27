@@ -1,16 +1,20 @@
 let shoppingCards = [];
 let totalAmount = 0;
 
-if(localStorage.getItem("shoppingCards")){
-    shoppingCards = JSON.parse(localStorage.getItem("shoppingCards"));
+getAll();
 
-    for(let card of shoppingCards){
-      totalAmount += +card.price;
-    }
+async function getAll(){
+  var result = await axios.get("http://localhost:5001/shoppingcards");
+
+  shoppingCards = result.data;
+
+  for(let card of shoppingCards){
+    totalAmount += +card.price;
+  }
+
+  setShoppingCardToHTML();
+  setShoppingCardCount();
 }
-
-setShoppingCardToHTML();
-setShoppingCardCountUsingLocalStorage();
 
 function setShoppingCardToHTML(){
     const shoppingCardsRowElement = document.getElementById("shoppingCardsRow");
@@ -31,7 +35,7 @@ function setShoppingCardToHTML(){
             <h4 class="alert alert-success">
               ${formatCurrency(shoppingCard.price)}
             </h4>
-            <button onclick="deleteByIndex(${index},${shoppingCard.id})" class="btn btn-outline-danger w-100">
+            <button onclick="deleteByIndex('${shoppingCard.id}')" class="btn btn-outline-danger w-100">
               <i class="bi bi-trash"></i>
               Delete
             </button>
@@ -48,19 +52,14 @@ function setShoppingCardToHTML(){
     totalAmountEl.innerHTML = formatCurrency(totalAmount);
 }
 
-function setShoppingCardCountUsingLocalStorage(){
-    let cards = [];
-    if(localStorage.getItem("shoppingCards")){
-        cards = JSON.parse(localStorage.getItem("shoppingCards"));
-    }
-
+function setShoppingCardCount(){
     const shoppingCardCountElement = document.getElementById("shopping-card-count");
 
-    shoppingCardCountElement.innerHTML =cards.length;
+    shoppingCardCountElement.innerHTML =shoppingCards.length;
 }
 
-function deleteByIndex(index, id){
-  Swal.fire({
+async function deleteByIndex(id){
+  const res = await Swal.fire({
     title: 'Delete!',
     text: 'Do you want to delete',
     icon: 'question',
@@ -68,30 +67,17 @@ function deleteByIndex(index, id){
     showConfirmButton: true,
     showCancelButton: true,
     cancelButtonText: "Cancel"
-  }).then((res)=> {
-    console.log(res);
-    if(res.isConfirmed){
-      this.shoppingCards.splice(index,1);
-
-      localStorage.setItem("shoppingCards", JSON.stringify(this.shoppingCards));
-    
-      const products = JSON.parse(localStorage.getItem("products"));
-
-      const product = products.find(p => p.id === id);
-      product.stock += 1;
-
-      localStorage.setItem("products", JSON.stringify(products));
-
-      setShoppingCardToHTML();
-      setShoppingCardCountUsingLocalStorage();
-    }
   });
-  
+
+  if(res.isConfirmed){
+    await fetch("http://localhost:5001/shoppingcards/" + id, {
+      method: "DELETE"
+    });
+  }  
 }
 
 function payAndCreateOrder(e){
   e.preventDefault();
-  const currentTarget = event.currentTarget;
 
   Swal.fire({
     title: 'Pay?',
@@ -101,32 +87,12 @@ function payAndCreateOrder(e){
     showConfirmButton: true,
     showCancelButton: true,
     cancelButtonText: "Cancel"
-  }).then(res=> {
+  }).then(async res=> {
     if(res.isConfirmed){  
-      const creditCard ={};
-    
-      for(const el of currentTarget){
-        if(el.name){
-          creditCard[el.name] = el.value;
-        }    
-      }
-    
-      const data = {
-        creditCard: creditCard,
-        totalAmount: totalAmount,
-        products: shoppingCards
-      }
-    
-      shoppingCards = [];
-      localStorage.removeItem("shoppingCards");
-      setShoppingCardToHTML();
-    
-      localStorage.setItem("orders", JSON.stringify(data));
-
-      for(let el of currentTarget){
-        if(el.name){
-          el.value = ""
-        }        
+      for(let card of shoppingCards){
+        await fetch("http://localhost:5001/shoppingcards/" + card.id, {
+          method: "DELETE"
+        });
       }
     }
   }) 
