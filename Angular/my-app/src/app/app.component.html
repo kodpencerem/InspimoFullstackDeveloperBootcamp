@@ -1,0 +1,12 @@
+<h1>Hello, world</h1>
+
+<div>
+  <input type="text" [(ngModel)]="work">
+  <button (click)="save()">Save</button>
+</div>
+
+<ul>
+  @for(t of todos; track t){
+    <li>{{t}} <button>Delete</button></li>
+  }
+</ul>
