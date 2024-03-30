@@ -1,12 +1,40 @@
-<h1>Hello, world</h1>
-
-<div>
-  <input type="text" [(ngModel)]="work">
-  <button (click)="save()">Save</button>
-</div>
-
-<ul>
-  @for(t of todos; track t){
-    <li>{{t}} <button>Delete</button></li>
+<h1 class="text-center alert alert-dark">Todo App</h1>
+<div class="row d-flex justify-content-center" style="width: 99%;">
+  @if(isUpdateFormActive === false){
+  <div class="col-4">
+    <input class="form-control" type="text" [(ngModel)]="work" placeholder="Some work...">
+    <button class="btn btn-dark w-100 mt-1" (click)="save()">Save</button>
+  </div>
+  }@else {
+  <div class="col-4">
+    <input class="form-control" type="text" [(ngModel)]="updateWork">
+    <button class="btn btn-primary w-100 mt-1" (click)="update()">Update</button>
+  </div>
   }
-</ul>
+</div>
+<h1>22:23 görüşelim</h1>
+<div class="row mt-3" style="width: 99%;">
+  @for(t of todos;track t){
+    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-12 mt-1">
+      <div class="card text-bg-dark">
+        <div class="card-header">
+          <img src="/assets/todo.jpg" style="width: 100%; object-fit: cover;">
+        </div>
+        
+        <div class="card-body text-center">
+          <h5>{{t}}</h5>
+          <div class="form-check form-switch d-flex justify-content-center">
+            <input class="form-check-input" type="checkbox" id="{{$index}}}">
+          </div>
+        </div>
+
+        <div class="card-header">
+          @if(isUpdateFormActive === false){
+            <button class="btn btn-sm btn-primary w-100" (click)="get($index)">Update</button>
+            <button class="btn btn-sm btn-danger w-100 mt-1" (click)="remove($index)">Delete</button>
+            }
+        </div>
+      </div>
+    </div>
+  }  
+</div>
