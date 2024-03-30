@@ -1,0 +1,19 @@
+{
+  "todos": [
+    {
+      "id": "6b3a",
+      "work": "deneme",
+      "isCompleted": false
+    },
+    {
+      "id": "beeb",
+      "work": "deneme2",
+      "isCompleted": false
+    },
+    {
+      "id": "08a4",
+      "work": "deneme3",
+      "isCompleted": true
+    }
+  ]
+}

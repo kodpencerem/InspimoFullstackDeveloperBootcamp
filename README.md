@@ -1,14 +1,17 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 30.03.2024 (Gelecek ders)
-- Angular Devam Ediyoruz
-- Todo Projesi
+## 01.04.2024  (Gelecek ders)
 - eTicaret Projesi
-- Yapılar:
-  - Component
+- Yapılar:  
   - Directive
   - Pipe
   - Service
+
+## 30.03.2024
+- Angular Devam Ediyoruz
+- Todo Projesi
+- Angular Component Yapısı
+
 
 ## 29.03.2024
 - Typescript ile CLI yapma

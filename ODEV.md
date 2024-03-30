@@ -1,5 +1,10 @@
 # ÖDEV Readme Dosyası
 
+## 31.03.2024
+- Update ve Delete metotlarını API'ye bağlayın
+- Angular üzerinden Portfolio sitesinizi Bootstrap kullanarak tasarlayın
+- Json-Server ile verileri API'dan çekin
+
 ## 20.03.2024
 - index.html sayfa oluşturun
 - Bootstrap, FontAwesome ve SweetAlert2 js CDN linklerini dahil edin
