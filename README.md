@@ -1,11 +1,15 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 01.04.2024  (Gelecek ders)
-- eTicaret Projesi
-- Yapılar:  
-  - Directive
-  - Pipe
-  - Service
+## 03.04.2024 (Gelecek ders)
+- Angular ile eTicaret Projesi Tasarım
+- Models 
+- json-server ile Db
+- API ile ürünlerin eklenmesi
+- API ile sepete ürün ekleme
+- API ile sepetteki ürünleri siparişe çevirme
+
+## 01.04.2024
+- Angular ile eTicaret Projesi Tasarım
 
 ## 30.03.2024
 - Angular Devam Ediyoruz

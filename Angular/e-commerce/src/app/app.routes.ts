@@ -23,7 +23,7 @@ export const routes: Routes = [
                 component: ShoppingCartsComponent
             }
         ]
-    },//23:20 görüşelim
+    },
     {
         path: "**",
         component: NotFoundComponent
