@@ -1,12 +1,17 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 03.04.2024 (Gelecek ders)
-- Angular ile eTicaret Projesi Tasarım
-- Models 
+## 05.04.2024 (Gelecek ders)
+- Angular ile eTicaret Projesi Devam
+- Generic Component
 - json-server ile Db
-- API ile ürünlerin eklenmesi
+- API ile Ürün ve Kategory Listelenmesi
 - API ile sepete ürün ekleme
 - API ile sepetteki ürünleri siparişe çevirme
+- API ile ürünlerin eklenmesi
+
+## 03.04.2024
+- Angular ile eTicaret Projesi Tasarım
+- Models 
 
 ## 01.04.2024
 - Angular ile eTicaret Projesi Tasarım
@@ -15,7 +20,6 @@
 - Angular Devam Ediyoruz
 - Todo Projesi
 - Angular Component Yapısı
-
 
 ## 29.03.2024
 - Typescript ile CLI yapma
