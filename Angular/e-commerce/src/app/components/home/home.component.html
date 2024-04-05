@@ -52,8 +52,8 @@
                                 </span>
                                 <p style="font-size: small;">{{product.description}} </p>
                                 <div>
-                                    <span class="text-danger me-3"><del>{{product.price}}</del></span>
-                                    <span class="text-success">{{product.discountedPrice}}</span>
+                                    <span class="text-danger me-3"><del>{{product.price | trCurrency: '₺':true}}</del></span>
+                                    <span class="text-success">{{product.discountedPrice | trCurrency: '₺':true}}</span>
                                 </div>
                             </div>
                             <div class="card-header">
@@ -67,7 +67,9 @@
                                                 [(ngModel)]="product.quantity">
                                             <i class="fa-solid fa-plus ibtn" (click)="incrementProductQuantity(product)"></i>
                                         </div>
-                                        <i class="fa-solid fa-cart-plus"></i>
+                                        <i 
+                                            class="fa-solid fa-cart-plus" 
+                                            (click)="addShoppingCart(product)"></i>
                                     </button>
                                 }@else {
                                     <button class="btn btn-danger w-100" disabled>

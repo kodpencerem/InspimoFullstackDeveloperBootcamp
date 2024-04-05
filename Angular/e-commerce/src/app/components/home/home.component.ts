@@ -6,11 +6,13 @@ import { CommonModule } from '@angular/common';
 import { ProductModel } from '../../models/product.model';
 import { ProductPipe } from '../../pipes/product.pipe';
 import { SearchComponent } from '../../common/components/search/search.component';
+import { TrCurrencyPipe } from 'tr-currency';
+import { ShoppingCartService } from '../../services/shopping-cart.service';
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-home', //npm install tr-currency
   standalone: true,
-  imports: [FormsModule,CategoryPipe, CommonModule, ProductPipe, SearchComponent],
+  imports: [FormsModule,CategoryPipe, CommonModule, ProductPipe, SearchComponent, TrCurrencyPipe],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -38,7 +40,7 @@ export class HomeComponent {
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       price: 12650,
       discountedPrice: 11999,
-      stock: 0,
+      stock: 10,
       kdvRate: 20,
       categoryId : "1",
       category: {
@@ -69,6 +71,10 @@ export class HomeComponent {
   productSearch: string = "";
   selectedCategoryId:string = "";
 
+  constructor(
+    private cart: ShoppingCartService
+  ){}
+
   selectCategory(id:string = ""){
     this.selectedCategoryId = id;
   }
@@ -83,5 +89,18 @@ export class HomeComponent {
     if(product.quantity < product.stock){
       product.quantity++;
     }    
+  }
+
+  addShoppingCart(product: ProductModel){
+    const productModel = {...product};
+
+    const model = this.cart.shoppingCarts.find(p=> p.id === product.id);
+    if(model === undefined){
+      this.cart.shoppingCarts.push(productModel);
+    }else{
+      model.quantity += productModel.quantity;
+    }
+    
+    product.stock -= product.quantity;
   }
 }

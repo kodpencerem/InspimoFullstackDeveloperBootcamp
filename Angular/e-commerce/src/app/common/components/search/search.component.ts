@@ -16,4 +16,3 @@ export class SearchComponent {
     this.changeSearch.emit(this.search);
   }
 }
-//21:45 görüşelim
