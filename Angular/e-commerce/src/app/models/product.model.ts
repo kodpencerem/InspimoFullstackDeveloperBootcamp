@@ -11,6 +11,7 @@ export class ProductModel{
     kdvRate: KDVRateType = 1;
     categoryId: string = "";
     category: CategoryModel = new CategoryModel();
+    quantity:number = 1;
 }
 
 export type KDVRateType = 0 | 1 | 10 | 20;

@@ -9,10 +9,7 @@
     <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 mt-1">
         <ul class="list-group">
             <li class="list-group-item">
-                <div class="position-relative">
-                   <input type="search" class="form-control" placeholder="Search category..." style="padding-left:35px;" [(ngModel)]="categorySearch">
-                   <i class="fa-solid fa-magnifying-glass search"></i>
-                </div>
+                <app-search (changeSearch)="categorySearch = $event"></app-search>
             </li>
             @if(categorySearch === ""){
                 <li class="list-group-item" (click)="selectCategory()" [ngClass]="selectedCategoryId === '' ? 'active' : ''">
@@ -29,10 +26,7 @@
     </div>
 
     <div class="col-xl-9 col-lg-9 col-md-8 col-sm-12 col-12 mt-1">
-        <div class="position-relative">
-            <input type="search" class="form-control" placeholder="Search product..." style="padding-left:35px;" [(ngModel)]="productSearch">
-            <i class="fa-solid fa-magnifying-glass search"></i>
-        </div>
+        <app-search (changeSearch)="productSearch = $event"></app-search>
 
         <div class="form-group mt-1">
             <div class="row">
@@ -63,14 +57,23 @@
                                 </div>
                             </div>
                             <div class="card-header">
-                                <button class="btn btn-dark w-100 d-flex justify-content-between align-items-center">
-                                    <div class="d-flex" style="gap: 10px;">
-                                        <button class="btn btn-sm btn-light">-</button>
-                                        <input type="number" style="width: 30px; text-align: center;" value="5">
-                                        <button class="btn btn-sm btn-light">+</button>
-                                    </div>
-                                    <i class="fa-solid fa-cart-plus"></i>
-                                </button>
+                                @if(product.stock > 0){
+                                    <button class="btn btn-dark w-100 d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center" style="gap: 10px;">
+                                            <i class="fa-solid fa-minus ibtn" (click)="decrementProductQuantity(product)"></i>
+                                            <input 
+                                                type="number" 
+                                                style="width: 30px; text-align: center; height: 25px;" 
+                                                [(ngModel)]="product.quantity">
+                                            <i class="fa-solid fa-plus ibtn" (click)="incrementProductQuantity(product)"></i>
+                                        </div>
+                                        <i class="fa-solid fa-cart-plus"></i>
+                                    </button>
+                                }@else {
+                                    <button class="btn btn-danger w-100" disabled>
+                                        Out of stock
+                                    </button>
+                                }
                             </div>
                         </div>
                     </div>

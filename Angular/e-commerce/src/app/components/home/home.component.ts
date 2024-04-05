@@ -5,11 +5,12 @@ import { CategoryPipe } from '../../pipes/category.pipe';
 import { CommonModule } from '@angular/common';
 import { ProductModel } from '../../models/product.model';
 import { ProductPipe } from '../../pipes/product.pipe';
+import { SearchComponent } from '../../common/components/search/search.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [FormsModule,CategoryPipe, CommonModule, ProductPipe],
+  imports: [FormsModule,CategoryPipe, CommonModule, ProductPipe, SearchComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -37,13 +38,14 @@ export class HomeComponent {
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       price: 12650,
       discountedPrice: 11999,
-      stock: 100,
+      stock: 0,
       kdvRate: 20,
       categoryId : "1",
       category: {
         id: "1",
         name: "Elektronik"
-      }
+      },
+      quantity: 1
     },
     {
       id: "2",
@@ -52,13 +54,14 @@ export class HomeComponent {
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       price: 11550,
       discountedPrice: 10999,
-      stock: 100,
+      stock: 4,
       kdvRate: 20,
       categoryId : "3",
       category: {
         id: "3",
         name: "Kıyafet"
-      }
+      },
+      quantity: 1
     }
   ]
 
@@ -68,5 +71,17 @@ export class HomeComponent {
 
   selectCategory(id:string = ""){
     this.selectedCategoryId = id;
+  }
+
+  decrementProductQuantity(product:ProductModel){
+    if(product.quantity > 1){
+      product.quantity--;
+    }    
+  }
+
+  incrementProductQuantity(product: ProductModel){
+    if(product.quantity < product.stock){
+      product.quantity++;
+    }    
   }
 }
