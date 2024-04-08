@@ -41,7 +41,7 @@ export class HomeComponent {
       price: 12650,
       discountedPrice: 11999,
       stock: 10,
-      kdvRate: 20,
+      kdvRate: 10,
       categoryId : "1",
       category: {
         id: "1",

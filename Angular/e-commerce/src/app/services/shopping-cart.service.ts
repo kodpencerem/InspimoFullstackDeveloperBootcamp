@@ -5,7 +5,7 @@ import { ShoppingCartModel } from '../models/shopping-cart.model';
   providedIn: 'root'
 })
 export class ShoppingCartService {
-
+  
   shoppingCarts: ShoppingCartModel[] = [];
   constructor() { }
 }
