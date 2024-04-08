@@ -1,0 +1,10 @@
+.ibtn{
+    padding: 2px;
+    cursor: pointer;
+}
+
+.ibtn:hover{
+    background-color: #ccc;    
+    color: black;
+    border-radius: 5px;
+}

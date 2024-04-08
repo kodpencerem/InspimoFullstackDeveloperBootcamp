@@ -35,10 +35,19 @@
                                     </td>
                                     <td>{{data.name}}</td>
                                     <td>{{data.discountedPrice | trCurrency:'₺':true}}</td>
-                                    <td>{{data.quantity}}</td>
+                                    <td>
+                                        <div class="d-flex align-items-center" style="gap: 10px;">
+                                            <i class="fa-solid fa-minus ibtn" (click)="decrement(data)"></i>
+                                            <input 
+                                                type="number" 
+                                                style="width: 30px; text-align: center; height: 25px;" 
+                                                [(ngModel)]="data.quantity">
+                                            <i class="fa-solid fa-plus ibtn" (click)="increment(data)"></i>
+                                        </div>
+                                    </td>
                                     <td>{{(data.discountedPrice * data.quantity) | trCurrency:'₺':true}}</td>
                                     <td>
-                                        <button class="btn btn-sn btn-outline-danger">
+                                        <button (click)="removeByIndex($index)" class="btn btn-sn btn-outline-danger">
                                             <i class="fa-solid fa-trash"></i>
                                         </button>
                                     </td>

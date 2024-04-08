@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
-import { ShoppingCartModel } from '../models/shopping-cart.model';
+import { ProductModel } from '../models/product.model';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ShoppingCartService {
+export class ProductService {
 
-  shoppingCarts: ShoppingCartModel[] = [
+  products: ProductModel[] = [
     {
       id: "1",
       imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfFFXV4zCJybOFvocqAKKkko37SsPbl9F66Q&usqp=CA",
@@ -22,7 +22,24 @@ export class ShoppingCartService {
         name: "Elektronik"
       },
       quantity: 1
+    },
+    {
+      id: "2",
+      imageUrl: "https://m.media-amazon.com/images/I/61ujQL9JflL._AC_SX679_.jpg",
+      name: "Columbia Delta Ridge™ Down Erkek Mont",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      price: 11550,
+      discountedPrice: 10999,
+      stock: 4,
+      kdvRate: 20,
+      categoryId : "3",
+      category: {
+        id: "3",
+        name: "Kıyafet"
+      },
+      quantity: 1
     }
-  ];
+  ]
+
   constructor() { }
 }
