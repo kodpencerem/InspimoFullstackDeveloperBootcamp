@@ -6,7 +6,16 @@ import { ProductModel } from '../models/product.model';
 })
 export class ProductService {
 
-  products: ProductModel[] = [
+  products: ProductModel[] = []
+
+  constructor() {
+    setTimeout(()=> {
+      this.seedData();
+    },3000)
+  }
+
+  seedData(){
+    this.products = [      
     {
       id: "1",
       imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfFFXV4zCJybOFvocqAKKkko37SsPbl9F66Q&usqp=CA",
@@ -38,8 +47,7 @@ export class ProductService {
         name: "Kıyafet"
       },
       quantity: 1
-    }
-  ]
-
-  constructor() { }
+    }  
+    ]
+  }
 }

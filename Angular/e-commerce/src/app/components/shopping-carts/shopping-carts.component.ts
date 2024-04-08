@@ -71,15 +71,22 @@ export class ShoppingCartsComponent implements OnInit {
       if(product.stock > 0){
         cart.quantity++;
         product.stock--;
+        this.calculateTotal();
       }
     }
   }
 
-  decrement(cart: ShoppingCartModel){
-    const product = this._product.products.find(p=> p.id == cart.id);
-    if(product !== undefined){
-      cart.quantity--;
-      product.stock++;
+  decrement(cart: ShoppingCartModel, index:number){
+    if(cart.quantity === 1){
+      this.removeByIndex(index);
+    }else{
+      const product = this._product.products.find(p=> p.id == cart.id);
+      if(product !== undefined){
+        cart.quantity--;
+        product.stock++;
+        this.calculateTotal();
+      }
     }
+   
   }
 }

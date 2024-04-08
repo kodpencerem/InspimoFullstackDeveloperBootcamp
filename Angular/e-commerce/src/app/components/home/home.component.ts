@@ -13,61 +13,69 @@ import { ProductService } from '../../services/product.service';
 @Component({
   selector: 'app-home', //npm install tr-currency
   standalone: true,
-  imports: [FormsModule,CategoryPipe, CommonModule, ProductPipe, SearchComponent, TrCurrencyPipe],
+  imports: [FormsModule, CategoryPipe, CommonModule, ProductPipe, SearchComponent, TrCurrencyPipe],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  categories:CategoryModel[] = [
-    {
-      id: "1",
-      name: "Elektronik"
-    },
-    {
-      id: "2",
-      name: "Meyve & Sebze"
-    },
-    {
-      id: "3",
-      name: "Kıyafet"
-    }
-  ];
- 
-  categorySearch:string = "";
+  categories: CategoryModel[] = [];
+  numbers: number[] = [1,2,3,4]
+  categorySearch: string = "";
   productSearch: string = "";
-  selectedCategoryId:string = "";
+  selectedCategoryId: string = "";
 
   constructor(
     private cart: ShoppingCartService,
     public _product: ProductService
-  ){}
+  ) {
+    setTimeout(() => {
+      this.seedData();
+    }, 3000);
+   }
 
-  selectCategory(id:string = ""){
+  selectCategory(id: string = "") {
     this.selectedCategoryId = id;
   }
 
-  decrementProductQuantity(product:ProductModel){
-    if(product.quantity > 1){
+  decrementProductQuantity(product: ProductModel) {
+    if (product.quantity > 1) {
       product.quantity--;
-    }    
+    }
   }
 
-  incrementProductQuantity(product: ProductModel){
-    if(product.quantity < product.stock){
+  incrementProductQuantity(product: ProductModel) {
+    if (product.quantity < product.stock) {
       product.quantity++;
-    }    
+    }
   }
 
-  addShoppingCart(product: ProductModel){
-    const productModel = {...product};
+  addShoppingCart(product: ProductModel) {
+    const productModel = { ...product };
 
-    const model = this.cart.shoppingCarts.find(p=> p.id === product.id);
-    if(model === undefined){
+    const model = this.cart.shoppingCarts.find(p => p.id === product.id);
+    if (model === undefined) {
       this.cart.shoppingCarts.push(productModel);
-    }else{
+    } else {
       model.quantity += productModel.quantity;
     }
-    
+
     product.stock -= product.quantity;
+  }
+
+  seedData() {
+    this.categories = [
+      {
+        id: "1",
+        name: "Elektronik"
+      },
+      {
+        id: "2",
+        name: "Meyve & Sebze"
+      },
+      {
+        id: "3",
+        name: "Kıyafet"
+      }
+    ]
   }
 }

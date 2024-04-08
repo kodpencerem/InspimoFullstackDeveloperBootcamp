@@ -37,10 +37,11 @@
                                     <td>{{data.discountedPrice | trCurrency:'₺':true}}</td>
                                     <td>
                                         <div class="d-flex align-items-center" style="gap: 10px;">
-                                            <i class="fa-solid fa-minus ibtn" (click)="decrement(data)"></i>
+                                            <i class="fa-solid fa-minus ibtn" (click)="decrement(data, $index)"></i>
                                             <input 
                                                 type="number" 
-                                                style="width: 30px; text-align: center; height: 25px;" 
+                                                disabled
+                                                class="quantity"                                                
                                                 [(ngModel)]="data.quantity">
                                             <i class="fa-solid fa-plus ibtn" (click)="increment(data)"></i>
                                         </div>

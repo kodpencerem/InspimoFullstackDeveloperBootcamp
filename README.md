@@ -1,6 +1,19 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 06.04.2024 (Gelecek ders)
+## 12.04.2024 (Gelecek ders)
+- Sepete Placeholder(Ödev)
+- Ödemeyi yapıp sipariş oluşturma
+- Sipariş sayfası
+- Sipariş sayfası placeholder
+- Sipariş faturası
+- json-server ile API
+
+## 08.04.2024
+- Angular ile eTicaret Projesi Devam
+- Sepet içerisinde ürün silme ve adet değiştirme
+- Placeholder
+
+## 06.04.2024
 - Öğrencilerle Task Tamamlama (Her öğrenci ekran paylaşıp söylediğim taskı Angular ile yapmaya çalışacak)
 
 ## 05.04.2024
