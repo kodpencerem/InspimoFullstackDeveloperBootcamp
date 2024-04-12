@@ -1,12 +1,19 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 12.04.2024 (Gelecek ders)
+## 13.04.2024 (Gelecek ders)
+- Projenin tamamını API'ya bağlama
+- Directive
+- Guard
+- Interceptor
+- Module
+- Version Update
+
+## 12.04.2024
 - Sepete Placeholder(Ödev)
 - Ödemeyi yapıp sipariş oluşturma
 - Sipariş sayfası
-- Sipariş sayfası placeholder
-- Sipariş faturası
-- json-server ile API
+- json-server
+- Products GetAll API
 
 ## 08.04.2024
 - Angular ile eTicaret Projesi Devam
