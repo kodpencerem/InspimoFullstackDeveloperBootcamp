@@ -1,12 +1,15 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 13.04.2024 (Gelecek ders)
-- Projenin tamamını API'ya bağlama
+## 15.04.2024 (Gelecek ders)
+- Angular Todo Projesi (API ile)
 - Directive
 - Guard
 - Interceptor
 - Module
 - Version Update
+
+## 13.04.2024
+- Projenin tamamını API'ya bağlama
 
 ## 12.04.2024
 - Sepete Placeholder(Ödev)

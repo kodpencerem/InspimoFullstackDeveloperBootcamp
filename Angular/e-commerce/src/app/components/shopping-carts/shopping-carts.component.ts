@@ -94,7 +94,7 @@ export class ShoppingCartsComponent implements OnInit {
         if(orders.length > 0){
           lastOrderSuffix = orders[this._order.orders.length - 1].orderNumberSuffix;
         } 
-
+        
         const order: OrderModel = {
           id: "123",
           date: new Date().toString(),
