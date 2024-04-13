@@ -7,23 +7,23 @@
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       "price": 12650,
       "discountedPrice": 11999,
-      "stock": 10,
+      "stock": 195,
       "kdvRate": 10,
       "categoryId": "1",
       "category": {
         "id": "1",
         "name": "Elektronik"
       },
-      "quantity": 4
+      "quantity": 1
     },
     {
-      "id": "2",
+      "id": "2a",
       "imageUrl": "https://m.media-amazon.com/images/I/61ujQL9JflL._AC_SX679_.jpg",
       "name": "Columbia Delta Ridge™ Down Erkek Mont",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       "price": 11550,
       "discountedPrice": 10999,
-      "stock": 4,
+      "stock": 197,
       "kdvRate": 20,
       "categoryId": "3",
       "category": {
@@ -47,5 +47,71 @@
       "name": "Kıyafet"
     }
   ],
-  "shoppingCarts": []
+  "shoppingCarts": [],
+  "orders": [
+    {
+      "id": "123",
+      "date": "Sat Apr 13 2024 23:12:16 GMT+0300 (GMT+03:00)",
+      "kdvRate": 10,
+      "price": 12650,
+      "productName": "Grundig Pc 2560 B1",
+      "productDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "quantity": 1,
+      "productImageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfFFXV4zCJybOFvocqAKKkko37SsPbl9F66Q&usqp=CA",
+      "total": 11999,
+      "totalAmount": 10908.181818181818,
+      "totalKDV": 1090.818181818182,
+      "orderNumberPrefix": "TS2024",
+      "orderNumberSuffix": 1,
+      "orderNumber": "TS20240000000001"
+    },
+    {
+      "id": "123",
+      "date": "Sat Apr 13 2024 23:12:46 GMT+0300 (GMT+03:00)",
+      "kdvRate": 20,
+      "price": 11550,
+      "productName": "Columbia Delta Ridge™ Down Erkek Mont",
+      "productDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "quantity": 1,
+      "productImageUrl": "https://m.media-amazon.com/images/I/61ujQL9JflL._AC_SX679_.jpg",
+      "total": 10999,
+      "totalAmount": 9165.833333333334,
+      "totalKDV": 1833.166666666666,
+      "orderNumberPrefix": "TS2024",
+      "orderNumberSuffix": 2,
+      "orderNumber": "TS20240000000002"
+    },
+    {
+      "id": "123",
+      "date": "Sat Apr 13 2024 23:13:28 GMT+0300 (GMT+03:00)",
+      "kdvRate": 10,
+      "price": 12650,
+      "productName": "Grundig Pc 2560 B1",
+      "productDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "quantity": 1,
+      "productImageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfFFXV4zCJybOFvocqAKKkko37SsPbl9F66Q&usqp=CA",
+      "total": 11999,
+      "totalAmount": 10908.181818181818,
+      "totalKDV": 1090.818181818182,
+      "orderNumberPrefix": "TS2024",
+      "orderNumberSuffix": 3,
+      "orderNumber": "TS20240000000003"
+    },
+    {
+      "id": "123",
+      "date": "Sat Apr 13 2024 23:13:28 GMT+0300 (GMT+03:00)",
+      "kdvRate": 20,
+      "price": 11550,
+      "productName": "Columbia Delta Ridge™ Down Erkek Mont",
+      "productDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "quantity": 1,
+      "productImageUrl": "https://m.media-amazon.com/images/I/61ujQL9JflL._AC_SX679_.jpg",
+      "total": 10999,
+      "totalAmount": 9165.833333333334,
+      "totalKDV": 1833.166666666666,
+      "orderNumberPrefix": "TS2024",
+      "orderNumberSuffix": 3,
+      "orderNumber": "TS20240000000003"
+    }
+  ]
 }

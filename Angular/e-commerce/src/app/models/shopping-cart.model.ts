@@ -6,8 +6,7 @@ export class ShoppingCartModel{
     productId: string = "";
     imageUrl: string = "";
     name: string = "";
-    description: string = "";
-    stock: number = 0;
+    description: string = "";    
     price: number = 0;
     discountedPrice: number = 0;
     kdvRate: KDVRateType = 1;

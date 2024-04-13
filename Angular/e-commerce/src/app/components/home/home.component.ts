@@ -76,8 +76,7 @@ export class HomeComponent {
         kdvRate: productModel.kdvRate,
         name: productModel.name,
         price: productModel.price,
-        quantity: productModel.quantity,
-        stock: productModel.stock,
+        quantity: productModel.quantity,        
         category: productModel.category,
         id: undefined
       }
