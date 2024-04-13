@@ -114,4 +114,4 @@ export class HomeComponent {
         }
       });
   }
-}//21:22 de görüşelim
+}
