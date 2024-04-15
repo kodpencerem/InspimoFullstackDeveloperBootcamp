@@ -1,0 +1,44 @@
+<h1>Todo App</h1>
+@if(!isUpdateFormActive){
+  <div>
+    <span>Create Form</span>
+    <input type="text" [(ngModel)]="createModel.work">
+    <button (click)="save()">Save</button>
+  </div>
+}@else {
+  <div>
+    <span>Update Form</span>
+    <input type="text" [(ngModel)]="updateModel.work">
+    <button (click)="update()">Update</button>
+    <button (click)="cancel()">Cancel</button>
+  </div>
+}
+
+<hr>
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Work</th>
+      <th>IsCompleted</th>
+      <th>Date</th>
+      <th>Operations</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for(todo of todos;track todo){
+      <tr>
+        <td>{{ $index + 1 }}</td>
+        <td>{{ todo.work }}</td>
+        <td>{{ (todo.isCompleted === true ? 'Completed' : 'Not Completed') }}</td>
+        <td>{{ todo.createdAt | date:'dd.MM.yyyy HH:mm:ss' }}</td>
+        <td>
+          @if(!isUpdateFormActive){
+            <button (click)="get(todo)">Update</button>
+            <button (click)="deleteById(todo.id)">Delete</button>
+          }          
+        </td>
+      </tr>
+    }
+  </tbody>
+</table>  
