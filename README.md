@@ -1,11 +1,15 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 17.04.2024 (Gelecek ders)
+## 19.04.2024 (Gelecek ders)
+- Module
+- Version Update
+- Generic Http Service
+- Generic Error Service
+
+## 17.04.2024
 - Directive
 - Guard
 - Interceptor
-- Module
-- Version Update
 
 ## 15.04.2024
 - Angular Todo Projesi (API ile)

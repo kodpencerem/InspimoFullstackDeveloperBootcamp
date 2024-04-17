@@ -6,6 +6,9 @@ import { canDeactivateGuard } from '../candeactivate.guard';
 import { LayoutsComponent } from './layouts/layouts.component';
 import { LoginComponent } from './login/login.component';
 import { canactivatechildGuard } from '../canactivatechild.guard';
+import { canactivateGuard } from '../canactivate.guard';
+import { inject } from '@angular/core';
+import { AuthService } from './auth.service';
 
 export const routes: Routes = [
     {
@@ -15,7 +18,8 @@ export const routes: Routes = [
     {
         path: "",
         component: LayoutsComponent,
-        canActivateChild: [canactivatechildGuard],
+        //canActivateChild: [canactivatechildGuard],
+        canActivateChild: [()=> inject(AuthService).isAuthenticated()], //functional guard
         children: [
             {
                 path: "home",
@@ -24,7 +28,8 @@ export const routes: Routes = [
             },
             {
                 path:"about",
-                component: AboutComponent,                
+                component: AboutComponent, 
+                canActivate: [canactivateGuard]               
             },
             {
                 path: "contact",
