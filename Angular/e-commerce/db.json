@@ -23,7 +23,7 @@
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       "price": 11550,
       "discountedPrice": 10999,
-      "stock": 197,
+      "stock": 193,
       "kdvRate": 20,
       "categoryId": "3",
       "category": {
@@ -112,6 +112,38 @@
       "orderNumberPrefix": "TS2024",
       "orderNumberSuffix": 3,
       "orderNumber": "TS20240000000003"
+    },
+    {
+      "id": "123",
+      "date": "Fri Apr 19 2024 22:01:13 GMT+0300 (GMT+03:00)",
+      "kdvRate": 20,
+      "price": 11550,
+      "productName": "Columbia Delta Ridge™ Down Erkek Mont",
+      "productDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "quantity": 4,
+      "productImageUrl": "https://m.media-amazon.com/images/I/61ujQL9JflL._AC_SX679_.jpg",
+      "total": 43996,
+      "totalAmount": 36663.333333333336,
+      "totalKDV": 7332.666666666664,
+      "orderNumberPrefix": "TS2024",
+      "orderNumberSuffix": 4,
+      "orderNumber": "TS20240000000004"
+    },
+    {
+      "id": "123",
+      "date": "Fri Apr 19 2024 22:01:13 GMT+0300 (GMT+03:00)",
+      "kdvRate": 20,
+      "price": 11550,
+      "productName": "Columbia Delta Ridge™ Down Erkek Mont",
+      "productDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "quantity": 1,
+      "productImageUrl": "https://m.media-amazon.com/images/I/61ujQL9JflL._AC_SX679_.jpg",
+      "total": 10999,
+      "totalAmount": 9165.833333333334,
+      "totalKDV": 1833.166666666666,
+      "orderNumberPrefix": "TS2024",
+      "orderNumberSuffix": 4,
+      "orderNumber": "TS20240000000004"
     }
   ]
 }

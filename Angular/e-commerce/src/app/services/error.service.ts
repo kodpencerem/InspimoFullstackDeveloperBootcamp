@@ -1,0 +1,20 @@
+import { HttpErrorResponse } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class ErrorService {
+
+  constructor() { }
+
+  errorHandler(err: HttpErrorResponse){
+    console.log(err);    
+
+    if(err.status === 0){
+      //şu hatayı ver
+    }else if(err.status === 400){
+      //şu hatayı ver
+    }
+  }
+}

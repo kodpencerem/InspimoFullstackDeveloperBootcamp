@@ -8,11 +8,13 @@ import { ShoppingCartModel } from '../../models/shopping-cart.model';
 import { OrderModel } from '../../models/order.model';
 import { OrderService } from '../../services/order.service';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { SharedModule } from '../../module/shared.module';
+import { HttpService } from '../../services/http.service';
 
 @Component({
   selector: 'app-shopping-carts',
   standalone: true,
-  imports: [SearchComponent, TrCurrencyPipe, FormsModule],
+  imports: [SharedModule],
   templateUrl: './shopping-carts.component.html',
   styleUrl: './shopping-carts.component.css'
 })
@@ -22,7 +24,7 @@ export class ShoppingCartsComponent implements OnInit {
     public _cart: ShoppingCartService,
     private _product: ProductService,
     private _order: OrderService,
-    private _http: HttpClient
+    private _http: HttpService
   ) { }
 
   ngOnInit(): void {}  
@@ -34,35 +36,25 @@ export class ShoppingCartsComponent implements OnInit {
     if(product !== undefined){
       product.stock += cart.quantity;
 
-      this._http.put("http://localhost:5000/products/" + product.id, product).subscribe({
-        next: ()=> {
-          this._product.getAll();
-        },
-        error: (err: HttpErrorResponse)=> {
-          console.log(err);          
-        }
-      })
+      this._http.put(`products/${product.id}`, product,()=> {
+        this._product.getAll();
+      });
     }    
 
-    this._http.delete("http://localhost:5000/shoppingCarts/" + cart.id).subscribe({
-      next: ()=> {
-        this._cart.getAll();              
-      },
-      error: (err: HttpErrorResponse)=> {
-        console.log(err);        
-      }
-    });    
+    this._http.delete(`shoppingCarts/${cart.id}`,()=> {
+      this._cart.getAll();
+    });
   }
-//22:25 görüşelim
+
   increment(cart: ShoppingCartModel){
     const product = this._product.products.find(p=> p.id == cart.productId);
     if(product !== undefined){
       if(product.stock > 0){
         cart.quantity++;
-        this._http.put("http://localhost:5000/shoppingCarts/" + cart.id, cart).subscribe(()=> this._cart.getAll());
+        this._http.put(`shoppingCarts/${cart.id}`, cart,()=> this._cart.getAll());
         
         product.stock--;
-        this._http.put("http://localhost:5000/products/" + product.id, product).subscribe(()=> this._product.getAll());
+        this._http.put(`products/${product.id}`, product,()=> this._product.getAll());
       }
     }
   }
@@ -74,10 +66,10 @@ export class ShoppingCartsComponent implements OnInit {
       const product = this._product.products.find(p=> p.id == cart.productId);
       if(product !== undefined){
         cart.quantity--;
-        this._http.put("http://localhost:5000/shoppingCarts/" + cart.id, cart).subscribe(()=> this._cart.getAll());
+        this._http.put(`shoppingCarts/${cart.id}`, cart,()=> this._cart.getAll());
 
         product.stock++;
-        this._http.put("http://localhost:5000/products/" + product.id, product).subscribe(()=> this._product.getAll());
+        this._http.put(`products/${product.id}`, product,()=> this._product.getAll());
       }
     }
    
