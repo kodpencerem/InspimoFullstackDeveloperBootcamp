@@ -1,10 +1,14 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 19.04.2024 (Gelecek ders)
+## 20.04.2024 (Gelecek ders)
+- C# Başlıyoruz
+
+## 19.04.2024
 - Module
 - Version Update
 - Generic Http Service
 - Generic Error Service
+- Chart.js
 
 ## 17.04.2024
 - Directive
