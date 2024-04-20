@@ -1,7 +1,20 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 20.04.2024 (Gelecek ders)
+## 22.04.2024 (Gelecek ders)
+- C# Devam ediyoruz
+- Örnek bir araç kiralama Console App
+- Class yapıları
+- Property
+- Constructor
+- Methodlar
+- Polymorphism
+
+## 20.04.2024
 - C# Başlıyoruz
+- Değişkenler
+- Şart Blogları
+- Döngüler
+- Goto
 
 ## 19.04.2024
 - Module

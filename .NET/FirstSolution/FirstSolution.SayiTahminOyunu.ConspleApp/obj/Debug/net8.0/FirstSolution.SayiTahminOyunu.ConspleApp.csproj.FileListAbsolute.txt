@@ -1,0 +1,15 @@
+C:\InspimoFullstackDeveloperBootcamp\.NET\FirstSolution\FirstSolution.SayiTahminOyunu.ConspleApp\bin\Debug\net8.0\FirstSolution.SayiTahminOyunu.ConspleApp.exe
+C:\InspimoFullstackDeveloperBootcamp\.NET\FirstSolution\FirstSolution.SayiTahminOyunu.ConspleApp\bin\Debug\net8.0\FirstSolution.SayiTahminOyunu.ConspleApp.deps.json
+C:\InspimoFullstackDeveloperBootcamp\.NET\FirstSolution\FirstSolution.SayiTahminOyunu.ConspleApp\bin\Debug\net8.0\FirstSolution.SayiTahminOyunu.ConspleApp.runtimeconfig.json
+C:\InspimoFullstackDeveloperBootcamp\.NET\FirstSolution\FirstSolution.SayiTahminOyunu.ConspleApp\bin\Debug\net8.0\FirstSolution.SayiTahminOyunu.ConspleApp.dll
+C:\InspimoFullstackDeveloperBootcamp\.NET\FirstSolution\FirstSolution.SayiTahminOyunu.ConspleApp\bin\Debug\net8.0\FirstSolution.SayiTahminOyunu.ConspleApp.pdb
+C:\InspimoFullstackDeveloperBootcamp\.NET\FirstSolution\FirstSolution.SayiTahminOyunu.ConspleApp\obj\Debug\net8.0\FirstSolution.SayiTahminOyunu.ConspleApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\InspimoFullstackDeveloperBootcamp\.NET\FirstSolution\FirstSolution.SayiTahminOyunu.ConspleApp\obj\Debug\net8.0\FirstSolution.SayiTahminOyunu.ConspleApp.AssemblyInfoInputs.cache
+C:\InspimoFullstackDeveloperBootcamp\.NET\FirstSolution\FirstSolution.SayiTahminOyunu.ConspleApp\obj\Debug\net8.0\FirstSolution.SayiTahminOyunu.ConspleApp.AssemblyInfo.cs
+C:\InspimoFullstackDeveloperBootcamp\.NET\FirstSolution\FirstSolution.SayiTahminOyunu.ConspleApp\obj\Debug\net8.0\FirstSolution.SayiTahminOyunu.ConspleApp.csproj.CoreCompileInputs.cache
+C:\InspimoFullstackDeveloperBootcamp\.NET\FirstSolution\FirstSolution.SayiTahminOyunu.ConspleApp\obj\Debug\net8.0\FirstSolution.SayiTahminOyunu.ConspleApp.sourcelink.json
+C:\InspimoFullstackDeveloperBootcamp\.NET\FirstSolution\FirstSolution.SayiTahminOyunu.ConspleApp\obj\Debug\net8.0\FirstSolution.SayiTahminOyunu.ConspleApp.dll
+C:\InspimoFullstackDeveloperBootcamp\.NET\FirstSolution\FirstSolution.SayiTahminOyunu.ConspleApp\obj\Debug\net8.0\refint\FirstSolution.SayiTahminOyunu.ConspleApp.dll
+C:\InspimoFullstackDeveloperBootcamp\.NET\FirstSolution\FirstSolution.SayiTahminOyunu.ConspleApp\obj\Debug\net8.0\FirstSolution.SayiTahminOyunu.ConspleApp.pdb
+C:\InspimoFullstackDeveloperBootcamp\.NET\FirstSolution\FirstSolution.SayiTahminOyunu.ConspleApp\obj\Debug\net8.0\FirstSolution.SayiTahminOyunu.ConspleApp.genruntimeconfig.cache
+C:\InspimoFullstackDeveloperBootcamp\.NET\FirstSolution\FirstSolution.SayiTahminOyunu.ConspleApp\obj\Debug\net8.0\ref\FirstSolution.SayiTahminOyunu.ConspleApp.dll
