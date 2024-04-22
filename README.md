@@ -1,13 +1,17 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 22.04.2024 (Gelecek ders)
+## 24.04.2024 (Gelecek ders)
+- Araç kiralama Console App'e devam ediyoruz
+- Müşteri araç kiralama
+- Müşteri araç teslim
+- Kiralanan araçlar listesi
+
+## 22.04.2024
 - C# Devam ediyoruz
 - Örnek bir araç kiralama Console App
 - Class yapıları
 - Property
-- Constructor
 - Methodlar
-- Polymorphism
 
 ## 20.04.2024
 - C# Başlıyoruz

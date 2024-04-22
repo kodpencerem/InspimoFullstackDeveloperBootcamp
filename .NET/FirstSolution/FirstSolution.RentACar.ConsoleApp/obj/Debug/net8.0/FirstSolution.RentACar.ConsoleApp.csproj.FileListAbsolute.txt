@@ -1,0 +1,15 @@
+C:\InspimoFullstackDeveloperBootcamp\.NET\FirstSolution\FirstSolution.RentACar.ConsoleApp\bin\Debug\net8.0\FirstSolution.RentACar.ConsoleApp.exe
+C:\InspimoFullstackDeveloperBootcamp\.NET\FirstSolution\FirstSolution.RentACar.ConsoleApp\bin\Debug\net8.0\FirstSolution.RentACar.ConsoleApp.deps.json
+C:\InspimoFullstackDeveloperBootcamp\.NET\FirstSolution\FirstSolution.RentACar.ConsoleApp\bin\Debug\net8.0\FirstSolution.RentACar.ConsoleApp.runtimeconfig.json
+C:\InspimoFullstackDeveloperBootcamp\.NET\FirstSolution\FirstSolution.RentACar.ConsoleApp\bin\Debug\net8.0\FirstSolution.RentACar.ConsoleApp.dll
+C:\InspimoFullstackDeveloperBootcamp\.NET\FirstSolution\FirstSolution.RentACar.ConsoleApp\bin\Debug\net8.0\FirstSolution.RentACar.ConsoleApp.pdb
+C:\InspimoFullstackDeveloperBootcamp\.NET\FirstSolution\FirstSolution.RentACar.ConsoleApp\obj\Debug\net8.0\FirstSolution.RentACar.ConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\InspimoFullstackDeveloperBootcamp\.NET\FirstSolution\FirstSolution.RentACar.ConsoleApp\obj\Debug\net8.0\FirstSolution.RentACar.ConsoleApp.AssemblyInfoInputs.cache
+C:\InspimoFullstackDeveloperBootcamp\.NET\FirstSolution\FirstSolution.RentACar.ConsoleApp\obj\Debug\net8.0\FirstSolution.RentACar.ConsoleApp.AssemblyInfo.cs
+C:\InspimoFullstackDeveloperBootcamp\.NET\FirstSolution\FirstSolution.RentACar.ConsoleApp\obj\Debug\net8.0\FirstSolution.RentACar.ConsoleApp.csproj.CoreCompileInputs.cache
+C:\InspimoFullstackDeveloperBootcamp\.NET\FirstSolution\FirstSolution.RentACar.ConsoleApp\obj\Debug\net8.0\FirstSolution.RentACar.ConsoleApp.sourcelink.json
+C:\InspimoFullstackDeveloperBootcamp\.NET\FirstSolution\FirstSolution.RentACar.ConsoleApp\obj\Debug\net8.0\FirstSolution.RentACar.ConsoleApp.dll
+C:\InspimoFullstackDeveloperBootcamp\.NET\FirstSolution\FirstSolution.RentACar.ConsoleApp\obj\Debug\net8.0\refint\FirstSolution.RentACar.ConsoleApp.dll
+C:\InspimoFullstackDeveloperBootcamp\.NET\FirstSolution\FirstSolution.RentACar.ConsoleApp\obj\Debug\net8.0\FirstSolution.RentACar.ConsoleApp.pdb
+C:\InspimoFullstackDeveloperBootcamp\.NET\FirstSolution\FirstSolution.RentACar.ConsoleApp\obj\Debug\net8.0\FirstSolution.RentACar.ConsoleApp.genruntimeconfig.cache
+C:\InspimoFullstackDeveloperBootcamp\.NET\FirstSolution\FirstSolution.RentACar.ConsoleApp\obj\Debug\net8.0\ref\FirstSolution.RentACar.ConsoleApp.dll
