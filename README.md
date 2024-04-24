@@ -1,10 +1,12 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 24.04.2024 (Gelecek ders)
+## 26.04.2024 (Gelecek ders)
+- Asp.NET MVC (Web) başlıyoruz
+
+## 24.04.2024
 - Araç kiralama Console App'e devam ediyoruz
 - Müşteri araç kiralama
-- Müşteri araç teslim
-- Kiralanan araçlar listesi
+- Masaüstü Uygulama Geliştirme
 
 ## 22.04.2024
 - C# Devam ediyoruz

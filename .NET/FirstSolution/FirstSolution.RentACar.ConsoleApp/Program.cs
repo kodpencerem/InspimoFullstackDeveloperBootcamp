@@ -46,10 +46,116 @@ while (true)
 }
 
 
+void ShowCustomerMenu()
+{
+    Console.Clear();
+    Console.ForegroundColor = ConsoleColor.Green;
+    Console.WriteLine("Müşteri paneline hoş geldiniz...");
+    Console.WriteLine("Ben AI. Size nasıl yardımcı olabilirim?");
+    Console.ForegroundColor = ConsoleColor.White;
+    Console.WriteLine("------------------------------------------------");
+    Console.WriteLine("1. Araçları kirala");
+    Console.WriteLine("------------------------------------------------");
+    Console.WriteLine("e. Çıkış yap");
+
+    select = Console.ReadLine();
+    if (select is null || select == string.Empty || Convert.ToInt16(select) > 1)
+    {
+        Console.WriteLine("Lütfen listedeki seçeneklerden birini seçin!");
+        Console.WriteLine("");
+    }
+}
 
 void ShowCustomerPanel()
 {
+    while (select == string.Empty || Convert.ToInt16(select) > 1)
+    {
+        ShowCustomerMenu();
 
+        if (select == "1")
+        {
+            RentACar();
+        }        
+    }
+}
+
+void RentACar()
+{
+    int selectedCardNumber = 0;
+    Console.Clear();
+    while (selectedCardNumber  == 0)
+    {
+        Console.WriteLine("Kiralamak istediğiniz aracı seçin");
+        Console.WriteLine("------------------------------------------------");
+        int i = 0;
+        foreach (var item in cars)
+        {
+            i++;
+            Console.WriteLine($"{i}. Marka: {item.Brand} Model: {item.Model} Üretim Yılı: {item.ProductionYear} Günlük Ücret: {item.DailyPrice}");
+        }
+
+        string? selectedCar = Console.ReadLine();
+        Console.WriteLine("------------------------------------------------");
+        bool result = int.TryParse(selectedCar, out selectedCardNumber);
+        if (!result || selectedCardNumber > cars.Count)
+        {            
+            Console.WriteLine("Geçersiz bir giriş yaptığınız işlem iptal edilmiştir!");
+            Console.WriteLine("------------------------------------------------");
+            continue;
+        }
+
+        bool rentDateResult = false;
+        DateTime rentDate = DateTime.Now;
+        while(rentDateResult == false)
+        {
+            Console.WriteLine("Kiralama tarihi?");
+            string rentDateString = Console.ReadLine();
+            rentDateResult = DateTime.TryParse(rentDateString, out rentDate);
+            if (rentDateResult == false)
+            {
+                Console.WriteLine("Geçersiz bir tarih girdiniz. Lütfen tekrar deneyiniz!");
+                continue;
+            }
+        }
+
+        bool deliveryDateResult = false;
+        DateTime deliveryDate = DateTime.Now;
+        while(deliveryDateResult == false)
+        {
+            Console.WriteLine("------------------------------------------------");
+            Console.WriteLine("Teslim tarihi?");
+            string deliveryDateString = Console.ReadLine();
+            deliveryDateResult = DateTime.TryParse(deliveryDateString, out deliveryDate);
+            if(deliveryDateResult == false)
+            {
+                Console.WriteLine("Geçersiz bir tarih girdiniz. Lütfen tekrar deneyiniz");
+                continue;
+            }
+
+            if(deliveryDate < rentDate)
+            {
+                Console.WriteLine("Teslim tarihi kiralama tarihinden önce olamaz!");
+                deliveryDateResult = false;
+                continue;
+            }
+        }
+        
+        TimeSpan timeSpan = deliveryDate - rentDate;
+        decimal totalDay = Convert.ToDecimal(timeSpan.TotalDays);
+
+        if (totalDay == 0) totalDay = 1;
+
+        Car car = cars[selectedCardNumber-1];
+
+        decimal totalAmount = totalDay * car.DailyPrice; 
+
+        Console.WriteLine("------------------------------------------------");
+        Console.WriteLine($"Ödeme tutarınız: {totalAmount}");
+        Console.WriteLine("Ödeme için [enter] tuşuna basın.");
+        Console.ReadLine();
+        Console.WriteLine("Ödeme  işlemi başarılı. Aracınızı teslim alabilirsiniz.");
+        select = string.Empty;
+    }      
 }
 
 void ShowAdminPanel()
@@ -134,7 +240,7 @@ void ShowMenu()
 {
     Console.Clear();
     Console.ForegroundColor = ConsoleColor.Green;
-    Console.WriteLine("Admin panele hoş geldiniz...");
+    Console.WriteLine("Admin paneline hoş geldiniz...");
     Console.WriteLine("Ben AI. Size nasıl yardımcı olabilirim?");
     Console.ForegroundColor = ConsoleColor.White;
     Console.WriteLine("------------------------------------------------");

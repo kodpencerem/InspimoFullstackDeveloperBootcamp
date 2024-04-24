@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\InspimoFullstackDeveloperBootcamp\\.NET\\FirstSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{49C424B0-327D-4A92-A19A-B3B43DD2C767}|FirstSolution.RentACar.ConsoleApp\\FirstSolution.RentACar.ConsoleApp.csproj|c:\\inspimofullstackdeveloperbootcamp\\.net\\firstsolution\\firstsolution.rentacar.consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49C424B0-327D-4A92-A19A-B3B43DD2C767}|FirstSolution.RentACar.ConsoleApp\\FirstSolution.RentACar.ConsoleApp.csproj|solutionrelative:firstsolution.rentacar.consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C4820CC9-967C-4DB3-8340-08F552235D83}|FirstSolution.DesktopApp\\FirstSolution.DesktopApp.csproj|c:\\inspimofullstackdeveloperbootcamp\\.net\\firstsolution\\firstsolution.desktopapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C4820CC9-967C-4DB3-8340-08F552235D83}|FirstSolution.DesktopApp\\FirstSolution.DesktopApp.csproj|solutionrelative:firstsolution.desktopapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{49C424B0-327D-4A92-A19A-B3B43DD2C767}|FirstSolution.RentACar.ConsoleApp\\FirstSolution.RentACar.ConsoleApp.csproj|c:\\inspimofullstackdeveloperbootcamp\\.net\\firstsolution\\firstsolution.rentacar.consoleapp\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49C424B0-327D-4A92-A19A-B3B43DD2C767}|FirstSolution.RentACar.ConsoleApp\\FirstSolution.RentACar.ConsoleApp.csproj|solutionrelative:firstsolution.rentacar.consoleapp\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C4820CC9-967C-4DB3-8340-08F552235D83}|FirstSolution.DesktopApp\\FirstSolution.DesktopApp.csproj|c:\\inspimofullstackdeveloperbootcamp\\.net\\firstsolution\\firstsolution.desktopapp\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4820CC9-967C-4DB3-8340-08F552235D83}|FirstSolution.DesktopApp\\FirstSolution.DesktopApp.csproj|solutionrelative:firstsolution.desktopapp\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{49C424B0-327D-4A92-A19A-B3B43DD2C767}|FirstSolution.RentACar.ConsoleApp\\FirstSolution.RentACar.ConsoleApp.csproj|c:\\inspimofullstackdeveloperbootcamp\\.net\\firstsolution\\firstsolution.rentacar.consoleapp\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49C424B0-327D-4A92-A19A-B3B43DD2C767}|FirstSolution.RentACar.ConsoleApp\\FirstSolution.RentACar.ConsoleApp.csproj|solutionrelative:firstsolution.rentacar.consoleapp\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C4820CC9-967C-4DB3-8340-08F552235D83}|FirstSolution.DesktopApp\\FirstSolution.DesktopApp.csproj|c:\\inspimofullstackdeveloperbootcamp\\.net\\firstsolution\\firstsolution.desktopapp\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C4820CC9-967C-4DB3-8340-08F552235D83}|FirstSolution.DesktopApp\\FirstSolution.DesktopApp.csproj|solutionrelative:firstsolution.desktopapp\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4820CC9-967C-4DB3-8340-08F552235D83}|FirstSolution.DesktopApp\\FirstSolution.DesktopApp.csproj|c:\\inspimofullstackdeveloperbootcamp\\.net\\firstsolution\\firstsolution.desktopapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4820CC9-967C-4DB3-8340-08F552235D83}|FirstSolution.DesktopApp\\FirstSolution.DesktopApp.csproj|solutionrelative:firstsolution.desktopapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4820CC9-967C-4DB3-8340-08F552235D83}|FirstSolution.DesktopApp\\FirstSolution.DesktopApp.csproj|c:\\inspimofullstackdeveloperbootcamp\\.net\\firstsolution\\firstsolution.desktopapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4820CC9-967C-4DB3-8340-08F552235D83}|FirstSolution.DesktopApp\\FirstSolution.DesktopApp.csproj|solutionrelative:firstsolution.desktopapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -47,41 +55,65 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Customer.cs",
-              "DocumentMoniker": "C:\\InspimoFullstackDeveloperBootcamp\\.NET\\FirstSolution\\FirstSolution.RentACar.ConsoleApp\\Models\\Customer.cs",
-              "RelativeDocumentMoniker": "FirstSolution.RentACar.ConsoleApp\\Models\\Customer.cs",
-              "ToolTip": "C:\\InspimoFullstackDeveloperBootcamp\\.NET\\FirstSolution\\FirstSolution.RentACar.ConsoleApp\\Models\\Customer.cs",
-              "RelativeToolTip": "FirstSolution.RentACar.ConsoleApp\\Models\\Customer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\InspimoFullstackDeveloperBootcamp\\.NET\\FirstSolution\\FirstSolution.DesktopApp\\Login.cs",
+              "RelativeDocumentMoniker": "FirstSolution.DesktopApp\\Login.cs",
+              "ToolTip": "C:\\InspimoFullstackDeveloperBootcamp\\.NET\\FirstSolution\\FirstSolution.DesktopApp\\Login.cs",
+              "RelativeToolTip": "FirstSolution.DesktopApp\\Login.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T19:34:20.096Z",
+              "WhenOpened": "2024-04-24T19:30:26.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\InspimoFullstackDeveloperBootcamp\\.NET\\FirstSolution\\FirstSolution.DesktopApp\\Program.cs",
+              "RelativeDocumentMoniker": "FirstSolution.DesktopApp\\Program.cs",
+              "ToolTip": "C:\\InspimoFullstackDeveloperBootcamp\\.NET\\FirstSolution\\FirstSolution.DesktopApp\\Program.cs",
+              "RelativeToolTip": "FirstSolution.DesktopApp\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T19:29:23.809Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Car.cs",
-              "DocumentMoniker": "C:\\InspimoFullstackDeveloperBootcamp\\.NET\\FirstSolution\\FirstSolution.RentACar.ConsoleApp\\Models\\Car.cs",
-              "RelativeDocumentMoniker": "FirstSolution.RentACar.ConsoleApp\\Models\\Car.cs",
-              "ToolTip": "C:\\InspimoFullstackDeveloperBootcamp\\.NET\\FirstSolution\\FirstSolution.RentACar.ConsoleApp\\Models\\Car.cs",
-              "RelativeToolTip": "FirstSolution.RentACar.ConsoleApp\\Models\\Car.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAfAAAA",
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "C:\\InspimoFullstackDeveloperBootcamp\\.NET\\FirstSolution\\FirstSolution.DesktopApp\\Login.cs",
+              "RelativeDocumentMoniker": "FirstSolution.DesktopApp\\Login.cs",
+              "ToolTip": "C:\\InspimoFullstackDeveloperBootcamp\\.NET\\FirstSolution\\FirstSolution.DesktopApp\\Login.cs [Design]",
+              "RelativeToolTip": "FirstSolution.DesktopApp\\Login.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T17:24:47.856Z",
+              "WhenOpened": "2024-04-24T19:27:06.485Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\InspimoFullstackDeveloperBootcamp\\.NET\\FirstSolution\\FirstSolution.DesktopApp\\Form1.cs",
+              "RelativeDocumentMoniker": "FirstSolution.DesktopApp\\Form1.cs",
+              "ToolTip": "C:\\InspimoFullstackDeveloperBootcamp\\.NET\\FirstSolution\\FirstSolution.DesktopApp\\Form1.cs",
+              "RelativeToolTip": "FirstSolution.DesktopApp\\Form1.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwCUAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T18:27:45.3Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\InspimoFullstackDeveloperBootcamp\\.NET\\FirstSolution\\FirstSolution.RentACar.ConsoleApp\\Program.cs",
-              "RelativeDocumentMoniker": "FirstSolution.RentACar.ConsoleApp\\Program.cs",
-              "ToolTip": "C:\\InspimoFullstackDeveloperBootcamp\\.NET\\FirstSolution\\FirstSolution.RentACar.ConsoleApp\\Program.cs",
-              "RelativeToolTip": "FirstSolution.RentACar.ConsoleApp\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAATAAAA",
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\InspimoFullstackDeveloperBootcamp\\.NET\\FirstSolution\\FirstSolution.DesktopApp\\Form1.cs",
+              "RelativeDocumentMoniker": "FirstSolution.DesktopApp\\Form1.cs",
+              "ToolTip": "C:\\InspimoFullstackDeveloperBootcamp\\.NET\\FirstSolution\\FirstSolution.DesktopApp\\Form1.cs [Design]",
+              "RelativeToolTip": "FirstSolution.DesktopApp\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T17:19:09.168Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-24T17:58:18.221Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }
