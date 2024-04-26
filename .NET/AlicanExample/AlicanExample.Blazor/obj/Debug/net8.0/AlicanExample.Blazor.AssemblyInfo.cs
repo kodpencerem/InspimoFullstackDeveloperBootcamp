@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AlicanExample.Blazor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0d2a3ccf4c13d1a473c472e5f10741738070ee9d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cf16311b5926ded5980a37c1a59c3260699053c7")]
 [assembly: System.Reflection.AssemblyProductAttribute("AlicanExample.Blazor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AlicanExample.Blazor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
