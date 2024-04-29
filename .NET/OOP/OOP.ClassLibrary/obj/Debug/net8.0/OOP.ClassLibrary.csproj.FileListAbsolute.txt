@@ -1,0 +1,12 @@
+C:\InspimoFullstackDeveloperBootcamp\.NET\OOP\OOP.ClassLibrary\bin\Debug\net8.0\OOP.ClassLibrary.deps.json
+C:\InspimoFullstackDeveloperBootcamp\.NET\OOP\OOP.ClassLibrary\bin\Debug\net8.0\OOP.ClassLibrary.dll
+C:\InspimoFullstackDeveloperBootcamp\.NET\OOP\OOP.ClassLibrary\bin\Debug\net8.0\OOP.ClassLibrary.pdb
+C:\InspimoFullstackDeveloperBootcamp\.NET\OOP\OOP.ClassLibrary\obj\Debug\net8.0\OOP.ClassLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\InspimoFullstackDeveloperBootcamp\.NET\OOP\OOP.ClassLibrary\obj\Debug\net8.0\OOP.ClassLibrary.AssemblyInfoInputs.cache
+C:\InspimoFullstackDeveloperBootcamp\.NET\OOP\OOP.ClassLibrary\obj\Debug\net8.0\OOP.ClassLibrary.AssemblyInfo.cs
+C:\InspimoFullstackDeveloperBootcamp\.NET\OOP\OOP.ClassLibrary\obj\Debug\net8.0\OOP.ClassLibrary.csproj.CoreCompileInputs.cache
+C:\InspimoFullstackDeveloperBootcamp\.NET\OOP\OOP.ClassLibrary\obj\Debug\net8.0\OOP.ClassLibrary.sourcelink.json
+C:\InspimoFullstackDeveloperBootcamp\.NET\OOP\OOP.ClassLibrary\obj\Debug\net8.0\OOP.ClassLibrary.dll
+C:\InspimoFullstackDeveloperBootcamp\.NET\OOP\OOP.ClassLibrary\obj\Debug\net8.0\refint\OOP.ClassLibrary.dll
+C:\InspimoFullstackDeveloperBootcamp\.NET\OOP\OOP.ClassLibrary\obj\Debug\net8.0\OOP.ClassLibrary.pdb
+C:\InspimoFullstackDeveloperBootcamp\.NET\OOP\OOP.ClassLibrary\obj\Debug\net8.0\ref\OOP.ClassLibrary.dll

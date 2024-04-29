@@ -1,8 +1,25 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 27.04.2024 (Gelecek ders)
-- Asp.NET MVC Portfolio
-- Asp.NET MVC e-Ticaret
+## 01.05.2024 (Gelecek ders)
+- LinQ Metotları
+- IEnumerable
+- ICollection
+- Ovverride
+- Abstract keyword
+- Ref, Out keyword
+- MVC ile e-Ticaret
+
+## 29.04.2024 
+- Class
+- Interface
+- Abstract Class
+- Inherit
+- Implement
+- Constructor
+- List, HasSet
+- LinQ Metotları
+- Array
+- Static
 
 ## 26.04.2024
 - Asp.NET MVC (Web) başlıyoruz
