@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\InspimoFullstackDeveloperBootcamp\\.NET\\OOP\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{E938CCC3-EF74-412D-B9ED-31CF919489B0}|OOP.ConsoleApp\\OOP.ConsoleApp.csproj|c:\\inspimofullstackdeveloperbootcamp\\.net\\oop\\oop.consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E938CCC3-EF74-412D-B9ED-31CF919489B0}|OOP.ConsoleApp\\OOP.ConsoleApp.csproj|solutionrelative:oop.consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51C333E4-485C-46E8-89EF-099ADF90273B}|OOP.ClassLibrary\\OOP.ClassLibrary.csproj|c:\\inspimofullstackdeveloperbootcamp\\.net\\oop\\oop.classlibrary\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51C333E4-485C-46E8-89EF-099ADF90273B}|OOP.ClassLibrary\\OOP.ClassLibrary.csproj|solutionrelative:oop.classlibrary\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -39,32 +30,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Car.cs",
-              "DocumentMoniker": "C:\\InspimoFullstackDeveloperBootcamp\\.NET\\OOP\\OOP.ClassLibrary\\Car.cs",
-              "RelativeDocumentMoniker": "OOP.ClassLibrary\\Car.cs",
-              "ToolTip": "C:\\InspimoFullstackDeveloperBootcamp\\.NET\\OOP\\OOP.ClassLibrary\\Car.cs",
-              "RelativeToolTip": "OOP.ClassLibrary\\Car.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T18:45:04.294Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\InspimoFullstackDeveloperBootcamp\\.NET\\OOP\\OOP.ConsoleApp\\Program.cs",
-              "RelativeDocumentMoniker": "OOP.ConsoleApp\\Program.cs",
-              "ToolTip": "C:\\InspimoFullstackDeveloperBootcamp\\.NET\\OOP\\OOP.ConsoleApp\\Program.cs",
-              "RelativeToolTip": "OOP.ConsoleApp\\Program.cs",
-              "ViewState": "AQIAALMAAAAAAAAAAAAIwMoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T17:17:26.999Z",
-              "EditorCaption": ""
             }
           ]
         }

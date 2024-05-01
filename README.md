@@ -1,13 +1,16 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 01.05.2024 (Gelecek ders)
+## 03.05.2024 (Gelecek ders)
+- MVC ile e-Ticaret projesine devam ediyoruz
+
+## 01.05.2024
 - LinQ Metotları
 - IEnumerable
 - ICollection
 - Ovverride
 - Abstract keyword
 - Ref, Out keyword
-- MVC ile e-Ticaret
+- MVC ile e-Ticaret projesi başladık
 
 ## 29.04.2024 
 - Class
