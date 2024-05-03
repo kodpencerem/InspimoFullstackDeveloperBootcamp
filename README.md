@@ -1,6 +1,12 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 03.05.2024 (Gelecek ders)
+## 04.05.2024 (Gelecek ders)
+- MVC ile e-Ticaret projesine devam ediyoruz
+- Iyzico ile ödeme entegrasyonu
+- Database bağlantısı
+- Product CRUD işlemleri
+
+## 03.05.2024
 - MVC ile e-Ticaret projesine devam ediyoruz
 
 ## 01.05.2024

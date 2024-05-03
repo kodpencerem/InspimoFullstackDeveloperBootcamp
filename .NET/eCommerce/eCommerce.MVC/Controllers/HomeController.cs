@@ -1,4 +1,5 @@
 using Bogus;
+using eCommerce.MVC.DTOs;
 using eCommerce.MVC.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -6,7 +7,7 @@ namespace eCommerce.MVC.Controllers;
 public class HomeController : Controller
 {
     private List<Product> products = new();
-
+    private static List<ShoppingCart> shoppingCarts = new();
     public HomeController()
     {
         Faker faker = new();
@@ -42,9 +43,42 @@ public class HomeController : Controller
     {
         return View();
     }
-
+   
     public IActionResult ShoppingCart()
     {
-        return View();
+        decimal total = 0;
+        foreach (var item in shoppingCarts)
+        {
+            total += Convert.ToDecimal(item.Price.Replace("TRY", ""));
+        }
+
+        ViewBag.Total = total;
+        //TempData["Total"] = total;
+
+        return View(shoppingCarts);
     }
+
+    [HttpGet]
+    public IActionResult AddShoppingCart(int index)
+    {
+        Product product = products[index];
+
+        ShoppingCart shoppingCart = new()
+        {
+            Name = product.Name,
+            ImageUrl = product.ImageUrl,
+            Price = product.Price
+        };
+
+        shoppingCarts.Add(shoppingCart);
+
+        return RedirectToAction("Index","Home");
+    }
+
+    [HttpPost]
+    public IActionResult Pay(PayDto request)
+    {
+        return RedirectToAction("ShoppingCart");
+    }
+
 }
