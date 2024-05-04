@@ -1,10 +1,15 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 04.05.2024 (Gelecek ders)
+## 06.05.2024 (Gelecek ders)
+- Entity Framework Core
+
+## 04.05.2024
 - MVC ile e-Ticaret projesine devam ediyoruz
 - Iyzico ile ödeme entegrasyonu
+- **Iyzico GitHub Reposu: https://github.com/iyzico/iyzipay-dotnet**
+- **Iyzico Sandbox Sitesi: https://sandbox-merchant.iyzipay.com/auth/login**
 - Database bağlantısı
-- Product CRUD işlemleri
+- Product Create ve Read İşlemi
 
 ## 03.05.2024
 - MVC ile e-Ticaret projesine devam ediyoruz
