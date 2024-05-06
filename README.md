@@ -1,7 +1,19 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 06.05.2024 (Gelecek ders)
+## 08.05.2024  (Gelecek ders)
 - Entity Framework Core
+
+## 06.05.2024
+- DB çeşitleri nedir
+- RMDB ve NoSQL farkları
+- MSSQL Kurulumu
+- C# projesinde MSSQL ile bağlanma
+- Entity Framework Core nedir
+- EFCore kütüphaneleri
+- EFCore ile Connection (DbContext)
+- EFCore Entity oluşturma
+- EFCore Linq Queries
+---- ToList, OrderBy, Where, First, FirstOrDefault, Last, ThenBy, ToHashSet, Add, Update, SaveChanges, Select
 
 ## 04.05.2024
 - MVC ile e-Ticaret projesine devam ediyoruz
