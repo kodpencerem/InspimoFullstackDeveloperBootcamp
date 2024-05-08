@@ -52,28 +52,87 @@ ApplicationDbContext context = new();
 //context.SaveChanges();
 
 
-User updateUser = new()
+//User updateUser = new()
+//{
+//    Id = 5,
+//    Name = "Foo"
+//};
+
+//context.Users.Update(updateUser);
+//context.SaveChanges();
+
+//var users = context.Users.ToList();
+
+
+
+//int id = 5;
+//User? deleteUser = context.Users.Find(id);
+
+//context.Users.Remove(deleteUser);
+
+//context.SaveChanges();
+
+
+//context.Remove(deleteUser);
+
+
+//List<User> users = context.Users.ToList();
+
+//context.Users.RemoveRange(users);
+//context.SaveChanges();
+
+//List<User> user2 = new()
+//{
+//    new User()
+//    {
+//        Name = "Taner"
+//    },
+//    new User()
+//    {
+//        Name = "Ahmet"
+//    }
+//};
+
+//context.Users.AddRange(user2);
+//context.SaveChanges();
+
+//transaction
+
+
+
+//context.Database.BeginTransaction();
+
+try
 {
-    Id = 5,
-    Name = "Foo"
-};
+    User user = new()
+    {
+        Id = 6,
+        Name = "Nisa"
+    };
 
-context.Users.Update(updateUser);
-context.SaveChanges();
+    context.Users.Add(user);
+    //context.SaveChanges();
 
-var users = context.Users.ToList();
+    Product product = new()
+    {
+        Id = 1,
+        Name = null
+    };
+    context.Products.Add(product);
+    context.SaveChanges(); //21: 09 görüşelim
+
+   // context.Database.CommitTransaction();
+}
+catch(Exception ex)
+{
+    Console.WriteLine("İşlem başarısız oldu!");
+    //context.Database.RollbackTransaction();
+}
+
+
+
 
 Console.ReadLine();
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -86,6 +145,7 @@ public class ApplicationDbContext : DbContext
     }
 
     public DbSet<User> Users { get; set; }
+    public DbSet<Product> Products { get; set; }
 }
 
 public class User
@@ -99,4 +159,32 @@ public class User2 : User
 {
     public string LastName { get; set; } = string.Empty;
 
+}
+
+public class Product
+{
+    public int Id { get; set; }
+    public string Name { get; set; } = string.Empty;
+}
+
+
+public class TestContext
+{
+    public string? ConnectionString;
+
+    public virtual void Connect(string connectionString)
+    {
+        ConnectionString = connectionString;
+
+    }
+}
+
+public class MyDbContext : TestContext
+{
+    public override void Connect(string connectionString)
+    {
+        base.Connect(connectionString);
+
+        connectionString = "taner";
+    }
 }

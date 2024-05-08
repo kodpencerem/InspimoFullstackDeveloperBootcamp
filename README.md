@@ -1,7 +1,27 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 08.05.2024  (Gelecek ders)
+## 10.05.2024 (Gelecek ders)
+- HTTPGET kullanımı devam
+- Query Params, Route Params
+- HTTPPOST
+- HTTPPUT
+- HTTPDelete
+- WebAPI ile dosya işlemleri
+- HttpContext, HttpContextAccessor
+- HttpClient
+- ErrorHandler => Exception işleme
+
+## 08.05.2024
 - Entity Framework Core
+- Remove, RemoveRange, AddRange, UpdateRange
+- Transaction
+- Savechanges ile transaction
+- Database.BeginTransaction ile transaction
+- WebAPI nedir?
+- Örnek proje oluşturma
+- WebAPI Metotları
+- Response Status code mantığı
+- HTTPGET kullanımı
 
 ## 06.05.2024
 - DB çeşitleri nedir
