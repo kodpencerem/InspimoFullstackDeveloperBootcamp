@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using First.WebAPI.Utilities;
+using Microsoft.AspNetCore.Mvc;
 
 namespace First.WebAPI.Controllers;
 
@@ -6,37 +7,47 @@ namespace First.WebAPI.Controllers;
 [ApiController]
 public class TestController : ControllerBase
 {
-    [HttpGet("Saydam")]
-    public IActionResult Taner(int? age, string? name, string? address)
+    //[HttpGet("{age}/{name}")] //Route params
+    [HttpGet] //Query Params
+    public IActionResult Read(int age, string name)
     {
-        return Ok("Api is working...");
+        Result4 result = Result4.Successful("API is working...");        
+        return Ok(result);
     }
-
-    [HttpGet]
-    public IActionResult Hello2(int? age, string? name, string? address)
-    {
-        return Ok("Api is working...");
-    }
-
-    //string int double decimal 
 
     [HttpPost]
-    public IActionResult HelloPost(int? age, string? name, string? address)
+    public IActionResult Create(CreateDto request, int age)
     {
-        return Ok("Api is working...");
+        //db kayıt işlemleri
+        return Ok(Result3.Successful("Create is successful"));
     }
 
-
-
     [HttpPut]
-    public IActionResult HelloPut(int? age, string? name, string? address)
+    public IActionResult Update(Product product)
     {
-        return Ok("Api is working...");
+        //update işlemi
+        return Ok(Result4.Successful("Update is successful"));
     }
 
     [HttpDelete]
-    public IActionResult HelloDelete(int? age, string? name, string? address)
+    public IActionResult Delete(User user, int id)
     {
-        return Ok("Api is working...");
+        return Ok(Result4.Successful("Delete is successful"));
     }
+}
+public class User
+{
+    public string Email { get; set; } = string.Empty;
+    public string Password { get; set; } = string.Empty;
+}
+
+public class Product
+{
+    public string Name { get; set; } = string.Empty;
+}
+
+public class CreateDto
+{
+    public User User { get; set; } = new();
+    public Product Product { get; set; } = new();
 }

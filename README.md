@@ -1,15 +1,19 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 10.05.2024 (Gelecek ders)
+## 11.05.2024 (Gelecek ders)
+- Postman
+- WebAPI ile dosya işlemleri
+- HttpContext, HttpContextAccessor
+- HttpClient
+- ErrorHandler => Exception işleme
+
+## 10.05.2024
 - HTTPGET kullanımı devam
 - Query Params, Route Params
 - HTTPPOST
 - HTTPPUT
 - HTTPDelete
-- WebAPI ile dosya işlemleri
-- HttpContext, HttpContextAccessor
-- HttpClient
-- ErrorHandler => Exception işleme
+- Canlıya Alma
 
 ## 08.05.2024
 - Entity Framework Core
