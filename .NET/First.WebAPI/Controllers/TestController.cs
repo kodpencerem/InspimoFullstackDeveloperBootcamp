@@ -23,7 +23,7 @@ public class TestController : ControllerBase
     }
 
     [HttpPut]
-    public IActionResult Update(Product product)
+    public IActionResult Update(ProductTest product)
     {
         //update işlemi
         return Ok(Result4.Successful("Update is successful"));
@@ -41,7 +41,7 @@ public class User
     public string Password { get; set; } = string.Empty;
 }
 
-public class Product
+public class ProductTest
 {
     public string Name { get; set; } = string.Empty;
 }
@@ -49,5 +49,5 @@ public class Product
 public class CreateDto
 {
     public User User { get; set; } = new();
-    public Product Product { get; set; } = new();
+    public ProductTest Product { get; set; } = new();
 }

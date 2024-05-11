@@ -1,11 +1,19 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 11.05.2024 (Gelecek ders)
-- Postman
-- WebAPI ile dosya işlemleri
+## 13.05.2024 (Gelecek ders)
 - HttpContext, HttpContextAccessor
 - HttpClient
 - ErrorHandler => Exception işleme
+- Rate limiting
+- Health check
+- Minimal API
+- API Versioning
+- Dependency Injection
+- Middleware
+
+## 11.05.2024
+- Postman
+- WebAPI ile dosya işlemleri
 
 ## 10.05.2024
 - HTTPGET kullanımı devam
