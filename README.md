@@ -1,7 +1,6 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 13.05.2024 (Gelecek ders)
-- HttpContext, HttpContextAccessor
+## 15.05.2024 (Gelecek ders)
 - HttpClient
 - ErrorHandler => Exception işleme
 - Rate limiting
@@ -10,6 +9,9 @@
 - API Versioning
 - Dependency Injection
 - Middleware
+
+## 13.05.2024
+- HttpContext, HttpContextAccessor
 
 ## 11.05.2024
 - Postman

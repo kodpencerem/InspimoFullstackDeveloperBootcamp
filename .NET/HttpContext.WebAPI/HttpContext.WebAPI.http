@@ -5,3 +5,12 @@ Accept: application/json
 SecretKey: Taner Saydam
 
 ###
+
+
+POST http://localhost:5064/api/Values/Create
+Content-Type: application/json
+
+{
+  "email": "tanersaydam@gmail.com",
+  "password": "1"
+}
