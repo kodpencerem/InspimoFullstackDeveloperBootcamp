@@ -1,0 +1,7 @@
+@HttpContext.WebAPI_HostAddress = http://localhost:5064
+
+GET http://localhost:5064/api/Values/Get/34/Taner
+Accept: application/json
+SecretKey: Taner Saydam
+
+###
