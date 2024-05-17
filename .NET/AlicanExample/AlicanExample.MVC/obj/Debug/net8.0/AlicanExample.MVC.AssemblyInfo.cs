@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AlicanExample.MVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+63fd726402883491192d24d9af903f941c08586e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+261b8c0ad306a6fded7d4fdba0adcf547cff8b57")]
 [assembly: System.Reflection.AssemblyProductAttribute("AlicanExample.MVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AlicanExample.MVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
