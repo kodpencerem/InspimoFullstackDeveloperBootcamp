@@ -1,13 +1,16 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 18.05.2024  (Gelecek ders)
+## 20.05.2024 (Gelecek ders)
+- Dependency Injection
+- Middleware
+
+## 18.05.2024
 - ErrorHandler => Exception işleme
 - Rate limiting
 - Health check
 - Minimal API
 - API Versioning
-- Dependency Injection
-- Middleware
+- Dependency Injection (başladık)
 
 ## 17.05.2024
 - HttpClient

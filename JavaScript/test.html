@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="sendAPIRequest()">Send API Request</button>
+
+    <script>
+        function sendAPIRequest(){
+            for (let i = 0; i < 100; i++) {
+                fetch("https://localhost:7065/api/Values/Get");                
+            }            
+        }
+    </script>
+</body>
+</html>

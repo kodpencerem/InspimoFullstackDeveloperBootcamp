@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Middle.WebAPI.Exceptions;
 
 namespace Middle.WebAPI.Controllers;
 [Route("api/[controller]/[action]")]
@@ -6,19 +7,16 @@ namespace Middle.WebAPI.Controllers;
 public class ValuesController : ControllerBase
 {
     [HttpGet]
+    //[EnableRateLimiting("fixed")]
+    //[DisableRateLimiting]
     public IActionResult Get()
     {
-        try
-        {
-            int a = 0;
-            int b = 0;
-            int c = a / b; //DivideByZero Exception
-        }
-        catch (Exception ex)
-        {
-            return StatusCode(500, ex.Message);
-        }
+        return Ok(new { Message = "API is working..." });
+    }
 
-        return Ok();
+    [HttpGet]
+    public IActionResult GetException()
+    {
+        throw new WeCannotFindYourUserException();
     }
 }
