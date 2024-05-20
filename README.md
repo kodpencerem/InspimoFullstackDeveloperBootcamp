@@ -1,8 +1,11 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 20.05.2024 (Gelecek ders)
-- Dependency Injection
+## 22.05.2024 (Gelecek ders)
 - Middleware
+
+## 20.05.2024
+- Dependency Injection
+- Örnek Todo Projesi
 
 ## 18.05.2024
 - ErrorHandler => Exception işleme
