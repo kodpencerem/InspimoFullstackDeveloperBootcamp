@@ -1,7 +1,16 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 22.05.2024 (Gelecek ders)
+## 24.05.2024 (Gelecek ders)
+- Örnek Personel Projesine devam ediyoruz
+- Authentication / Authorization (Filters)
+- Cachleme
+- AutoMapper
+- Loglama
+
+## 22.05.2024
 - Middleware
+- Filters
+- Örnek Personel Projesine başladık
 
 ## 20.05.2024
 - Dependency Injection
