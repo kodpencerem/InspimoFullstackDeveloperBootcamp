@@ -11,4 +11,4 @@ public sealed class AuthToken
     public string SecretKey { get; set; } = string.Empty;
     public DateTime CreateDate { get; set; }
     public DateTime ExpireDate { get; set; }
-} //22:17 görüşelim
+}

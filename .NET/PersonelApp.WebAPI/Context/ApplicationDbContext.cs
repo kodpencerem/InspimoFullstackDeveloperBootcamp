@@ -12,4 +12,5 @@ public sealed class ApplicationDbContext : DbContext
 
     public DbSet<Personel> Personels { get; set; }
     public DbSet<User> Users { get; set; }
+    public DbSet<AuthToken> AuthTokens { get; set; }
 }

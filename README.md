@@ -1,11 +1,18 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 24.05.2024 (Gelecek ders)
-- Örnek Personel Projesine devam ediyoruz
-- Authentication / Authorization (Filters)
-- Cachleme
-- AutoMapper
+## Sonraki Ders (Tarihi yazılacak)
+- Authorization
+- Cache
 - Loglama
+- AutoMapper
+- Exception Handler (IExceptionHandler)
+- Extensions Method ile IoC container'ı düzenleyelim
+- Gerçek Database'e alma (MSSQL ya da PostgreSQL)
+- Angular ile Frontend yazalım
+
+## 24.05.2024
+- Örnek Personel Projesine devam ediyoruz
+- Authentication (Filters)
 
 ## 22.05.2024
 - Middleware

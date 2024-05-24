@@ -7,7 +7,8 @@ namespace PersonelApp.WebAPI.Controllers;
 [Route("api/[controller]/[action]")]
 [ApiController]
 public sealed class AuthController(
-    IUserService userService) : ControllerBase
+    IUserService userService,
+    IAuthTokenService authTokenService) : ControllerBase
 {
     [HttpPost]
     public IActionResult Register(RegisterDto request)
@@ -30,6 +31,8 @@ public sealed class AuthController(
             return BadRequest(new { Message = "User name or password is wrong" });
         }
 
-        return Ok(new { SecretKey = "My Secret Key" });
+        string secretKey = authTokenService.Create(user.Id);
+
+        return Ok(new { SecretKey = secretKey });
     }
 }

@@ -13,6 +13,9 @@ builder.Services.AddTransient<IPersonelService, PersonelService>();
 builder.Services.AddTransient<IUserRepository, UserRepository>();
 builder.Services.AddTransient<IUserService, UserService>();
 
+builder.Services.AddTransient<IAuthTokenRepository, AuthTokenRepository>();
+builder.Services.AddTransient<IAuthTokenService, AuthTokenService>();
+
 var app = builder.Build();
 
 app.Use(async (context, next) =>
