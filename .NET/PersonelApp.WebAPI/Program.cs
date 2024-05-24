@@ -10,6 +10,9 @@ builder.Services.AddTransient<ApplicationDbContext>();
 builder.Services.AddTransient<IPersonelRepository, PersonelRepository>();
 builder.Services.AddTransient<IPersonelService, PersonelService>();
 
+builder.Services.AddTransient<IUserRepository, UserRepository>();
+builder.Services.AddTransient<IUserService, UserService>();
+
 var app = builder.Build();
 
 app.Use(async (context, next) =>
