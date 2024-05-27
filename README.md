@@ -1,14 +1,21 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## Sonraki Ders (Tarihi yazılacak)
-- Authorization
-- Cache
+## 29.05.2024 (Sonraki ders)
+- Frontend de milyonluk verilerin Fronend pagination ile yapılışı
+- Backend de pagination yapılışı ve performans ölçümü
 - Loglama
 - AutoMapper
-- Exception Handler (IExceptionHandler)
 - Extensions Method ile IoC container'ı düzenleyelim
+- Angular projemizi oluşturup tüm yapılan işlemlerin sayfasını hazırlayalım
+- Authorization (Yetki kontrolü)
+
+## 27.05.2024
+- Cache
+- Exception Handler (IExceptionHandler)
+- Extensions Method yazalım
 - Gerçek Database'e alma (MSSQL ya da PostgreSQL)
-- Angular ile Frontend yazalım
+- Angular ile Frontend yazmaya başladık
+- Milyonluk verilerin işlenişini incelemeye başladık
 
 ## 24.05.2024
 - Örnek Personel Projesine devam ediyoruz

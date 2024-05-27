@@ -36,7 +36,7 @@ public sealed class AuthTokenService(
         {
             UserId = userId,
             CreateDate = DateTime.Now,
-            ExpireDate = DateTime.Now.AddMinutes(1),
+            ExpireDate = DateTime.Now.AddMonths(1),
             SecretKey = Convert.ToBase64String(secretKey)
         };
 

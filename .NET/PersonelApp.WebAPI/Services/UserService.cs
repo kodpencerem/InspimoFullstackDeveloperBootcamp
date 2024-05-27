@@ -1,6 +1,7 @@
 ﻿using PersonelApp.WebAPI.DTOs;
 using PersonelApp.WebAPI.Models;
 using PersonelApp.WebAPI.Repositories;
+using PersonelApp.WebAPI.Utilities;
 
 namespace PersonelApp.WebAPI.Services;
 
@@ -11,7 +12,8 @@ public sealed class UserService(
     {
         if (request.UserName.Length < 3)
         {
-            throw new ArgumentException("User name must be greater than 3 characters");
+            string errorMessage = "User name must be greater than 3 characters";
+            throw new ArgumentException(errorMessage.ToErrorResult());
 
         }
 
@@ -23,7 +25,8 @@ public sealed class UserService(
         bool isUserNameExists = userRepository.IsUserNameExists(request.UserName);
         if (isUserNameExists)
         {
-            throw new ArgumentException("User name already exists");
+            string errorMessage = "User name already exists";
+            throw new ArgumentException(errorMessage.ToErrorResult());
         }
 
         User user = new()

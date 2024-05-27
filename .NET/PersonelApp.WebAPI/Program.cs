@@ -1,8 +1,11 @@
 using PersonelApp.WebAPI.Context;
+using PersonelApp.WebAPI.Filters;
 using PersonelApp.WebAPI.Repositories;
 using PersonelApp.WebAPI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddCors();
 
 builder.Services.AddControllers();
 
@@ -16,22 +19,26 @@ builder.Services.AddTransient<IUserService, UserService>();
 builder.Services.AddTransient<IAuthTokenRepository, AuthTokenRepository>();
 builder.Services.AddTransient<IAuthTokenService, AuthTokenService>();
 
+builder.Services.AddMemoryCache();
+
+builder.Services.AddSwaggerGen();
+builder.Services.AddEndpointsApiExplorer();
+
+
+//builder.Services.AddTransient<MyExceptionMiddleware>();
+
+builder.Services.AddExceptionHandler<MyExceptionHandler>().AddProblemDetails();
+
 var app = builder.Build();
 
-app.Use(async (context, next) =>
-{
-    try
-    {
-        await next(context);
-    }
-    catch (Exception ex)
-    {
-        context.Response.StatusCode = 500;
-        await context.Response.WriteAsync(ex.Message);
-    }
-});
+app.UseSwagger();
+app.UseSwaggerUI();
+
+app.UseCors(x => x.AllowAnyOrigin());
 
 app.MapControllers();
 
+app.UseExceptionHandler();
+//app.UseMiddleware<MyExceptionHandler>();
 
 app.Run();
