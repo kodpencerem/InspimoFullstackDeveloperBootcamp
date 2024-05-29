@@ -10,9 +10,14 @@ public sealed class PersonelsController(
     IPersonelService personelService) : ControllerBase
 {
     [HttpGet]
-    public IActionResult GetAll()
+    public IActionResult GetAll(int pageNumber = 1)
     {
-        var personels = personelService.GetAll();
+        //var stopwatch = new Stopwatch();
+        //stopwatch.Start();
+        var personels = personelService.GetAll(pageNumber);
+        //stopwatch.Stop();
+
+        //Console.WriteLine(stopwatch.Elapsed.TotalMilliseconds);
         return Ok(personels);
     }
 

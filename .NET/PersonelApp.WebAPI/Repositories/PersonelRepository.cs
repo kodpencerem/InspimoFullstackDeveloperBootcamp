@@ -5,9 +5,9 @@ namespace PersonelApp.WebAPI.Repositories;
 
 public sealed class PersonelRepository(ApplicationDbContext context) : IPersonelRepository
 {
-    public List<Personel> GetAll()
+    public IQueryable<Personel> GetAll()
     {
-        var personels = context.Personels.ToList();
+        var personels = context.Personels.AsQueryable();
         return personels;
     }
 

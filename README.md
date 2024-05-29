@@ -1,13 +1,16 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 29.05.2024 (Sonraki ders)
-- Frontend de milyonluk verilerin Fronend pagination ile yapılışı
-- Backend de pagination yapılışı ve performans ölçümü
+## 03.06.2024 (Sonraki ders)
+- Backend de pagination yapısına devam ediyoruz
 - Loglama
 - AutoMapper
 - Extensions Method ile IoC container'ı düzenleyelim
 - Angular projemizi oluşturup tüm yapılan işlemlerin sayfasını hazırlayalım
 - Authorization (Yetki kontrolü)
+
+## 29.05.2024
+- Frontend de 250k verinin Fronend pagination ile yapılışı
+- Backend de pagination yapısına başladık
 
 ## 27.05.2024
 - Cache

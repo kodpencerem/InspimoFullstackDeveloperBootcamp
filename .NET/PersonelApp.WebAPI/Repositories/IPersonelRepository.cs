@@ -4,7 +4,7 @@ namespace PersonelApp.WebAPI.Repositories;
 
 public interface IPersonelRepository
 {
-    List<Personel> GetAll();
+    IQueryable<Personel> GetAll();
     bool Create(Personel personel);
     bool IsPersonelExists(string firstName, string lastName);
 }

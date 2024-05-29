@@ -37,15 +37,24 @@ public sealed class PersonelService(
         return result;
     }
 
-    public List<Personel> GetAll()
+    public PaginationResult GetAll(int pageNumber)
     {
-        memoryCache.TryGetValue("personels", out List<Personel>? personels);
-        if (personels is null)
-        {
-            personels = personelRepository.GetAll();
-            memoryCache.Set("personels", personels);
-        }
+        var personels = personelRepository.GetAll().Skip(10 * (pageNumber - 1)).Take(10).ToList();
+        int count = personelRepository.GetAll().Count();
+        decimal totalPage = count / 10;
+        decimal totalPageCeiling = Math.Ceiling(totalPage);
+        int totalPageCount = Convert.ToInt32(totalPageCeiling);
 
-        return personels;
+
+        PaginationResult result = new(personels, totalPageCount);
+
+        //memoryCache.TryGetValue("personels", out List<Personel>? personels);
+        //if (personels is null)
+        //{
+        //    personels = personelRepository.GetAll();
+        //    memoryCache.Set("personels", personels);
+        //}
+
+        return result;
     }
 }
