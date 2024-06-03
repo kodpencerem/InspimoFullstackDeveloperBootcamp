@@ -5,6 +5,6 @@ namespace PersonelApp.WebAPI.Services;
 
 public interface IPersonelService
 {
-    PaginationResult GetAll(int pageNumber);
+    PaginationResult GetAll(int pageNumber, string search);
     bool Create(CreatePersonelDto request);
 }

@@ -7,17 +7,14 @@ namespace PersonelApp.WebAPI.Controllers;
 [ApiController]
 //[MyAuthorize]
 public sealed class PersonelsController(
-    IPersonelService personelService) : ControllerBase
+    IPersonelService personelService,
+    ILogger<PersonelsController> logger) : ControllerBase
 {
     [HttpGet]
-    public IActionResult GetAll(int pageNumber = 1)
+    public IActionResult GetAll(int pageNumber = 1, string search = "")
     {
-        //var stopwatch = new Stopwatch();
-        //stopwatch.Start();
-        var personels = personelService.GetAll(pageNumber);
-        //stopwatch.Stop();
-
-        //Console.WriteLine(stopwatch.Elapsed.TotalMilliseconds);
+        logger.LogInformation("Hello, world");
+        var personels = personelService.GetAll(pageNumber, search);
         return Ok(personels);
     }
 

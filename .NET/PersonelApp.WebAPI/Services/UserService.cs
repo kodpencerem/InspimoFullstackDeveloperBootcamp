@@ -1,4 +1,5 @@
-﻿using PersonelApp.WebAPI.DTOs;
+﻿using AutoMapper;
+using PersonelApp.WebAPI.DTOs;
 using PersonelApp.WebAPI.Models;
 using PersonelApp.WebAPI.Repositories;
 using PersonelApp.WebAPI.Utilities;
@@ -6,7 +7,8 @@ using PersonelApp.WebAPI.Utilities;
 namespace PersonelApp.WebAPI.Services;
 
 public sealed class UserService(
-    IUserRepository userRepository) : IUserService
+    IUserRepository userRepository,
+    IMapper mapper) : IUserService
 {
     public User? Login(LoginDto request)
     {
@@ -29,13 +31,7 @@ public sealed class UserService(
             throw new ArgumentException(errorMessage.ToErrorResult());
         }
 
-        User user = new()
-        {
-            FirstName = request.FirstName,
-            LastName = request.LastName,
-            UserName = request.UserName,
-            Password = request.Password,
-        };
+        User user = mapper.Map<User>(request);
 
         return userRepository.Create(user);
     }

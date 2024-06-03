@@ -1,12 +1,14 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 03.06.2024 (Sonraki ders)
-- Backend de pagination yapısına devam ediyoruz
-- Loglama
-- AutoMapper
+## 05.06.2024 (Sonraki ders)
 - Extensions Method ile IoC container'ı düzenleyelim
 - Angular projemizi oluşturup tüm yapılan işlemlerin sayfasını hazırlayalım
 - Authorization (Yetki kontrolü)
+
+## 03.06.2024
+- Backend de pagination yapısına devam ediyoruz
+- Loglama
+- AutoMapper
 
 ## 29.05.2024
 - Frontend de 250k verinin Fronend pagination ile yapılışı
