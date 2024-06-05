@@ -1,0 +1,20 @@
+2024-06-05 20:38:08.166 +03:00 [INF] Now listening on: https://localhost:7052
+2024-06-05 20:38:08.197 +03:00 [INF] Now listening on: http://localhost:5254
+2024-06-05 20:38:08.200 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-05 20:38:08.201 +03:00 [INF] Hosting environment: Development
+2024-06-05 20:38:08.202 +03:00 [INF] Content root path: C:\InspimoFullstackDeveloperBootcamp\.NET\PersonelApp.WebAPI
+2024-06-05 20:38:32.722 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7052/api/Personels/GetAll - null null
+2024-06-05 20:38:32.783 +03:00 [INF] Executing endpoint 'PersonelApp.WebAPI.Controllers.PersonelsController.GetAll (PersonelApp.WebAPI)'
+2024-06-05 20:38:32.802 +03:00 [INF] Route matched with {action = "GetAll", controller = "Personels"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(Int32, System.String) on controller PersonelApp.WebAPI.Controllers.PersonelsController (PersonelApp.WebAPI).
+2024-06-05 20:38:32.962 +03:00 [INF] Hello, world
+2024-06-05 20:38:33.867 +03:00 [INF] Executing OkObjectResult, writing value of type 'PersonelApp.WebAPI.Utilities.PaginationResult'.
+2024-06-05 20:38:33.890 +03:00 [INF] Executed action PersonelApp.WebAPI.Controllers.PersonelsController.GetAll (PersonelApp.WebAPI) in 1084.2079ms
+2024-06-05 20:38:33.894 +03:00 [INF] Executed endpoint 'PersonelApp.WebAPI.Controllers.PersonelsController.GetAll (PersonelApp.WebAPI)'
+2024-06-05 20:38:33.901 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7052/api/Personels/GetAll - 200 null application/json; charset=utf-8 1180.2677ms
+2024-06-05 20:38:50.154 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7052/api/Auth/Login - application/json 50
+2024-06-05 20:38:50.160 +03:00 [INF] Executing endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (PersonelApp.WebAPI)'
+2024-06-05 20:38:50.169 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(PersonelApp.WebAPI.DTOs.LoginDto) on controller PersonelApp.WebAPI.Controllers.AuthController (PersonelApp.WebAPI).
+2024-06-05 20:38:50.339 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-05 20:38:50.341 +03:00 [INF] Executed action PersonelApp.WebAPI.Controllers.AuthController.Login (PersonelApp.WebAPI) in 169.6267ms
+2024-06-05 20:38:50.342 +03:00 [INF] Executed endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (PersonelApp.WebAPI)'
+2024-06-05 20:38:50.344 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7052/api/Auth/Login - 200 null application/json; charset=utf-8 189.6694ms
