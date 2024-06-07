@@ -1,15 +1,16 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 07.06.2024 (Sonraki ders)
-- Angular projemizde aşağıdaki işlemler yapılacak
-- Login sayfası toparlanacak
-- Validation check
-- API ile Login Request
+## 10.06.2024 (Sonraki ders)
+- API ile Login Request devamını kodluyoruz
 - Personel sayfası oluşturulacak ve tasarımı yapılacak
 - Personel Getall ve search işlemi kodlanacak
 - Personel Create modalı oluşturulacak
 - Personel Create işlemi yapılacak
 
+## 07.06.2024
+- Login sayfası toparlanacak
+- Validation check
+- API ile Login Request başladık
 
 ## 05.06.2024
 - Extensions Method ile IoC container'ı düzenleyelim

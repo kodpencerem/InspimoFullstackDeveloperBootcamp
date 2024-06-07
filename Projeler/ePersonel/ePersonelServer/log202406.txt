@@ -1,0 +1,71 @@
+2024-06-05 20:38:08.166 +03:00 [INF] Now listening on: https://localhost:7052
+2024-06-05 20:38:08.197 +03:00 [INF] Now listening on: http://localhost:5254
+2024-06-05 20:38:08.200 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-05 20:38:08.201 +03:00 [INF] Hosting environment: Development
+2024-06-05 20:38:08.202 +03:00 [INF] Content root path: C:\InspimoFullstackDeveloperBootcamp\.NET\PersonelApp.WebAPI
+2024-06-05 20:38:32.722 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7052/api/Personels/GetAll - null null
+2024-06-05 20:38:32.783 +03:00 [INF] Executing endpoint 'PersonelApp.WebAPI.Controllers.PersonelsController.GetAll (PersonelApp.WebAPI)'
+2024-06-05 20:38:32.802 +03:00 [INF] Route matched with {action = "GetAll", controller = "Personels"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(Int32, System.String) on controller PersonelApp.WebAPI.Controllers.PersonelsController (PersonelApp.WebAPI).
+2024-06-05 20:38:32.962 +03:00 [INF] Hello, world
+2024-06-05 20:38:33.867 +03:00 [INF] Executing OkObjectResult, writing value of type 'PersonelApp.WebAPI.Utilities.PaginationResult'.
+2024-06-05 20:38:33.890 +03:00 [INF] Executed action PersonelApp.WebAPI.Controllers.PersonelsController.GetAll (PersonelApp.WebAPI) in 1084.2079ms
+2024-06-05 20:38:33.894 +03:00 [INF] Executed endpoint 'PersonelApp.WebAPI.Controllers.PersonelsController.GetAll (PersonelApp.WebAPI)'
+2024-06-05 20:38:33.901 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7052/api/Personels/GetAll - 200 null application/json; charset=utf-8 1180.2677ms
+2024-06-05 20:38:50.154 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7052/api/Auth/Login - application/json 50
+2024-06-05 20:38:50.160 +03:00 [INF] Executing endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (PersonelApp.WebAPI)'
+2024-06-05 20:38:50.169 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(PersonelApp.WebAPI.DTOs.LoginDto) on controller PersonelApp.WebAPI.Controllers.AuthController (PersonelApp.WebAPI).
+2024-06-05 20:38:50.339 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-05 20:38:50.341 +03:00 [INF] Executed action PersonelApp.WebAPI.Controllers.AuthController.Login (PersonelApp.WebAPI) in 169.6267ms
+2024-06-05 20:38:50.342 +03:00 [INF] Executed endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (PersonelApp.WebAPI)'
+2024-06-05 20:38:50.344 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7052/api/Auth/Login - 200 null application/json; charset=utf-8 189.6694ms
+2024-06-07 20:18:22.654 +03:00 [INF] Now listening on: https://localhost:7052
+2024-06-07 20:18:22.688 +03:00 [INF] Now listening on: http://localhost:5254
+2024-06-07 20:18:22.690 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-07 20:18:22.691 +03:00 [INF] Hosting environment: Development
+2024-06-07 20:18:22.692 +03:00 [INF] Content root path: C:\InspimoFullstackDeveloperBootcamp\Projeler\ePersonel\ePersonelServer
+2024-06-07 22:52:29.821 +03:00 [INF] Now listening on: https://localhost:7052
+2024-06-07 22:52:29.847 +03:00 [INF] Now listening on: http://localhost:5254
+2024-06-07 22:52:29.848 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-07 22:52:29.849 +03:00 [INF] Hosting environment: Development
+2024-06-07 22:52:29.849 +03:00 [INF] Content root path: C:\InspimoFullstackDeveloperBootcamp\Projeler\ePersonel\ePersonelServer
+2024-06-07 22:54:20.148 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7052/api/Auth/Login - null null
+2024-06-07 22:54:20.202 +03:00 [INF] CORS policy execution successful.
+2024-06-07 22:54:20.204 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7052/api/Auth/Login - 204 null null 57.7363ms
+2024-06-07 22:54:56.739 +03:00 [INF] Now listening on: https://localhost:7052
+2024-06-07 22:54:56.765 +03:00 [INF] Now listening on: http://localhost:5254
+2024-06-07 22:54:56.767 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-07 22:54:56.767 +03:00 [INF] Hosting environment: Development
+2024-06-07 22:54:56.768 +03:00 [INF] Content root path: C:\InspimoFullstackDeveloperBootcamp\Projeler\ePersonel\ePersonelServer
+2024-06-07 22:55:03.274 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7052/api/Auth/Login - null null
+2024-06-07 22:55:03.297 +03:00 [INF] CORS policy execution successful.
+2024-06-07 22:55:03.300 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7052/api/Auth/Login - 204 null null 26.9622ms
+2024-06-07 22:55:10.788 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7052/api/Auth/Login - null null
+2024-06-07 22:55:10.793 +03:00 [INF] CORS policy execution successful.
+2024-06-07 22:55:10.794 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7052/api/Auth/Login - 204 null null 5.6286ms
+2024-06-07 22:55:22.194 +03:00 [INF] Now listening on: https://localhost:7052
+2024-06-07 22:55:22.221 +03:00 [INF] Now listening on: http://localhost:5254
+2024-06-07 22:55:22.223 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-07 22:55:22.224 +03:00 [INF] Hosting environment: Development
+2024-06-07 22:55:22.224 +03:00 [INF] Content root path: C:\InspimoFullstackDeveloperBootcamp\Projeler\ePersonel\ePersonelServer
+2024-06-07 22:55:24.908 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7052/api/Auth/Login - null null
+2024-06-07 22:55:24.935 +03:00 [INF] CORS policy execution successful.
+2024-06-07 22:55:24.938 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7052/api/Auth/Login - 204 null null 30.2521ms
+2024-06-07 22:55:24.943 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7052/api/Auth/Login - application/json 56
+2024-06-07 22:55:24.949 +03:00 [INF] CORS policy execution successful.
+2024-06-07 22:55:24.951 +03:00 [INF] Executing endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-07 22:55:24.960 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(PersonelApp.WebAPI.DTOs.LoginDto) on controller PersonelApp.WebAPI.Controllers.AuthController (ePersonelServer.WebAPI).
+2024-06-07 22:55:25.664 +03:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-07 22:55:25.671 +03:00 [INF] Executed action PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI) in 706.8632ms
+2024-06-07 22:55:25.673 +03:00 [INF] Executed endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-07 22:55:25.679 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7052/api/Auth/Login - 400 null application/json; charset=utf-8 736.3197ms
+2024-06-07 22:56:44.825 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7052/api/Auth/Login - null null
+2024-06-07 22:56:44.829 +03:00 [INF] CORS policy execution successful.
+2024-06-07 22:56:44.830 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7052/api/Auth/Login - 204 null null 4.9673ms
+2024-06-07 22:56:44.833 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7052/api/Auth/Login - application/json 54
+2024-06-07 22:56:44.835 +03:00 [INF] CORS policy execution successful.
+2024-06-07 22:56:44.835 +03:00 [INF] Executing endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-07 22:56:44.836 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(PersonelApp.WebAPI.DTOs.LoginDto) on controller PersonelApp.WebAPI.Controllers.AuthController (ePersonelServer.WebAPI).
+2024-06-07 22:56:45.001 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-07 22:56:45.004 +03:00 [INF] Executed action PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI) in 167.1395ms
+2024-06-07 22:56:45.006 +03:00 [INF] Executed endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-07 22:56:45.007 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7052/api/Auth/Login - 200 null application/json; charset=utf-8 174.3335ms
