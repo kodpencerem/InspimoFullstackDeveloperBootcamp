@@ -24,6 +24,10 @@ public sealed class UserService(
 
     public bool Register(RegisterDto request)
     {
+        string fileName = string.Join("-", DateTime.Now.ToFileTime(), request.File.FileName);
+        var stream = System.IO.File.Create($"wwwroot/avatars/{fileName}");
+        request.File.CopyTo(stream);
+
         bool isUserNameExists = userRepository.IsUserNameExists(request.UserName);
         if (isUserNameExists)
         {
@@ -32,6 +36,7 @@ public sealed class UserService(
         }
 
         User user = mapper.Map<User>(request);
+        user.AvatarUrl = fileName;
 
         return userRepository.Create(user);
     }

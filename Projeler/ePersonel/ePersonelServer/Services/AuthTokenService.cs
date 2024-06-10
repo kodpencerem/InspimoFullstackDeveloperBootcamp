@@ -1,4 +1,5 @@
-﻿using PersonelApp.WebAPI.Models;
+﻿using ePersonelServer.WebAPI.DTOs;
+using PersonelApp.WebAPI.Models;
 using PersonelApp.WebAPI.Repositories;
 using System.Text;
 
@@ -19,7 +20,7 @@ public sealed class AuthTokenService(
         return true;
     }
 
-    public string Create(Guid userId, bool rememberMe = false)
+    public LoginResponseDto Create(User user, bool rememberMe = false)
     {
         byte[] secretKey;
 
@@ -29,7 +30,7 @@ public sealed class AuthTokenService(
             secretKey =
                 hmac
                 .ComputeHash(
-                    Encoding.UTF8.GetBytes(time.ToString() + "My secret key" + userId.ToString()));
+                    Encoding.UTF8.GetBytes(time.ToString() + "My secret key" + user.Id.ToString()));
         }
 
         DateTime expires = DateTime.Now.AddDays(1);
@@ -40,7 +41,7 @@ public sealed class AuthTokenService(
 
         AuthToken authToken = new()
         {
-            UserId = userId,
+            UserId = user.Id,
             CreateDate = DateTime.Now,
             ExpireDate = expires,
             SecretKey = Convert.ToBase64String(secretKey)
@@ -49,7 +50,12 @@ public sealed class AuthTokenService(
         var result = authTokenRepository.Create(authToken);
         if (result)
         {
-            return authToken.SecretKey;
+            string fullName = string.Join(" ", user.FirstName, user.LastName);
+            return new LoginResponseDto(
+                authToken.SecretKey,
+                fullName,
+                user.AvatarUrl,
+                authToken.ExpireDate);
         }
 
         throw new ArgumentException("Something went wrong");

@@ -3,6 +3,7 @@ import { LoginModel } from '../../models/login.model';
 import { FormsModule, NgForm } from '@angular/forms';
 import { ValidateDirective } from '../../directives/validate.directive';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -17,13 +18,14 @@ export class LoginComponent {
   data: LoginModel = new LoginModel();
   isShowPassword: boolean = false; 
 
-  constructor(private http: HttpClient){}
+  constructor(private http: HttpClient, private router: Router){}
 
   signIn(form: NgForm){
     if(form.valid){
       this.http.post("https://localhost:7052/api/Auth/Login",this.data).subscribe({
         next: (res:any)=> {
-          console.log(res);          
+          localStorage.setItem("response",JSON.stringify(res))
+          this.router.navigateByUrl("/");
         },
         error: (err: HttpErrorResponse)=> {
           console.log(err);          

@@ -9,5 +9,6 @@ public sealed class MappingProfile : Profile
     public MappingProfile()
     {
         CreateMap<CreatePersonelDto, Personel>();
+        CreateMap<RegisterDto, User>();
     }
 }

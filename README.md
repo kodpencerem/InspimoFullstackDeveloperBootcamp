@@ -1,11 +1,18 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 10.06.2024 (Sonraki ders)
-- API ile Login Request devamını kodluyoruz
+## 12.06.2024 (Sonraki ders)
+- Sweet Alert2 ile toast fırlatma
+- Hataları Angular tarafında işleme ve Swal ile gösterme
+- Girişte Secret Keyin expires kontrolü
 - Personel sayfası oluşturulacak ve tasarımı yapılacak
 - Personel Getall ve search işlemi kodlanacak
 - Personel Create modalı oluşturulacak
 - Personel Create işlemi yapılacak
+
+## 10.06.2024
+- API ile Login Request devamını kodluyoruz
+- User'a Avatar ekledik
+- Avatar ve Fullname'i Navbar da gösterdik
 
 ## 07.06.2024
 - Login sayfası toparlanacak

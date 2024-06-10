@@ -1,7 +1,10 @@
-﻿namespace PersonelApp.WebAPI.Services;
+﻿using ePersonelServer.WebAPI.DTOs;
+using PersonelApp.WebAPI.Models;
+
+namespace PersonelApp.WebAPI.Services;
 
 public interface IAuthTokenService
 {
-    string Create(Guid userId, bool rememberMe = false);
+    LoginResponseDto Create(User user, bool rememberMe = false);
     bool CheckSecretKey(string secretKey);
 }

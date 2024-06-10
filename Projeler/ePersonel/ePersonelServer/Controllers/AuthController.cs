@@ -11,7 +11,7 @@ public sealed class AuthController(
     IAuthTokenService authTokenService) : ControllerBase
 {
     [HttpPost]
-    public IActionResult Register(RegisterDto request)
+    public IActionResult Register([FromForm] RegisterDto request)
     {
         var result = userService.Register(request);
         if (!result)
@@ -31,8 +31,8 @@ public sealed class AuthController(
             return BadRequest(new { Message = "User name or password is wrong" });
         }
 
-        string secretKey = authTokenService.Create(user.Id);
+        var response = authTokenService.Create(user);
 
-        return Ok(new { SecretKey = secretKey });
+        return Ok(response);
     }
 }
