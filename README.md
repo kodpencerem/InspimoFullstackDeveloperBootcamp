@@ -1,13 +1,18 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 12.06.2024 (Sonraki ders)
-- Sweet Alert2 ile toast fırlatma
-- Hataları Angular tarafında işleme ve Swal ile gösterme
+## 14.06.2024 (Sonraki ders)
 - Girişte Secret Keyin expires kontrolü
 - Personel sayfası oluşturulacak ve tasarımı yapılacak
 - Personel Getall ve search işlemi kodlanacak
 - Personel Create modalı oluşturulacak
 - Personel Create işlemi yapılacak
+
+## 12.06.2024 
+- Sweet Alert2 ile toast fırlatma
+- Hataları Angular tarafında işleme ve Swal ile gösterme
+- Generic Swal Service
+- Generic Http Service
+- Register sayfası
 
 ## 10.06.2024
 - API ile Login Request devamını kodluyoruz

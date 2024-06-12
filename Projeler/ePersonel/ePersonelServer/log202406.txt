@@ -456,3 +456,376 @@ PersonelApp.WebAPI.DTOs.RegisterDto -> PersonelApp.WebAPI.Models.User
 2024-06-10 22:55:20.888 +03:00 [INF] Executed action PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI) in 169.8445ms
 2024-06-10 22:55:20.890 +03:00 [INF] Executed endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
 2024-06-10 22:55:20.891 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7052/api/Auth/Login - 200 null application/json; charset=utf-8 177.5536ms
+2024-06-12 20:17:10.685 +03:00 [INF] Now listening on: https://localhost:7052
+2024-06-12 20:17:10.715 +03:00 [INF] Now listening on: http://localhost:5254
+2024-06-12 20:17:10.717 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-12 20:17:10.718 +03:00 [INF] Hosting environment: Development
+2024-06-12 20:17:10.719 +03:00 [INF] Content root path: C:\InspimoFullstackDeveloperBootcamp\Projeler\ePersonel\ePersonelServer
+2024-06-12 20:17:48.667 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7052/avatars/133625222955629110-1-09.jpg - null null
+2024-06-12 20:17:48.784 +03:00 [INF] Sending file. Request path: '/avatars/133625222955629110-1-09.jpg'. Physical path: 'C:\InspimoFullstackDeveloperBootcamp\Projeler\ePersonel\ePersonelServer\wwwroot\avatars\133625222955629110-1-09.jpg'
+2024-06-12 20:17:48.790 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7052/avatars/133625222955629110-1-09.jpg - 200 487658 image/jpeg 123.6018ms
+2024-06-12 20:18:45.583 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7052/api/Auth/Login - null null
+2024-06-12 20:18:45.589 +03:00 [INF] CORS policy execution successful.
+2024-06-12 20:18:45.591 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7052/api/Auth/Login - 204 null null 8.0166ms
+2024-06-12 20:18:45.597 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7052/api/Auth/Login - application/json 54
+2024-06-12 20:18:45.601 +03:00 [INF] CORS policy execution successful.
+2024-06-12 20:18:45.604 +03:00 [INF] Executing endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 20:18:45.615 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(PersonelApp.WebAPI.DTOs.LoginDto) on controller PersonelApp.WebAPI.Controllers.AuthController (ePersonelServer.WebAPI).
+2024-06-12 20:18:46.352 +03:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-12 20:18:46.360 +03:00 [INF] Executed action PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI) in 741.0961ms
+2024-06-12 20:18:46.361 +03:00 [INF] Executed endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 20:18:46.367 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7052/api/Auth/Login - 400 null application/json; charset=utf-8 769.4851ms
+2024-06-12 21:35:15.419 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7052/api/Auth/Login - null null
+2024-06-12 21:35:15.423 +03:00 [INF] CORS policy execution successful.
+2024-06-12 21:35:15.424 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7052/api/Auth/Login - 204 null null 4.3602ms
+2024-06-12 21:35:15.429 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7052/api/Auth/Login - application/json 54
+2024-06-12 21:35:15.431 +03:00 [INF] CORS policy execution successful.
+2024-06-12 21:35:15.432 +03:00 [INF] Executing endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 21:35:15.433 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(PersonelApp.WebAPI.DTOs.LoginDto) on controller PersonelApp.WebAPI.Controllers.AuthController (ePersonelServer.WebAPI).
+2024-06-12 21:35:15.626 +03:00 [INF] Executing OkObjectResult, writing value of type 'ePersonelServer.WebAPI.DTOs.LoginResponseDto'.
+2024-06-12 21:35:15.633 +03:00 [INF] Executed action PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI) in 198.9783ms
+2024-06-12 21:35:15.634 +03:00 [INF] Executed endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 21:35:15.635 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7052/api/Auth/Login - 200 null application/json; charset=utf-8 206.4104ms
+2024-06-12 21:35:24.935 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7052/api/Auth/Login - null null
+2024-06-12 21:35:24.939 +03:00 [INF] CORS policy execution successful.
+2024-06-12 21:35:24.939 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7052/api/Auth/Login - 204 null null 3.7783ms
+2024-06-12 21:35:24.942 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7052/api/Auth/Login - application/json 54
+2024-06-12 21:35:24.943 +03:00 [INF] CORS policy execution successful.
+2024-06-12 21:35:24.944 +03:00 [INF] Executing endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 21:35:24.945 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(PersonelApp.WebAPI.DTOs.LoginDto) on controller PersonelApp.WebAPI.Controllers.AuthController (ePersonelServer.WebAPI).
+2024-06-12 21:35:24.949 +03:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-12 21:35:24.951 +03:00 [INF] Executed action PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI) in 5.1726ms
+2024-06-12 21:35:24.952 +03:00 [INF] Executed endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 21:35:24.954 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7052/api/Auth/Login - 400 null application/json; charset=utf-8 11.704ms
+2024-06-12 21:36:08.363 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7052/api/Auth/Login - null null
+2024-06-12 21:36:08.364 +03:00 [INF] CORS policy execution successful.
+2024-06-12 21:36:08.365 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7052/api/Auth/Login - 204 null null 2.0901ms
+2024-06-12 21:36:08.366 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7052/api/Auth/Login - application/json 54
+2024-06-12 21:36:08.368 +03:00 [INF] CORS policy execution successful.
+2024-06-12 21:36:08.369 +03:00 [INF] Executing endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 21:36:08.369 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(PersonelApp.WebAPI.DTOs.LoginDto) on controller PersonelApp.WebAPI.Controllers.AuthController (ePersonelServer.WebAPI).
+2024-06-12 21:36:08.372 +03:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-12 21:36:08.372 +03:00 [INF] Executed action PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI) in 2.3161ms
+2024-06-12 21:36:08.373 +03:00 [INF] Executed endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 21:36:08.375 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7052/api/Auth/Login - 400 null application/json; charset=utf-8 8.3479ms
+2024-06-12 21:36:16.042 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7052/api/Auth/Login - null null
+2024-06-12 21:36:16.044 +03:00 [INF] CORS policy execution successful.
+2024-06-12 21:36:16.045 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7052/api/Auth/Login - 204 null null 2.619ms
+2024-06-12 21:36:16.047 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7052/api/Auth/Login - application/json 54
+2024-06-12 21:36:16.051 +03:00 [INF] CORS policy execution successful.
+2024-06-12 21:36:16.053 +03:00 [INF] Executing endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 21:36:16.054 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(PersonelApp.WebAPI.DTOs.LoginDto) on controller PersonelApp.WebAPI.Controllers.AuthController (ePersonelServer.WebAPI).
+2024-06-12 21:36:16.057 +03:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-12 21:36:16.058 +03:00 [INF] Executed action PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI) in 2.3569ms
+2024-06-12 21:36:16.059 +03:00 [INF] Executed endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 21:36:16.060 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7052/api/Auth/Login - 400 null application/json; charset=utf-8 13.1517ms
+2024-06-12 21:36:27.234 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7052/api/Auth/Login - null null
+2024-06-12 21:36:27.237 +03:00 [INF] CORS policy execution successful.
+2024-06-12 21:36:27.237 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7052/api/Auth/Login - 204 null null 3.147ms
+2024-06-12 21:36:27.241 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7052/api/Auth/Login - application/json 54
+2024-06-12 21:36:27.243 +03:00 [INF] CORS policy execution successful.
+2024-06-12 21:36:27.243 +03:00 [INF] Executing endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 21:36:27.244 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(PersonelApp.WebAPI.DTOs.LoginDto) on controller PersonelApp.WebAPI.Controllers.AuthController (ePersonelServer.WebAPI).
+2024-06-12 21:36:27.251 +03:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-12 21:36:27.252 +03:00 [INF] Executed action PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI) in 6.2405ms
+2024-06-12 21:36:27.254 +03:00 [INF] Executed endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 21:36:27.255 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7052/api/Auth/Login - 400 null application/json; charset=utf-8 14.4452ms
+2024-06-12 21:46:41.658 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7052/api/Auth/Login - null null
+2024-06-12 21:46:41.660 +03:00 [INF] CORS policy execution successful.
+2024-06-12 21:46:41.660 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7052/api/Auth/Login - 204 null null 2.2694ms
+2024-06-12 21:46:41.662 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7052/api/Auth/Login - application/json 60
+2024-06-12 21:46:41.664 +03:00 [INF] CORS policy execution successful.
+2024-06-12 21:46:41.664 +03:00 [INF] Executing endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 21:46:41.665 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(PersonelApp.WebAPI.DTOs.LoginDto) on controller PersonelApp.WebAPI.Controllers.AuthController (ePersonelServer.WebAPI).
+2024-06-12 21:46:41.707 +03:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-12 21:46:41.708 +03:00 [INF] Executed action PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI) in 41.9914ms
+2024-06-12 21:46:41.709 +03:00 [INF] Executed endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 21:46:41.710 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7052/api/Auth/Login - 400 null application/json; charset=utf-8 47.9682ms
+2024-06-12 21:46:47.860 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7052/api/Auth/Login - null null
+2024-06-12 21:46:47.861 +03:00 [INF] CORS policy execution successful.
+2024-06-12 21:46:47.862 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7052/api/Auth/Login - 204 null null 2.3171ms
+2024-06-12 21:46:47.864 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7052/api/Auth/Login - application/json 60
+2024-06-12 21:46:47.866 +03:00 [INF] CORS policy execution successful.
+2024-06-12 21:46:47.866 +03:00 [INF] Executing endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 21:46:47.867 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(PersonelApp.WebAPI.DTOs.LoginDto) on controller PersonelApp.WebAPI.Controllers.AuthController (ePersonelServer.WebAPI).
+2024-06-12 21:46:47.870 +03:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-12 21:46:47.871 +03:00 [INF] Executed action PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI) in 2.4003ms
+2024-06-12 21:46:47.872 +03:00 [INF] Executed endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 21:46:47.873 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7052/api/Auth/Login - 400 null application/json; charset=utf-8 9.0286ms
+2024-06-12 21:46:48.078 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7052/api/Auth/Login - application/json 60
+2024-06-12 21:46:48.080 +03:00 [INF] CORS policy execution successful.
+2024-06-12 21:46:48.081 +03:00 [INF] Executing endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 21:46:48.081 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(PersonelApp.WebAPI.DTOs.LoginDto) on controller PersonelApp.WebAPI.Controllers.AuthController (ePersonelServer.WebAPI).
+2024-06-12 21:46:48.085 +03:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-12 21:46:48.086 +03:00 [INF] Executed action PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI) in 4.1066ms
+2024-06-12 21:46:48.088 +03:00 [INF] Executed endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 21:46:48.089 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7052/api/Auth/Login - 400 null application/json; charset=utf-8 10.5559ms
+2024-06-12 21:46:48.229 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7052/api/Auth/Login - application/json 60
+2024-06-12 21:46:48.232 +03:00 [INF] CORS policy execution successful.
+2024-06-12 21:46:48.233 +03:00 [INF] Executing endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 21:46:48.233 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(PersonelApp.WebAPI.DTOs.LoginDto) on controller PersonelApp.WebAPI.Controllers.AuthController (ePersonelServer.WebAPI).
+2024-06-12 21:46:48.236 +03:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-12 21:46:48.237 +03:00 [INF] Executed action PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI) in 2.2257ms
+2024-06-12 21:46:48.238 +03:00 [INF] Executed endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 21:46:48.239 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7052/api/Auth/Login - 400 null application/json; charset=utf-8 9.7457ms
+2024-06-12 21:46:48.391 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7052/api/Auth/Login - application/json 60
+2024-06-12 21:46:48.396 +03:00 [INF] CORS policy execution successful.
+2024-06-12 21:46:48.396 +03:00 [INF] Executing endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 21:46:48.398 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(PersonelApp.WebAPI.DTOs.LoginDto) on controller PersonelApp.WebAPI.Controllers.AuthController (ePersonelServer.WebAPI).
+2024-06-12 21:46:48.401 +03:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-12 21:46:48.401 +03:00 [INF] Executed action PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI) in 2.4897ms
+2024-06-12 21:46:48.402 +03:00 [INF] Executed endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 21:46:48.404 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7052/api/Auth/Login - 400 null application/json; charset=utf-8 12.5021ms
+2024-06-12 21:46:48.563 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7052/api/Auth/Login - application/json 60
+2024-06-12 21:46:48.566 +03:00 [INF] CORS policy execution successful.
+2024-06-12 21:46:48.566 +03:00 [INF] Executing endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 21:46:48.567 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(PersonelApp.WebAPI.DTOs.LoginDto) on controller PersonelApp.WebAPI.Controllers.AuthController (ePersonelServer.WebAPI).
+2024-06-12 21:46:48.570 +03:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-12 21:46:48.570 +03:00 [INF] Executed action PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI) in 2.0603ms
+2024-06-12 21:46:48.571 +03:00 [INF] Executed endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 21:46:48.572 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7052/api/Auth/Login - 400 null application/json; charset=utf-8 8.9512ms
+2024-06-12 21:46:48.729 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7052/api/Auth/Login - application/json 60
+2024-06-12 21:46:48.732 +03:00 [INF] CORS policy execution successful.
+2024-06-12 21:46:48.733 +03:00 [INF] Executing endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 21:46:48.734 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(PersonelApp.WebAPI.DTOs.LoginDto) on controller PersonelApp.WebAPI.Controllers.AuthController (ePersonelServer.WebAPI).
+2024-06-12 21:46:48.737 +03:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-12 21:46:48.738 +03:00 [INF] Executed action PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI) in 2.3045ms
+2024-06-12 21:46:48.738 +03:00 [INF] Executed endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 21:46:48.739 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7052/api/Auth/Login - 400 null application/json; charset=utf-8 10.5496ms
+2024-06-12 21:46:48.895 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7052/api/Auth/Login - application/json 60
+2024-06-12 21:46:48.898 +03:00 [INF] CORS policy execution successful.
+2024-06-12 21:46:48.899 +03:00 [INF] Executing endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 21:46:48.900 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(PersonelApp.WebAPI.DTOs.LoginDto) on controller PersonelApp.WebAPI.Controllers.AuthController (ePersonelServer.WebAPI).
+2024-06-12 21:46:48.904 +03:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-12 21:46:48.904 +03:00 [INF] Executed action PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI) in 2.8514ms
+2024-06-12 21:46:48.905 +03:00 [INF] Executed endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 21:46:48.906 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7052/api/Auth/Login - 400 null application/json; charset=utf-8 11.0632ms
+2024-06-12 21:46:49.063 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7052/api/Auth/Login - application/json 60
+2024-06-12 21:46:49.065 +03:00 [INF] CORS policy execution successful.
+2024-06-12 21:46:49.066 +03:00 [INF] Executing endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 21:46:49.067 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(PersonelApp.WebAPI.DTOs.LoginDto) on controller PersonelApp.WebAPI.Controllers.AuthController (ePersonelServer.WebAPI).
+2024-06-12 21:46:49.072 +03:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-12 21:46:49.073 +03:00 [INF] Executed action PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI) in 4.7422ms
+2024-06-12 21:46:49.075 +03:00 [INF] Executed endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 21:46:49.078 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7052/api/Auth/Login - 400 null application/json; charset=utf-8 14.4779ms
+2024-06-12 21:46:49.229 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7052/api/Auth/Login - application/json 60
+2024-06-12 21:46:49.231 +03:00 [INF] CORS policy execution successful.
+2024-06-12 21:46:49.232 +03:00 [INF] Executing endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 21:46:49.233 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(PersonelApp.WebAPI.DTOs.LoginDto) on controller PersonelApp.WebAPI.Controllers.AuthController (ePersonelServer.WebAPI).
+2024-06-12 21:46:49.236 +03:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-12 21:46:49.237 +03:00 [INF] Executed action PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI) in 2.7856ms
+2024-06-12 21:46:49.238 +03:00 [INF] Executed endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 21:46:49.239 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7052/api/Auth/Login - 400 null application/json; charset=utf-8 10.5245ms
+2024-06-12 21:46:49.388 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7052/api/Auth/Login - application/json 60
+2024-06-12 21:46:49.390 +03:00 [INF] CORS policy execution successful.
+2024-06-12 21:46:49.390 +03:00 [INF] Executing endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 21:46:49.391 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(PersonelApp.WebAPI.DTOs.LoginDto) on controller PersonelApp.WebAPI.Controllers.AuthController (ePersonelServer.WebAPI).
+2024-06-12 21:46:49.395 +03:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-12 21:46:49.396 +03:00 [INF] Executed action PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI) in 3.1878ms
+2024-06-12 21:46:49.397 +03:00 [INF] Executed endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 21:46:49.399 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7052/api/Auth/Login - 400 null application/json; charset=utf-8 10.6027ms
+2024-06-12 21:54:26.764 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7052/api/Auth/Login - null null
+2024-06-12 21:54:26.767 +03:00 [INF] CORS policy execution successful.
+2024-06-12 21:54:26.768 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7052/api/Auth/Login - 204 null null 3.6178ms
+2024-06-12 21:54:26.770 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7052/api/Auth/Login - application/json 60
+2024-06-12 21:54:26.773 +03:00 [INF] CORS policy execution successful.
+2024-06-12 21:54:26.774 +03:00 [INF] Executing endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 21:54:26.774 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(PersonelApp.WebAPI.DTOs.LoginDto) on controller PersonelApp.WebAPI.Controllers.AuthController (ePersonelServer.WebAPI).
+2024-06-12 21:54:26.819 +03:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-12 21:54:26.821 +03:00 [INF] Executed action PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI) in 45.1137ms
+2024-06-12 21:54:26.822 +03:00 [INF] Executed endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 21:54:26.823 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7052/api/Auth/Login - 400 null application/json; charset=utf-8 52.1207ms
+2024-06-12 21:54:33.084 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7052/api/Auth/Login - null null
+2024-06-12 21:54:33.088 +03:00 [INF] CORS policy execution successful.
+2024-06-12 21:54:33.089 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7052/api/Auth/Login - 204 null null 4.5423ms
+2024-06-12 21:54:33.091 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7052/api/Auth/Login - application/json 60
+2024-06-12 21:54:33.093 +03:00 [INF] CORS policy execution successful.
+2024-06-12 21:54:33.094 +03:00 [INF] Executing endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 21:54:33.095 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(PersonelApp.WebAPI.DTOs.LoginDto) on controller PersonelApp.WebAPI.Controllers.AuthController (ePersonelServer.WebAPI).
+2024-06-12 21:54:33.097 +03:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-12 21:54:33.098 +03:00 [INF] Executed action PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI) in 2.1418ms
+2024-06-12 21:54:33.099 +03:00 [INF] Executed endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 21:54:33.100 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7052/api/Auth/Login - 400 null application/json; charset=utf-8 8.8718ms
+2024-06-12 21:54:54.112 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7052/api/Auth/Login - null null
+2024-06-12 21:54:54.115 +03:00 [INF] CORS policy execution successful.
+2024-06-12 21:54:54.116 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7052/api/Auth/Login - 204 null null 3.4549ms
+2024-06-12 21:54:54.118 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7052/api/Auth/Login - application/json 54
+2024-06-12 21:54:54.120 +03:00 [INF] CORS policy execution successful.
+2024-06-12 21:54:54.120 +03:00 [INF] Executing endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 21:54:54.121 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(PersonelApp.WebAPI.DTOs.LoginDto) on controller PersonelApp.WebAPI.Controllers.AuthController (ePersonelServer.WebAPI).
+2024-06-12 21:54:54.128 +03:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-12 21:54:54.130 +03:00 [INF] Executed action PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI) in 7.0141ms
+2024-06-12 21:54:54.131 +03:00 [INF] Executed endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 21:54:54.132 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7052/api/Auth/Login - 400 null application/json; charset=utf-8 14.1718ms
+2024-06-12 21:55:26.740 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7052/api/Auth/Login - null null
+2024-06-12 21:55:26.743 +03:00 [INF] CORS policy execution successful.
+2024-06-12 21:55:26.744 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7052/api/Auth/Login - 204 null null 3.5692ms
+2024-06-12 21:55:26.747 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7052/api/Auth/Login - application/json 54
+2024-06-12 21:55:26.748 +03:00 [INF] CORS policy execution successful.
+2024-06-12 21:55:26.749 +03:00 [INF] Executing endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 21:55:26.750 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(PersonelApp.WebAPI.DTOs.LoginDto) on controller PersonelApp.WebAPI.Controllers.AuthController (ePersonelServer.WebAPI).
+2024-06-12 21:55:26.754 +03:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-12 21:55:26.756 +03:00 [INF] Executed action PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI) in 4.4087ms
+2024-06-12 21:55:26.757 +03:00 [INF] Executed endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 21:55:26.758 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7052/api/Auth/Login - 400 null application/json; charset=utf-8 11.0783ms
+2024-06-12 21:55:30.372 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7052/api/Auth/Login - application/json 54
+2024-06-12 21:55:30.373 +03:00 [INF] CORS policy execution successful.
+2024-06-12 21:55:30.374 +03:00 [INF] Executing endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 21:55:30.375 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(PersonelApp.WebAPI.DTOs.LoginDto) on controller PersonelApp.WebAPI.Controllers.AuthController (ePersonelServer.WebAPI).
+2024-06-12 21:55:30.378 +03:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-12 21:55:30.380 +03:00 [INF] Executed action PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI) in 2.7265ms
+2024-06-12 21:55:30.381 +03:00 [INF] Executed endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 21:55:30.382 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7052/api/Auth/Login - 400 null application/json; charset=utf-8 10.5105ms
+2024-06-12 21:55:32.864 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7052/api/Auth/Login - null null
+2024-06-12 21:55:32.867 +03:00 [INF] CORS policy execution successful.
+2024-06-12 21:55:32.868 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7052/api/Auth/Login - 204 null null 4.249ms
+2024-06-12 21:55:32.872 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7052/api/Auth/Login - application/json 54
+2024-06-12 21:55:32.878 +03:00 [INF] CORS policy execution successful.
+2024-06-12 21:55:32.879 +03:00 [INF] Executing endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 21:55:32.880 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(PersonelApp.WebAPI.DTOs.LoginDto) on controller PersonelApp.WebAPI.Controllers.AuthController (ePersonelServer.WebAPI).
+2024-06-12 21:55:32.884 +03:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-12 21:55:32.884 +03:00 [INF] Executed action PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI) in 2.5966ms
+2024-06-12 21:55:32.886 +03:00 [INF] Executed endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 21:55:32.886 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7052/api/Auth/Login - 400 null application/json; charset=utf-8 14.8943ms
+2024-06-12 22:27:07.024 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7052/api/Auth/Login - null null
+2024-06-12 22:27:07.026 +03:00 [INF] CORS policy execution successful.
+2024-06-12 22:27:07.027 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7052/api/Auth/Login - 204 null null 3.4164ms
+2024-06-12 22:27:07.030 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7052/api/Auth/Login - application/json 54
+2024-06-12 22:27:07.031 +03:00 [INF] CORS policy execution successful.
+2024-06-12 22:27:07.032 +03:00 [INF] Executing endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 22:27:07.032 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(PersonelApp.WebAPI.DTOs.LoginDto) on controller PersonelApp.WebAPI.Controllers.AuthController (ePersonelServer.WebAPI).
+2024-06-12 22:27:07.082 +03:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-12 22:27:07.084 +03:00 [INF] Executed action PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI) in 50.626ms
+2024-06-12 22:27:07.086 +03:00 [INF] Executed endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 22:27:07.088 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7052/api/Auth/Login - 400 null application/json; charset=utf-8 58.0715ms
+2024-06-12 22:27:07.996 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7052/api/Auth/Login - application/json 54
+2024-06-12 22:27:07.998 +03:00 [INF] CORS policy execution successful.
+2024-06-12 22:27:07.999 +03:00 [INF] Executing endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 22:27:07.999 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(PersonelApp.WebAPI.DTOs.LoginDto) on controller PersonelApp.WebAPI.Controllers.AuthController (ePersonelServer.WebAPI).
+2024-06-12 22:27:08.013 +03:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-12 22:27:08.013 +03:00 [INF] Executed action PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI) in 13.3003ms
+2024-06-12 22:27:08.015 +03:00 [INF] Executed endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 22:27:08.016 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7052/api/Auth/Login - 400 null application/json; charset=utf-8 19.4014ms
+2024-06-12 22:27:08.496 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7052/api/Auth/Login - application/json 54
+2024-06-12 22:27:08.498 +03:00 [INF] CORS policy execution successful.
+2024-06-12 22:27:08.498 +03:00 [INF] Executing endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 22:27:08.499 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(PersonelApp.WebAPI.DTOs.LoginDto) on controller PersonelApp.WebAPI.Controllers.AuthController (ePersonelServer.WebAPI).
+2024-06-12 22:27:08.501 +03:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-12 22:27:08.503 +03:00 [INF] Executed action PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI) in 2.668ms
+2024-06-12 22:27:08.504 +03:00 [INF] Executed endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 22:27:08.505 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7052/api/Auth/Login - 400 null application/json; charset=utf-8 9.0277ms
+2024-06-12 22:27:08.848 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7052/api/Auth/Login - application/json 54
+2024-06-12 22:27:08.850 +03:00 [INF] CORS policy execution successful.
+2024-06-12 22:27:08.850 +03:00 [INF] Executing endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 22:27:08.851 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(PersonelApp.WebAPI.DTOs.LoginDto) on controller PersonelApp.WebAPI.Controllers.AuthController (ePersonelServer.WebAPI).
+2024-06-12 22:27:08.855 +03:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-12 22:27:08.856 +03:00 [INF] Executed action PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI) in 3.3572ms
+2024-06-12 22:27:08.858 +03:00 [INF] Executed endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 22:27:08.859 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7052/api/Auth/Login - 400 null application/json; charset=utf-8 10.9414ms
+2024-06-12 22:27:09.087 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7052/api/Auth/Login - application/json 54
+2024-06-12 22:27:09.090 +03:00 [INF] CORS policy execution successful.
+2024-06-12 22:27:09.090 +03:00 [INF] Executing endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 22:27:09.091 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(PersonelApp.WebAPI.DTOs.LoginDto) on controller PersonelApp.WebAPI.Controllers.AuthController (ePersonelServer.WebAPI).
+2024-06-12 22:27:09.093 +03:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-12 22:27:09.094 +03:00 [INF] Executed action PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI) in 2.2317ms
+2024-06-12 22:27:09.095 +03:00 [INF] Executed endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 22:27:09.096 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7052/api/Auth/Login - 400 null application/json; charset=utf-8 9.0894ms
+2024-06-12 22:27:09.399 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7052/api/Auth/Login - application/json 54
+2024-06-12 22:27:09.401 +03:00 [INF] CORS policy execution successful.
+2024-06-12 22:27:09.401 +03:00 [INF] Executing endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 22:27:09.402 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(PersonelApp.WebAPI.DTOs.LoginDto) on controller PersonelApp.WebAPI.Controllers.AuthController (ePersonelServer.WebAPI).
+2024-06-12 22:27:09.408 +03:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-12 22:27:09.410 +03:00 [INF] Executed action PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI) in 5.8068ms
+2024-06-12 22:27:09.411 +03:00 [INF] Executed endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 22:27:09.412 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7052/api/Auth/Login - 400 null application/json; charset=utf-8 13.2192ms
+2024-06-12 22:27:09.766 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7052/api/Auth/Login - application/json 54
+2024-06-12 22:27:09.768 +03:00 [INF] CORS policy execution successful.
+2024-06-12 22:27:09.768 +03:00 [INF] Executing endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 22:27:09.769 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(PersonelApp.WebAPI.DTOs.LoginDto) on controller PersonelApp.WebAPI.Controllers.AuthController (ePersonelServer.WebAPI).
+2024-06-12 22:27:09.773 +03:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-12 22:27:09.774 +03:00 [INF] Executed action PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI) in 3.7144ms
+2024-06-12 22:27:09.775 +03:00 [INF] Executed endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 22:27:09.777 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7052/api/Auth/Login - 400 null application/json; charset=utf-8 10.9781ms
+2024-06-12 22:27:10.302 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7052/api/Auth/Login - application/json 54
+2024-06-12 22:27:10.304 +03:00 [INF] CORS policy execution successful.
+2024-06-12 22:27:10.305 +03:00 [INF] Executing endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 22:27:10.306 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(PersonelApp.WebAPI.DTOs.LoginDto) on controller PersonelApp.WebAPI.Controllers.AuthController (ePersonelServer.WebAPI).
+2024-06-12 22:27:10.309 +03:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-12 22:27:10.310 +03:00 [INF] Executed action PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI) in 2.6512ms
+2024-06-12 22:27:10.311 +03:00 [INF] Executed endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 22:27:10.311 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7052/api/Auth/Login - 400 null application/json; charset=utf-8 9.8404ms
+2024-06-12 22:27:10.471 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7052/api/Auth/Login - application/json 54
+2024-06-12 22:27:10.473 +03:00 [INF] CORS policy execution successful.
+2024-06-12 22:27:10.474 +03:00 [INF] Executing endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 22:27:10.475 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(PersonelApp.WebAPI.DTOs.LoginDto) on controller PersonelApp.WebAPI.Controllers.AuthController (ePersonelServer.WebAPI).
+2024-06-12 22:27:10.477 +03:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-12 22:27:10.478 +03:00 [INF] Executed action PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI) in 2.0876ms
+2024-06-12 22:27:10.479 +03:00 [INF] Executed endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 22:27:10.480 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7052/api/Auth/Login - 400 null application/json; charset=utf-8 9.3533ms
+2024-06-12 22:27:10.649 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7052/api/Auth/Login - application/json 54
+2024-06-12 22:27:10.651 +03:00 [INF] CORS policy execution successful.
+2024-06-12 22:27:10.652 +03:00 [INF] Executing endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 22:27:10.652 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(PersonelApp.WebAPI.DTOs.LoginDto) on controller PersonelApp.WebAPI.Controllers.AuthController (ePersonelServer.WebAPI).
+2024-06-12 22:27:10.655 +03:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-12 22:27:10.656 +03:00 [INF] Executed action PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI) in 2.6297ms
+2024-06-12 22:27:10.657 +03:00 [INF] Executed endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 22:27:10.659 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7052/api/Auth/Login - 400 null application/json; charset=utf-8 9.1677ms
+2024-06-12 22:27:14.262 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7052/api/Auth/Login - null null
+2024-06-12 22:27:14.265 +03:00 [INF] CORS policy execution successful.
+2024-06-12 22:27:14.265 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7052/api/Auth/Login - 204 null null 3.071ms
+2024-06-12 22:27:14.267 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7052/api/Auth/Login - application/json 54
+2024-06-12 22:27:14.270 +03:00 [INF] CORS policy execution successful.
+2024-06-12 22:27:14.270 +03:00 [INF] Executing endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 22:27:14.271 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(PersonelApp.WebAPI.DTOs.LoginDto) on controller PersonelApp.WebAPI.Controllers.AuthController (ePersonelServer.WebAPI).
+2024-06-12 22:27:14.277 +03:00 [INF] Executing OkObjectResult, writing value of type 'ePersonelServer.WebAPI.DTOs.LoginResponseDto'.
+2024-06-12 22:27:14.279 +03:00 [INF] Executed action PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI) in 6.6813ms
+2024-06-12 22:27:14.280 +03:00 [INF] Executed endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 22:27:14.281 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7052/api/Auth/Login - 200 null application/json; charset=utf-8 13.5669ms
+2024-06-12 22:53:10.595 +03:00 [INF] Now listening on: https://localhost:7052
+2024-06-12 22:53:10.652 +03:00 [INF] Now listening on: http://localhost:5254
+2024-06-12 22:53:10.655 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-12 22:53:10.656 +03:00 [INF] Hosting environment: Development
+2024-06-12 22:53:10.657 +03:00 [INF] Content root path: C:\InspimoFullstackDeveloperBootcamp\Projeler\ePersonel\ePersonelServer
+2024-06-12 22:53:15.762 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7052/api/Auth/Register - multipart/form-data; boundary=----WebKitFormBoundaryAt1qiwjALEglXEc7 459117
+2024-06-12 22:53:15.806 +03:00 [INF] CORS policy execution successful.
+2024-06-12 22:53:15.808 +03:00 [INF] Executing endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Register (ePersonelServer.WebAPI)'
+2024-06-12 22:53:15.824 +03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(PersonelApp.WebAPI.DTOs.RegisterDto) on controller PersonelApp.WebAPI.Controllers.AuthController (ePersonelServer.WebAPI).
+2024-06-12 22:53:46.390 +03:00 [INF] Now listening on: https://localhost:7052
+2024-06-12 22:53:46.430 +03:00 [INF] Now listening on: http://localhost:5254
+2024-06-12 22:53:46.434 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-12 22:53:46.435 +03:00 [INF] Hosting environment: Development
+2024-06-12 22:53:46.436 +03:00 [INF] Content root path: C:\InspimoFullstackDeveloperBootcamp\Projeler\ePersonel\ePersonelServer
+2024-06-12 22:53:50.530 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7052/api/Auth/Register - multipart/form-data; boundary=----WebKitFormBoundaryB92A5ePGbESs6P2E 459117
+2024-06-12 22:53:50.566 +03:00 [INF] CORS policy execution successful.
+2024-06-12 22:53:50.568 +03:00 [INF] Executing endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Register (ePersonelServer.WebAPI)'
+2024-06-12 22:53:50.582 +03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(PersonelApp.WebAPI.DTOs.RegisterDto) on controller PersonelApp.WebAPI.Controllers.AuthController (ePersonelServer.WebAPI).
+2024-06-12 22:54:09.664 +03:00 [INF] Now listening on: https://localhost:7052
+2024-06-12 22:54:09.703 +03:00 [INF] Now listening on: http://localhost:5254
+2024-06-12 22:54:09.706 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-12 22:54:09.708 +03:00 [INF] Hosting environment: Development
+2024-06-12 22:54:09.709 +03:00 [INF] Content root path: C:\InspimoFullstackDeveloperBootcamp\Projeler\ePersonel\ePersonelServer
+2024-06-12 22:55:05.673 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7052/api/Auth/Login - null null
+2024-06-12 22:55:05.710 +03:00 [INF] CORS policy execution successful.
+2024-06-12 22:55:05.714 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7052/api/Auth/Login - 204 null null 44.8681ms
+2024-06-12 22:55:05.719 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7052/api/Auth/Login - application/json 54
+2024-06-12 22:55:05.724 +03:00 [INF] CORS policy execution successful.
+2024-06-12 22:55:05.726 +03:00 [INF] Executing endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 22:55:05.743 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(PersonelApp.WebAPI.DTOs.LoginDto) on controller PersonelApp.WebAPI.Controllers.AuthController (ePersonelServer.WebAPI).
+2024-06-12 22:55:06.671 +03:00 [INF] Executing OkObjectResult, writing value of type 'ePersonelServer.WebAPI.DTOs.LoginResponseDto'.
+2024-06-12 22:55:06.681 +03:00 [INF] Executed action PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI) in 933.9132ms
+2024-06-12 22:55:06.682 +03:00 [INF] Executed endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 22:55:06.691 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7052/api/Auth/Login - 200 null application/json; charset=utf-8 972.259ms
+2024-06-12 22:55:06.754 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7052/avatars/133626956076624361-1-08.jpg - null null
+2024-06-12 22:55:06.822 +03:00 [INF] Sending file. Request path: '/avatars/133626956076624361-1-08.jpg'. Physical path: 'C:\InspimoFullstackDeveloperBootcamp\Projeler\ePersonel\ePersonelServer\wwwroot\avatars\133626956076624361-1-08.jpg'
+2024-06-12 22:55:06.828 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7052/avatars/133626956076624361-1-08.jpg - 200 458537 image/jpeg 74.6131ms
+2024-06-12 22:55:15.370 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7052/api/Auth/Login - null null
+2024-06-12 22:55:15.373 +03:00 [INF] CORS policy execution successful.
+2024-06-12 22:55:15.374 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7052/api/Auth/Login - 204 null null 4.8897ms
+2024-06-12 22:55:15.377 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7052/api/Auth/Login - application/json 54
+2024-06-12 22:55:15.379 +03:00 [INF] CORS policy execution successful.
+2024-06-12 22:55:15.379 +03:00 [INF] Executing endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 22:55:15.381 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(PersonelApp.WebAPI.DTOs.LoginDto) on controller PersonelApp.WebAPI.Controllers.AuthController (ePersonelServer.WebAPI).
+2024-06-12 22:55:15.447 +03:00 [INF] Executing OkObjectResult, writing value of type 'ePersonelServer.WebAPI.DTOs.LoginResponseDto'.
+2024-06-12 22:55:15.449 +03:00 [INF] Executed action PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI) in 64.5308ms
+2024-06-12 22:55:15.450 +03:00 [INF] Executed endpoint 'PersonelApp.WebAPI.Controllers.AuthController.Login (ePersonelServer.WebAPI)'
+2024-06-12 22:55:15.453 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7052/api/Auth/Login - 200 null application/json; charset=utf-8 76.6194ms

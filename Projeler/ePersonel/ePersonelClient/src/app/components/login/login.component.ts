@@ -3,60 +3,37 @@ import { LoginModel } from '../../models/login.model';
 import { FormsModule, NgForm } from '@angular/forms';
 import { ValidateDirective } from '../../directives/validate.directive';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
-import { Router } from '@angular/router';
-import { ToastrService } from 'ngx-toastr';
-import Swal from 'sweetalert2';
+import { Router, RouterLink } from '@angular/router';
+import { SwalService } from '../../services/swal.service';
+import { HttpService } from '../../services/http.service';
+
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [FormsModule,ValidateDirective],
+  imports: [FormsModule,ValidateDirective, RouterLink],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
-  @ViewChild("password") passwordEl: ElementRef<HTMLInputElement> | undefined
+  @ViewChild("password") passwordEl: ElementRef<HTMLInputElement> | undefined 
 
   data: LoginModel = new LoginModel();
   isShowPassword: boolean = false; 
 
   constructor(
-    private http: HttpClient, 
-    private router: Router, 
-  private toastr: ToastrService){
-    // this.toastr.success("sadasd");
-    // this.toastr.info("sadasd");
-    // this.toastr.error("sadasd");
-    // this.toastr.warning("sadasd");
- //21: 15 görüşelim
-    // const Toast = Swal.mixin({
-    //   toast: true,
-    //   position: "bottom-end",
-    //   showConfirmButton: false,
-    //   timer: 3000,
-    //   timerProgressBar: true,
-    //   didOpen: (toast) => {
-    //     toast.onmouseenter = Swal.stopTimer;
-    //     toast.onmouseleave = Swal.resumeTimer;
-    //   }
-    // });
-    // Toast.fire({
-    //   icon: "warning",
-    //   title: "Signed in successfully"
-    // });
-  }
+    public http: HttpService, 
+    private router: Router,
+    private swal: SwalService
+  ){}
 
   signIn(form: NgForm){
     if(form.valid){
-      this.http.post("https://localhost:7052/api/Auth/Login",this.data).subscribe({
-        next: (res:any)=> {
-          localStorage.setItem("response",JSON.stringify(res))
-          this.router.navigateByUrl("/");
-        },
-        error: (err: HttpErrorResponse)=> {
-          console.log(err);          
-        }
-      })
+      this.http.post("Auth/Login", this.data,(res)=> {
+        localStorage.setItem("response", JSON.stringify(res))
+        this.router.navigateByUrl("/");
+        this.swal.callToast("Login is successful");
+      });    
     }
   }
 
