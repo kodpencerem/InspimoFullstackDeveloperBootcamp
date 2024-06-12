@@ -4,6 +4,8 @@ import { FormsModule, NgForm } from '@angular/forms';
 import { ValidateDirective } from '../../directives/validate.directive';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-login',
@@ -18,7 +20,31 @@ export class LoginComponent {
   data: LoginModel = new LoginModel();
   isShowPassword: boolean = false; 
 
-  constructor(private http: HttpClient, private router: Router){}
+  constructor(
+    private http: HttpClient, 
+    private router: Router, 
+  private toastr: ToastrService){
+    // this.toastr.success("sadasd");
+    // this.toastr.info("sadasd");
+    // this.toastr.error("sadasd");
+    // this.toastr.warning("sadasd");
+ //21: 15 görüşelim
+    // const Toast = Swal.mixin({
+    //   toast: true,
+    //   position: "bottom-end",
+    //   showConfirmButton: false,
+    //   timer: 3000,
+    //   timerProgressBar: true,
+    //   didOpen: (toast) => {
+    //     toast.onmouseenter = Swal.stopTimer;
+    //     toast.onmouseleave = Swal.resumeTimer;
+    //   }
+    // });
+    // Toast.fire({
+    //   icon: "warning",
+    //   title: "Signed in successfully"
+    // });
+  }
 
   signIn(form: NgForm){
     if(form.valid){
