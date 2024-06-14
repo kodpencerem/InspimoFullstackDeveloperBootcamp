@@ -2,18 +2,18 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 import { LoginModel } from '../../models/login.model';
 import { FormsModule, NgForm } from '@angular/forms';
 import { ValidateDirective } from '../../directives/validate.directive';
-import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Router, RouterLink } from '@angular/router';
 import { SwalService } from '../../services/swal.service';
 import { HttpService } from '../../services/http.service';
+import { GoogleSigninButtonModule, SocialAuthService } from '@abacritt/angularx-social-login';
 
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [FormsModule,ValidateDirective, RouterLink],
+  imports: [FormsModule,ValidateDirective, RouterLink, GoogleSigninButtonModule],
   templateUrl: './login.component.html',
-  styleUrl: './login.component.css'
+  styleUrl: './login.component.css',  
 })
 export class LoginComponent {
   @ViewChild("password") passwordEl: ElementRef<HTMLInputElement> | undefined 
@@ -24,8 +24,13 @@ export class LoginComponent {
   constructor(
     public http: HttpService, 
     private router: Router,
-    private swal: SwalService
-  ){}
+    private swal: SwalService,
+    private authService: SocialAuthService
+  ){
+    this.authService.authState.subscribe((res)=> {
+      console.log(res);      
+    })
+  }
 
   signIn(form: NgForm){
     if(form.valid){

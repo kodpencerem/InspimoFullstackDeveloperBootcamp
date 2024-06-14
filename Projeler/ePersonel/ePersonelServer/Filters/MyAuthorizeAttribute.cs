@@ -13,7 +13,7 @@ public sealed class MyAuthorizeAttribute : Attribute, IAuthorizationFilter
         IAuthTokenService authTokenService = scoped.ServiceProvider.GetRequiredService<IAuthTokenService>();
 
         KeyValuePair<string, StringValues> secretKeyHeader =
-            context.HttpContext.Request.Headers.FirstOrDefault(p => p.Key == "SecretKey");
+            context.HttpContext.Request.Headers.FirstOrDefault(p => p.Key == "secretkey");
 
         if (secretKeyHeader.Key is null || !authTokenService.CheckSecretKey(secretKeyHeader.Value.ToString()))
         {
