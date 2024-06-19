@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, ViewChild, signal } from '@angular/core';
 import { LoginModel } from '../../models/login.model';
 import { FormsModule, NgForm } from '@angular/forms';
 import { ValidateDirective } from '../../directives/validate.directive';
@@ -18,8 +18,8 @@ import { GoogleSigninButtonModule, SocialAuthService } from '@abacritt/angularx-
 export class LoginComponent {
   @ViewChild("password") passwordEl: ElementRef<HTMLInputElement> | undefined 
 
-  data: LoginModel = new LoginModel();
-  isShowPassword: boolean = false; 
+  data = signal<LoginModel>(new LoginModel());
+  isShowPassword = signal(false); 
 
   constructor(
     public http: HttpService, 
@@ -34,7 +34,7 @@ export class LoginComponent {
 
   signIn(form: NgForm){
     if(form.valid){
-      this.http.post("Auth/Login", this.data,(res)=> {
+      this.http.post("Auth/Login", this.data(),(res)=> {
         localStorage.setItem("response", JSON.stringify(res))
         this.router.navigateByUrl("/");
         this.swal.callToast("Login is successful");
@@ -43,9 +43,9 @@ export class LoginComponent {
   }
 
   changeShowPassword(){
-    this.isShowPassword = !this.isShowPassword;
+    this.isShowPassword.set(!this.isShowPassword());
 
-    if(this.isShowPassword){
+    if(this.isShowPassword()){
       this.passwordEl!.nativeElement.type = "text";
     }else{
       this.passwordEl!.nativeElement.type = "password";

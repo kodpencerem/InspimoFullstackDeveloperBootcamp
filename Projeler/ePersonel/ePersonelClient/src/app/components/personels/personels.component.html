@@ -3,12 +3,8 @@
     <div class="container-xl">
         <div class="row g-2 align-items-center">
             <div class="col">
-                <!-- Page pre-title -->
-                <div class="page-pretitle">
-                    Overview
-                </div>
                 <h2 class="page-title">
-                    Dashboard
+                    Personel Listesi
                 </h2>
             </div>
             
@@ -25,7 +21,7 @@
                 </button>
             </div>
             <div class="col-3">
-                <input type="search" class="form-control" placeholder="Personel ara...">
+                <input type="search" [(ngModel)]="search" (keydown.enter)="getAll()" class="form-control" placeholder="Personel ara...">
             </div>
         </div>
         <hr>
@@ -40,19 +36,43 @@
                 </tr>
             </thead>
             <tbody>
-                @for(data of personels; track data){
+                @for(data of personels(); track data){
                     <tr>
                         <td>{{ $index + 1 }}</td>
                         <td>{{ data.firstName }}</td>
                         <td>{{ data.lastName }}</td>
                         <td>{{ data.startingDate }}</td>
                         <td>
-                            <button class="btn btn-primary btn-sm">Güncelle</button>
-                            <button class="btn btn-dark mx-1 btn-sm">Sil</button>
+                            <button class="btn btn-outline-primary">
+                                <i class="fa-solid fa-edit"></i>
+                            </button>
+                            <button class="btn btn-outline-dark mx-1">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
                         </td>
                     </tr>
                 }
             </tbody>
         </table>
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+              <li class="page-item" [ngClass]="pageNumber() === 1 ? 'disabled' : ''">
+                <a class="page-link" (click)="getAll(1)">İlk</a>
+              </li>
+              @for(p of pageNumbers(); track p){
+                <li class="page-item">
+                    <a 
+                    class="page-link" 
+                    [ngClass]="pageNumber() === p ? 'active' : ''"
+                    (click)="getAll(p)">{{p}}</a>
+                </li>             
+              }              
+              <li class="page-item" 
+              [ngClass]="pageNumber() === totalPageCount() ? 'disabled' : ''">
+                <a class="page-link" (click)="getAll(totalPageCount())">Son</a>
+              </li>
+            </ul>
+        </nav>
     </div>
 </div>

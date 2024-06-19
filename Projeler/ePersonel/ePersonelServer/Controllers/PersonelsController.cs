@@ -14,7 +14,6 @@ public sealed class PersonelsController(
     [HttpGet]
     public IActionResult GetAll(int pageNumber = 1, string search = "")
     {
-        logger.LogInformation("Hello, world");
         var personels = personelService.GetAll(pageNumber, search);
         return Ok(personels);
     }

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AlicanExample.WebAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+99e8739177fe4fef932e865ac2ca9d86d8bb404b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0b6609ba090799e55a825f14172d0758ca5fcfdc")]
 [assembly: System.Reflection.AssemblyProductAttribute("AlicanExample.WebAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AlicanExample.WebAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

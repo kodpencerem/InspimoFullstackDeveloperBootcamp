@@ -1,12 +1,15 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 19.06.2024 (Sonraki ders)
-- Personel pagination işlemi kodlanacak (Frontend)
-- Personel search işlemi kodlanacak
+## 21.06.2024 (Sonraki ders)
+- OData ve Grid kullanımı
 - Personel Create modalı oluşturulacak
 - Personel Create işlemi yapılacak
 - Personel Update işlemi yapılacak
 - Personel Delete işlemi yapılacak
+
+## 19.06.2024
+- Personel pagination işlemi kodlanacak (Frontend)
+- Personel search işlemi kodlanacak
 
 ## 14.06.2024
 - Girişte Secret Keyin expires kontrolü
