@@ -25,7 +25,21 @@
             </div>
         </div>
         <hr>
-        <table class="table table-hover">
+        <kendo-grid
+        [data]="result()"
+        [pageable]="true"
+        [pageSize]="state().take"
+        [skip]="state().skip"    
+        [filterable]="true"
+        [sortable]="true"
+        (dataStateChange)="stateChange($event)">
+        <kendo-grid-column field="id" title="Id"></kendo-grid-column>
+        <kendo-grid-column field="firstName" title="First Name"></kendo-grid-column>
+        <kendo-grid-column field="lastName" title="Last Name"></kendo-grid-column>
+
+        </kendo-grid>
+
+        <!-- <table class="table table-hover">
             <thead>
                 <tr>
                     <th>#</th>
@@ -73,6 +87,6 @@
                 <a class="page-link" (click)="getAll(totalPageCount())">Son</a>
               </li>
             </ul>
-        </nav>
+        </nav> -->
     </div>
 </div>
