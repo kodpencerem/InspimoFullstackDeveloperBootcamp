@@ -1,13 +1,12 @@
 ﻿using ePersonelServer.WebAPI.AOP;
 using Microsoft.AspNetCore.Mvc;
 using PersonelApp.WebAPI.DTOs;
-using PersonelApp.WebAPI.Filters;
 using PersonelApp.WebAPI.Services;
 
 namespace PersonelApp.WebAPI.Controllers;
 [Route("api/[controller]/[action]")]
 [ApiController]
-[MyAuthorize]
+//[MyAuthorize]
 public sealed class PersonelsController(
     IPersonelService personelService,
     ILogger<PersonelsController> logger) : ControllerBase

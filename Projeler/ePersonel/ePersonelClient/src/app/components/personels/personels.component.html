@@ -25,6 +25,14 @@
             </div>
         </div>
         <hr>
+        <data-grid
+        [value]="result()"
+        (dataStateChange)="myGridStateChange($event)">
+        <grid-column field="id" title="Id"></grid-column>
+        <grid-column field="firstName" title="First Name"></grid-column>
+        <grid-column field="lastName" title="Last Name"></grid-column>
+        </data-grid>
+<hr>
         <kendo-grid
         [data]="result()"
         [pageable]="true"
@@ -32,6 +40,8 @@
         [skip]="state().skip"    
         [filterable]="true"
         [sortable]="true"
+        [loading]="loading()"
+        [sort]="state().sort"        
         (dataStateChange)="stateChange($event)">
         <kendo-grid-column field="id" title="Id"></kendo-grid-column>
         <kendo-grid-column field="firstName" title="First Name"></kendo-grid-column>

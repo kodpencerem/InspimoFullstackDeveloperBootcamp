@@ -1,11 +1,15 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 24.06.2024 (Sonraki ders)
-- OData ve Grid kullanımı devam (Order, Filter, Export Excel, Export Pdf)
+## 26.06.2024 (Sonraki ders)
+- Kendi Angular Gridimizi Yazalım (devam ediyoruz)
 - Personel Create modalı oluşturulacak
 - Personel Create işlemi yapılacak
 - Personel Update işlemi yapılacak
 - Personel Delete işlemi yapılacak
+
+## 24.06.2024
+- OData ve Grid kullanımı devam (Order, Filter)
+- Kendi Angular Gridimizi Yazalım
 
 ## 21.06.2024
 - OData ve Grid kullanımı
