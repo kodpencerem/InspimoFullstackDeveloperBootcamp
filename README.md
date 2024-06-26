@@ -1,11 +1,15 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 26.06.2024 (Sonraki ders)
-- Kendi Angular Gridimizi Yazalım (devam ediyoruz)
-- Personel Create modalı oluşturulacak
-- Personel Create işlemi yapılacak
+## 28.06.2024 (Sonraki ders) 
 - Personel Update işlemi yapılacak
 - Personel Delete işlemi yapılacak
+- Export Excel ve PDF
+- Clean Architecture başlangıç yapacağız
+
+## 26.06.2024
+- Flexi Grid kullanalım
+- Personel Create modalı oluşturulacak
+- Personel Create işlemi yapılacak
 
 ## 24.06.2024
 - OData ve Grid kullanımı devam (Order, Filter)
