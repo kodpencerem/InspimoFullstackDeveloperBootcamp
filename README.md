@@ -1,9 +1,10 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 28.06.2024 (Sonraki ders) 
-- Personel Update işlemi yapılacak
-- Personel Delete işlemi yapılacak
-- Export Excel ve PDF
+## 01.07.2024 (Sonraki ders)
+- Clean Architecture devam ediyoruz
+- Uygulama olarak Online Sınav yapacağız
+
+## 29.06.2024
 - Clean Architecture başlangıç yapacağız
 
 ## 26.06.2024
