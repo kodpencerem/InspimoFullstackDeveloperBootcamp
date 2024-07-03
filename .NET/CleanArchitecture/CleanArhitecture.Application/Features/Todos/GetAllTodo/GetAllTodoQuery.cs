@@ -1,5 +1,4 @@
-﻿using CleanArchitecture.Domain.Entities;
-using MediatR;
+﻿using MediatR;
 
 namespace CleanArhitecture.Application.Features.Todos.GetAllTodo;
-public sealed record GetAllTodoQuery() : IRequest<List<Todo>>;
+public sealed record GetAllTodoQuery() : IRequest<List<GetAllTodoQueryResponse>>;

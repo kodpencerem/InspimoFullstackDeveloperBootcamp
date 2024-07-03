@@ -1,5 +1,4 @@
-﻿using CleanArchitecture.Domain.Entities;
-using CleanArhitecture.Application.Features.Todos.CreateTodo;
+﻿using CleanArhitecture.Application.Features.Todos.CreateTodo;
 using CleanArhitecture.Application.Features.Todos.DeleteTodo;
 using CleanArhitecture.Application.Features.Todos.GetAllTodo;
 using CleanArhitecture.Application.Features.Todos.UpdateTodo;
@@ -38,7 +37,7 @@ public class TodosController(IMediator mediator) : ControllerBase
     public async Task<IActionResult> GetAll(CancellationToken cancellationToken)
     {
         GetAllTodoQuery request = new();
-        List<Todo> todos = await mediator.Send(request, cancellationToken);
+        List<GetAllTodoQueryResponse> todos = await mediator.Send(request, cancellationToken);
         return Ok(todos);
     }
 }

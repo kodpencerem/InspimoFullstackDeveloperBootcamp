@@ -1,0 +1,73 @@
+<h1>Clean Arhictecture Todo App</h1>
+
+<flexi-grid
+[data]="todos()"
+themeClass="light"
+[showIndex]="true"
+height="100%"
+[showCaption]="true"
+captionTitle="Todo List"
+[captionTemplate]="captionTemplate"
+[showRefreshData]="false"
+>
+    <ng-template #captionTemplate>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addModal">
+            Add
+        </button>
+    </ng-template>
+
+    <flexi-grid-column field="id" title="Id" [hideOverflow]="true"></flexi-grid-column>
+    <flexi-grid-column field="work" title="Work"></flexi-grid-column>
+    <flexi-grid-column field="deadLine" title="Dead Line" filterType="date" format="dd.MM.yyyy"></flexi-grid-column>
+    <flexi-grid-column
+      field="isCompleted"
+      title="Is Comp."
+      [columnTemplate]="isCompletedColumnTemplate"
+      textAlign="center"
+      width="110px"
+      >
+    </flexi-grid-column>
+    <flexi-grid-column field="note" title="Note"></flexi-grid-column>
+
+    <ng-template #isCompletedColumnTemplate let-item="item">
+        <input type="checkbox" [(ngModel)]="item.isCompleted" (change)="changeIsCompleted(item)">
+        <!-- <span class="my-alert {{item.isCompleted ? 'alert-success' : 'alert-danger'}}">
+            {{item.isCompleted ? 'Completed' : 'Not Completed'}}
+        </span> -->
+    </ng-template>
+</flexi-grid>
+
+<div class="modal fade" id="addModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5">Add Todo</h1>
+          <button type="button" #addModalCloseBtn class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form #addForm="ngForm" (ngSubmit)="create()">
+            <div class="modal-body">
+                <!-- Work -->
+                <div class="form-group">
+                    <label>Work</label>
+                    <input type="text" [(ngModel)]="addModel().work" name="work" class="form-control">
+                </div>
+
+                <!-- Dead Line -->
+                <div class="form-group mt-1">
+                    <label>Dead Line</label>
+                    <input type="date" [(ngModel)]="addModel().deadLine" name="deadLine" class="form-control">
+                </div>
+
+                <!-- Note -->
+                <div class="form-group mt-1">
+                    <label>Note</label>
+                    <input type="text" [(ngModel)]="addModel().note" name="note" class="form-control">
+                </div>
+            </div>
+            <div class="modal-footer" style="text-align: right;">                
+                <button type="submit" class="btn btn-primary">Save changes</button>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
