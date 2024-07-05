@@ -1,8 +1,10 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 05.07.2024 (Sonraki ders)
-- Clean Architecture devam ediyoruz
-- Uygulama olarak Online Sınav yapacağız
+## 08.05.2024 (Sonraki ders)
+- e-Okul projesine başlayacağız (Clean Architecture ve Angular)
+
+## 05.07.2024 
+- Clean Architecture ile ilk projesmizi yapıp Angular ile birleştirip tamamladık
 
 ## 03.07.2024
 - Clean Architecture devam ediyoruz (Örnek todo app)

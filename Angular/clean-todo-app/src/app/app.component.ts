@@ -3,24 +3,32 @@ import { TodoModel } from './models/todo.model';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { FlexiGridModule } from 'flexi-grid';
 import { FormsModule } from '@angular/forms';
+import { CommonModule, DatePipe } from '@angular/common';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [FlexiGridModule, FormsModule],
+  imports: [FlexiGridModule, FormsModule, CommonModule],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
+  providers: [DatePipe]
 })
 export class AppComponent {
   todos = signal<TodoModel[]>([]);
   addModel = signal<TodoModel>(new TodoModel());
+  updateModel = signal<TodoModel>(new TodoModel());
+  isUpdateFormActive = signal<boolean>(false);
 
   @ViewChild("addModalCloseBtn") addModalCloseBtn : ElementRef<HTMLButtonElement> | undefined;
+  @ViewChild("updateModalCloseBtn") updateModalCloseBtn : ElementRef<HTMLButtonElement> | undefined;
   
   constructor(
-    private http: HttpClient
+    private http: HttpClient,
+    private date: DatePipe
   ){
     this.getAll();
+    this.addModel().deadLine = this.date.transform(new Date(),"yyyy-MM-dd")!;
   }
 
   getAll(){
@@ -40,6 +48,15 @@ export class AppComponent {
         this.getAll();
         this.addModalCloseBtn!.nativeElement.click();
         this.addModel.set(new TodoModel());
+        this.addModel().deadLine = this.date.transform(new Date(),"yyyy-MM-dd")!;
+        const Toast = Swal.mixin({
+          toast: true,
+          position: 'bottom-end',
+          timer: 3000,
+          timerProgressBar: true,
+          showConfirmButton: false
+        })
+        Toast.fire('Create is successful', '', 'success')
       },
       error: (err: HttpErrorResponse)=> {
         console.log(err);        
@@ -47,6 +64,37 @@ export class AppComponent {
     })
   }
 
+  deleteById(id: string){
+    Swal.fire({
+      title: "Delete?",
+      text: "You want to delete this record?",
+      showConfirmButton: true,
+      confirmButtonText: "Delete",
+      showCancelButton: true,
+      cancelButtonText: "Cancel",
+      icon: "question"
+    }).then(res=> {
+      if(res.isConfirmed){
+        this.http.delete(`https://localhost:7248/api/Todos/DeleteById?id=${id}`).subscribe({
+          next: (res)=> {
+            this.getAll();
+            const Toast = Swal.mixin({
+              toast: true,
+              position: 'bottom-end',
+              timer: 3000,
+              timerProgressBar: true,
+              showConfirmButton: false
+            })
+            Toast.fire('Delete is successful', '', 'info')
+          },
+          error: (err: HttpErrorResponse) => {
+            console.log(err);        
+          }
+        });
+      }
+    });
+  }
+  
   changeIsCompleted(model: TodoModel){
     this.http.put("https://localhost:7248/api/Todos/Update", model).subscribe({
       next: ()=> {},
@@ -55,4 +103,80 @@ export class AppComponent {
       }
     })
   }
+
+  get(item: TodoModel){
+    this.updateModel.set({...item});    
+  }
+
+  getWithForm(item: TodoModel){
+    item.isShowUpdateForm = true;
+    this.isUpdateFormActive.set(true);
+  }
+
+  cancel(){
+    this.getAll();
+    this.isUpdateFormActive.set(false);
+  }
+
+  update(){
+    this.http.put("https://localhost:7248/api/Todos/Update", this.updateModel()).subscribe({
+      next: ()=> {
+        this.getAll();
+        this.updateModalCloseBtn!.nativeElement.click();
+        const Toast = Swal.mixin({
+          toast: true,
+          position: "bottom-right",
+          showConfirmButton: false,
+          timer: 3000,
+          timerProgressBar: true
+        });
+
+        Toast.fire("Update is successful", "","warning");
+      },
+      error: (err: HttpErrorResponse)=> {
+        console.log(err);        
+        const Toast = Swal.mixin({
+          toast: true,
+          position: "bottom-right",
+          showConfirmButton: false,
+          timer: 3000,
+          timerProgressBar: true
+        });
+
+        Toast.fire("Something went wrong", "","error");
+      }
+    })
+  }
+
+  updateWithForm(item: TodoModel){
+    this.http.put("https://localhost:7248/api/Todos/Update", item).subscribe({
+      next: ()=> {
+        this.getAll();
+        item.isShowUpdateForm = false;
+        this.updateModalCloseBtn!.nativeElement.click();
+        const Toast = Swal.mixin({
+          toast: true,
+          position: "bottom-right",
+          showConfirmButton: false,
+          timer: 3000,
+          timerProgressBar: true
+        });
+
+        Toast.fire("Update is successful", "","warning");
+      },
+      error: (err: HttpErrorResponse)=> {
+        console.log(err);        
+        const Toast = Swal.mixin({
+          toast: true,
+          position: "bottom-right",
+          showConfirmButton: false,
+          timer: 3000,
+          timerProgressBar: true
+        });
+
+        Toast.fire("Something went wrong", "","error");
+      }
+    })
+  }
+  
 }
