@@ -1,6 +1,9 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 08.05.2024 (Sonraki ders)
+## 10.05.2024 (Sonraki ders)
+- e-Okul projesine devam ediyoruz
+
+## 08.05.2024
 - e-Okul projesine başlayacağız (Clean Architecture ve Angular)
 
 ## 05.07.2024 
