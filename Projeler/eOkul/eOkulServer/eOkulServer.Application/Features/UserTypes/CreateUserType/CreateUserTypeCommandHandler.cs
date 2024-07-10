@@ -1,4 +1,5 @@
-﻿using eOkulServer.Domain.Entities;
+﻿using eOkulServer.Domain.Abstracts;
+using eOkulServer.Domain.Entities;
 using eOkulServer.Domain.Repositories;
 using MediatR;
 
@@ -6,15 +7,15 @@ namespace eOkulServer.Application.Features.UserTypes.CreateUserType;
 
 internal sealed class CreateUserTypeCommandHandler(
     IUserTypeRepository userTypeRepository,
-    IUnitOfWork unitOfWork) : IRequestHandler<CreateUserTypeCommand>
+    IUnitOfWork unitOfWork) : IRequestHandler<CreateUserTypeCommand, Result<string>>
 {
-    public async Task Handle(CreateUserTypeCommand request, CancellationToken cancellationToken)
+    public async Task<Result<string>> Handle(CreateUserTypeCommand request, CancellationToken cancellationToken)
     {
         bool isUserTypeExists = await userTypeRepository.AnyAsync(p => p.Name == request.Name, cancellationToken);
 
         if (isUserTypeExists)
         {
-            throw new ArgumentException("User type already exists");
+            return Result<string>.Failure("User type already exists");
         }
 
         UserType userType = new()
@@ -24,5 +25,8 @@ internal sealed class CreateUserTypeCommandHandler(
 
         await userTypeRepository.CreateAsync(userType, cancellationToken);
         await unitOfWork.SaveChangesAsync(cancellationToken);
+
+        //return Result<string>.Success(userType.Id.ToString());
+        return userType.Id.ToString();
     }
 }

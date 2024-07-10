@@ -12,4 +12,20 @@ internal sealed class ApplicationDbContext : IdentityDbContext<User, IdentityRol
     }
 
     public DbSet<UserType> UserTypes { get; set; }
+
+    protected override void OnModelCreating(ModelBuilder builder)
+    {
+        builder.Ignore<IdentityUserRole<Guid>>();
+        builder.Ignore<IdentityUserClaim<Guid>>();
+        builder.Ignore<IdentityRoleClaim<Guid>>();
+        builder.Ignore<IdentityUserLogin<Guid>>();
+        builder.Ignore<IdentityUserToken<Guid>>();
+
+        builder.Entity<User>().OwnsOne(p => p.Address, builder =>
+        {
+            builder.Property(p => p.City).HasColumnName("City");
+            builder.Property(p => p.Town).HasColumnName("Town");
+            builder.Property(p => p.FullAddress).HasColumnName("FullAddress");
+        });
+    }
 }

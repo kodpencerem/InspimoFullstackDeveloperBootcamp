@@ -11,9 +11,11 @@ public static class DependencyInjection
 {
     public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
     {
+        string connectionString = configuration.GetConnectionString("SqlServer")!;
+
         services.AddDbContext<ApplicationDbContext>(options =>
         {
-            options.UseSqlServer(configuration.GetConnectionString("SqlServer"));
+            options.UseSqlServer(connectionString);
         });
 
         services.TryAddScoped<IUserTypeRepository, UserTypeRepository>();
