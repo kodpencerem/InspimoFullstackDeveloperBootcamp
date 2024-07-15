@@ -21,6 +21,13 @@ public sealed record Result<T>
         ErrorMessages = new() { errorMessage };
         IsSuccessful = false;
     }
+
+    public Result(bool isSuccessful, List<string> errorMessages, int statusCode = 400)
+    {
+        StatusCode = statusCode;
+        ErrorMessages = errorMessages;
+        IsSuccessful = false;
+    }
     public T? Data { get; set; }
     public bool IsSuccessful { get; set; } = true;
     public List<string>? ErrorMessages { get; set; }
@@ -35,6 +42,11 @@ public sealed record Result<T>
     public static Result<T> Failure(string errorMessage, int statusCode = 400)
     {
         return new Result<T>(false, errorMessage, statusCode);
+    }
+
+    public static Result<T> Failure(List<string> errorMessages, int statusCode = 400)
+    {
+        return new Result<T>(false, errorMessages, statusCode);
     }
 
     public static implicit operator Result<T>(T data)

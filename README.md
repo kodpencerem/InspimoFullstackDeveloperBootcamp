@@ -1,19 +1,28 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 12.05.2024 (Sonraki ders)
+## 17.07.2024 (Sonraki ders)
+- Angular projesine AdminLTE temasını giydirme
+- HttpService
+- ErrorService
+- UserTypes için Angularda CRUD işlemleri sayfası tasarlayacağız
+- User için Backend de CRUD işlemleri yazacağız
+- User için Angular da CRUD işlemleri sayfası tasarlayacağız
+- Domain Events
+
+## 15.07.2024
 - e-Okul projesine devam ediyoruz
 - Auto Mapper
 - Fluent Validation
 - Behaviors
-- Domain Events
 - Scrutor
+- Angular projesi oluşturma
 
-## 10.05.2024
+## 10.07.2024
 - e-Okul projesine devam ediyoruz
 - Exception Handler
 - Result Pattern
 
-## 08.05.2024
+## 08.07.2024
 - e-Okul projesine başlayacağız (Clean Architecture ve Angular)
 
 ## 05.07.2024 

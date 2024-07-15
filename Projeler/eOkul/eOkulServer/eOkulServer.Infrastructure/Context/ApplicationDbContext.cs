@@ -21,11 +21,6 @@ internal sealed class ApplicationDbContext : IdentityDbContext<User, IdentityRol
         builder.Ignore<IdentityUserLogin<Guid>>();
         builder.Ignore<IdentityUserToken<Guid>>();
 
-        builder.Entity<User>().OwnsOne(p => p.Address, builder =>
-        {
-            builder.Property(p => p.City).HasColumnName("City");
-            builder.Property(p => p.Town).HasColumnName("Town");
-            builder.Property(p => p.FullAddress).HasColumnName("FullAddress");
-        });
+        builder.ApplyConfigurationsFromAssembly(typeof(ApplicationDbContext).Assembly);
     }
 }

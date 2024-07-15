@@ -1,4 +1,5 @@
 ﻿using eOkulServer.Domain.Abstracts;
+using FluentValidation;
 using Microsoft.AspNetCore.Diagnostics;
 using System.Text.Json;
 
@@ -10,7 +11,18 @@ public sealed class MyExceptionHandler : IExceptionHandler
     {
         httpContext.Response.StatusCode = 500;
         httpContext.Response.ContentType = "application/json";
-        object error = Result<string>.Failure(exception.Message, 500);
+        Result<string> error = default!;
+
+        if (exception.GetType() == typeof(ValidationException))
+        {
+            var errors = ((ValidationException)exception).Errors.Select(s => s.PropertyName).ToList();
+            error = Result<string>.Failure(errors, 500);
+        }
+        else
+        {
+            error = Result<string>.Failure(exception.Message, 500);
+        }
+
         string errorString = JsonSerializer.Serialize(error);
         await httpContext.Response.WriteAsync(errorString);
 
