@@ -7,11 +7,19 @@ export const routes: Routes = [
     },
     {
         path: "",
+        loadComponent: ()=> import("./components/landspaces/landspaces.component")
+    },
+    {
+        path: "admin",
         loadComponent: ()=> import("./components/layouts/layouts.component"),
         children: [
             {
                 path: "",
                 loadComponent: () => import("./components/home/home.component")
+            },
+            {
+                path: "user-types",
+                loadComponent: () => import("./components/user-types/user-types.component")
             }
         ]
     },

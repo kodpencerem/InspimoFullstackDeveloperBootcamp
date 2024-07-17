@@ -1,0 +1,15 @@
+.popup {
+    position: absolute;
+    top: -100px;
+    right: 50%;    
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 999;
+    background-color: #ccc;
+    animation: anime 1s linear forwards;
+}
+
+@keyframes anime {
+    0% { top: -100px; }
+    100% { top: 20px; }
+}

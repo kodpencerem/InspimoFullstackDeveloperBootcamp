@@ -1,13 +1,17 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 17.07.2024 (Sonraki ders)
-- Angular projesine AdminLTE temasını giydirme
-- HttpService
-- ErrorService
-- UserTypes için Angularda CRUD işlemleri sayfası tasarlayacağız
+## 19.07.2024 (Sonraki ders)
+- Landspace sayfası tasarlayacağız
+- UserTypes için Angularda CRUD için sayfasını tasarlayacağız
 - User için Backend de CRUD işlemleri yazacağız
 - User için Angular da CRUD işlemleri sayfası tasarlayacağız
 - Domain Events
+
+## 17.07.2024
+- Angular projesine AdminLTE temasını giydirme
+- HttpService
+- ErrorService
+- UserTypes için Angularda GetAll için sayfasını tasarladık
 
 ## 15.07.2024
 - e-Okul projesine devam ediyoruz

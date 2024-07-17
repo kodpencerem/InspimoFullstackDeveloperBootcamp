@@ -1,0 +1,36 @@
+<app-blank pageTitle="Kullanıcı Tipleri" [breadCrumbs]="breadCrumbs()">
+    <app-section sectionTitle="Kullanıcı Tip Listesi">
+        <flexi-grid
+        [data]="userTypes()"
+        [showCaption]="true"
+        captionTitle="Kullanıcı Tipleri"
+        [showIndex]="true"
+        [sortable]="true"
+        [filterable]="true"
+        [pageable]="true"
+        [loading]="isLoading()"
+        >
+            <flexi-grid-column field="id" title="Id" width="40%"></flexi-grid-column>
+            <flexi-grid-column field="name" title="Adı" width="30%"></flexi-grid-column>
+            <flexi-grid-column field="isActive" title="Aktif Mi?" width="15%" [filterable]="false" [columnTemplate]="isActiveColumnTemplate" textAlign="center">
+                <ng-template #isActiveColumnTemplate let-item="item">
+                    @if(item.isActive){
+                        <span class="my-alert alert-success">Aktif</span>
+                    }@else {
+                        <span class="my-alert alert-danger">Pasif</span>
+                    }
+                </ng-template>
+            </flexi-grid-column>
+            <flexi-grid-column [columnTemplate]="operationsColumnTemplate" title="İşlemler" width="15%" textAlign="center">
+                <ng-template #operationsColumnTemplate let-item="item">
+                    <button class="btn btn-primary btn-sm me-1" title="Güncelle">
+                        <i class="fa-solid fa-edit"></i>
+                    </button>
+                    <button class="btn btn-danger btn-sm" title="Sil">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                </ng-template>
+            </flexi-grid-column>
+        </flexi-grid>
+    </app-section>
+</app-blank>
