@@ -14,12 +14,12 @@ internal sealed class DeleteUserTypeByIdCommandHandler(
         UserType? userType = await userTypeRepository.GetByIdAsync(request.Id, cancellationToken);
         if (userType is null)
         {
-            return Result<string>.Failure("User type not found");
+            return Result<string>.Failure("User type bulunamadı");
         }
 
-        userTypeRepository.Delete(userType);
+        userType.IsDelete = true;
         await unitOfWork.SaveChangesAsync(cancellationToken);
 
-        return "User type delete is successful";
+        return "User type silme işlemi başarılı";
     }
 }

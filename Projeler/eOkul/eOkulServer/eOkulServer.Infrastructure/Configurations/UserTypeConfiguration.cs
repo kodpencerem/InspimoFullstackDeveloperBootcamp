@@ -8,5 +8,6 @@ internal sealed class UserTypeConfiguration : IEntityTypeConfiguration<UserType>
     public void Configure(EntityTypeBuilder<UserType> builder)
     {
         builder.HasIndex(x => x.Name).IsUnique();
+        builder.HasQueryFilter(filter => filter.IsDelete == false);
     }
 }

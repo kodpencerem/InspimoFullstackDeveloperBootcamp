@@ -6,11 +6,12 @@ using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace eOkulServer.WebAPI.Controllers;
-[Route("api/[controller]/[action]")]
-[ApiController]
-public class UserTypesController(
-    IMediator mediator) : ControllerBase
+public class UserTypesController : ApiBase
 {
+    public UserTypesController(IMediator mediator) : base(mediator)
+    {
+    }
+
     [HttpPost]
     public async Task<IActionResult> Create(CreateUserTypeCommand request, CancellationToken cancellationToken)
     {

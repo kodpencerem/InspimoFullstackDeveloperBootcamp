@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using eOkulServer.Application.Features.Categories.CreateCategory;
+using eOkulServer.Application.Features.Categories.UpdateCategory;
 using eOkulServer.Application.Features.UserTypes.CreateUserType;
 using eOkulServer.Application.Features.UserTypes.UpdateUserType;
 using eOkulServer.Domain.Entities;
@@ -10,5 +12,7 @@ internal sealed class MappingProfile : Profile
     {
         CreateMap<CreateUserTypeCommand, UserType>();
         CreateMap<UpdateUserTypeCommand, UserType>();
+        CreateMap<CreateCategoryCommand, Category>();
+        CreateMap<UpdateCategoryCommand, Category>();
     }
 }

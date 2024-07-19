@@ -12,6 +12,10 @@ internal sealed class ApplicationDbContext : IdentityDbContext<User, IdentityRol
     }
 
     public DbSet<UserType> UserTypes { get; set; }
+    public DbSet<Book> Books { get; set; }
+    public DbSet<Category> Categories { get; set; }
+    public DbSet<BookCategory> BookCategories { get; set; }
+    public DbSet<BookImage> BookImages { get; set; }
 
     protected override void OnModelCreating(ModelBuilder builder)
     {

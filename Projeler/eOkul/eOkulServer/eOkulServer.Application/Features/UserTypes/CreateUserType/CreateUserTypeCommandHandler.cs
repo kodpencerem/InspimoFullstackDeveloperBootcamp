@@ -18,7 +18,7 @@ internal sealed class CreateUserTypeCommandHandler(
 
         if (isUserTypeExists)
         {
-            return Result<string>.Failure("User type already exists");
+            return Result<string>.Failure("User type daha önce oluşturulmuş");
         }
 
         UserType userType = mapper.Map<UserType>(request);

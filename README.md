@@ -1,11 +1,22 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 19.07.2024 (Sonraki ders)
-- Landspace sayfası tasarlayacağız
+## 22.07.2024 (Sonraki ders)
+- Category CRUD işlemlerini frontend de yazacağız
+- Book CRUD işlemleri yazacağız
+- Land page de booklarımızı db den çekip gösterelim
+- Booklar için detay sayfası yapalım
+- Bookları sepete ekleyebilelim
+- Sepetten ödeme ile satın alalım
 - UserTypes için Angularda CRUD için sayfasını tasarlayacağız
 - User için Backend de CRUD işlemleri yazacağız
 - User için Angular da CRUD işlemleri sayfası tasarlayacağız
 - Domain Events
+
+## 19.07.2024
+- Land page sayfası tasarladık
+- Book, Category kısımları ekledin
+- Book, Cateogy, BookImage tabloları ekledik
+- Category CRUD işlemlerini backend de yazdık
 
 ## 17.07.2024
 - Angular projesine AdminLTE temasını giydirme

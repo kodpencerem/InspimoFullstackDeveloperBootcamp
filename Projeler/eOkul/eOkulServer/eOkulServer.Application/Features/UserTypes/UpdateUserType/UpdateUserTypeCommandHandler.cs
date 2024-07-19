@@ -16,7 +16,7 @@ internal sealed class UpdateUserTypeCommandHandler(
         UserType? userType = await userTypeRepository.GetByIdAsync(request.Id, cancellationToken);
         if (userType is null)
         {
-            return Result<string>.Failure("User type not found");
+            return Result<string>.Failure("User type bulunamadı");
         }
 
         if (userType.Name != request.Name)
@@ -25,7 +25,7 @@ internal sealed class UpdateUserTypeCommandHandler(
 
             if (isUserTypeExists)
             {
-                return Result<string>.Failure("User type already exists");
+                return Result<string>.Failure("User type daha önce oluşturulmuş");
             }
         }
 
@@ -33,6 +33,6 @@ internal sealed class UpdateUserTypeCommandHandler(
 
         await unitOfWork.SaveChangesAsync(cancellationToken);
 
-        return "User type update is successful";
+        return "User type güncelleme başarıyla tamamlandı";
     }
 }
