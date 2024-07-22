@@ -51,3 +51,14 @@ del{
 input[type="search"]{
     padding-left: 35px;
 }
+
+.modal-header{
+    align-items: start !important;
+}
+
+.my-alert-danger{
+    background-color: red;
+    padding: 0 5px;
+    color: white;
+    margin-left: 2px;
+}

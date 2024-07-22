@@ -1,9 +1,10 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 22.07.2024 (Sonraki ders)
-- Category CRUD işlemlerini frontend de yazacağız
-- Book CRUD işlemleri yazacağız
+## 24.07.2024 (Sonraki ders)
+- Book için bir seeddata metodu yazacağız
+- Book CRUD işlemleri yazacağız tamamlayacağız
 - Land page de booklarımızı db den çekip gösterelim
+- Land page de book için paginationu js kütüphanesi ile yapacağız
 - Booklar için detay sayfası yapalım
 - Bookları sepete ekleyebilelim
 - Sepetten ödeme ile satın alalım
@@ -11,6 +12,10 @@
 - User için Backend de CRUD işlemleri yazacağız
 - User için Angular da CRUD işlemleri sayfası tasarlayacağız
 - Domain Events
+
+## 22.07.2024
+- Category CRUD işlemlerini frontend de yazacağız
+- Book Create ve GetAll metodunu backend de yazdık
 
 ## 19.07.2024
 - Land page sayfası tasarladık

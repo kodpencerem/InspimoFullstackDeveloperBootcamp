@@ -7,7 +7,7 @@ export const routes: Routes = [
     },
     {
         path: "",
-        loadComponent: ()=> import("./components/landspaces/landspaces.component")
+        loadComponent: ()=> import("./components/landpage/landpage.component")
     },
     {
         path: "admin",
@@ -20,6 +20,10 @@ export const routes: Routes = [
             {
                 path: "user-types",
                 loadComponent: () => import("./components/user-types/user-types.component")
+            },
+            {
+                path: "categories",
+                loadComponent: ()=> import("./components/categories/categories.component")
             }
         ]
     },

@@ -1,18 +1,18 @@
-import { Component, ElementRef, OnInit, signal, ViewChild } from '@angular/core';
+import { Component, ElementRef, signal, ViewChild } from '@angular/core';
 import { SharedModule } from '../../shared.module';
 import { BreadCrumbModel } from '../blank/blank.component';
-import { UserTypeModel } from '../../models/user-type.model';
-import { HttpService } from '../../services/http.service';
+import { CategoryModel } from '../../models/category.model';
 import { FlexiToastService } from 'flexi-toast';
+import { HttpService } from '../../services/http.service';
 
 @Component({
-  selector: 'app-user-types',
+  selector: 'app-categories',
   standalone: true,
   imports: [SharedModule],
-  templateUrl: './user-types.component.html',
-  styleUrl: './user-types.component.css'
+  templateUrl: './categories.component.html',
+  styleUrl: './categories.component.css'
 })
-export default class UserTypesComponent implements OnInit {
+export default class CategoriesComponent {
   breadCrumbs = signal<BreadCrumbModel[]>([
     {
       name: "Ana Sayfa",
@@ -20,16 +20,16 @@ export default class UserTypesComponent implements OnInit {
       route: "/admin"
     },
     {
-      name: "Kullanıcı Tipleri",
+      name: "Kategories",
       class: "active",
-      route: "/admin/user-types"
+      route: "/admin/categories"
     }
   ]);
-  userTypes = signal<UserTypeModel[]>([]);
+  datas = signal<CategoryModel[]>([]);
   isLoading = signal<boolean>(false);
 
-  addModel = signal<UserTypeModel>(new UserTypeModel());
-  updateModel = signal<UserTypeModel>(new UserTypeModel());
+  addModel = signal<CategoryModel>(new CategoryModel());
+  updateModel = signal<CategoryModel>(new CategoryModel());
 
   @ViewChild("addModalCloseBtn") addCloseBtn: ElementRef<HTMLButtonElement> | undefined;
   @ViewChild("updateModalCloseBtn") updateCloseBtn: ElementRef<HTMLButtonElement> | undefined;
@@ -45,36 +45,36 @@ export default class UserTypesComponent implements OnInit {
 
   getAll() {
     this.isLoading.set(true);
-    this.http.get<UserTypeModel[]>("UserTypes/GetAll", (res) => {
-      this.userTypes.set(res);
+    this.http.get<CategoryModel[]>("Categories/GetAll", (res) => {
+      this.datas.set(res);
       this.isLoading.set(false);
     }, () => this.isLoading.set(false));
   }
 
   create(){
-    this.http.post<string>(`UserTypes/Create`, this.addModel(),(res)=> {
+    this.http.post<string>(`Categories/Create`, this.addModel(),(res)=> {
       this.toast.showToast("Başarılı",res,"success");
       this.addCloseBtn!.nativeElement.click();
-      this.addModel.set(new UserTypeModel());
+      this.addModel.set(new CategoryModel());
       this.getAll();
     });
   }
 
   deleteById(id: string){
     this.toast.showSwal("Sil?","Bu kaydı silmek istiyor musunuz?",()=> {
-      this.http.post<string>("UserTypes/DeleteById",{id: id},(res)=> {
+      this.http.post<string>("Categories/DeleteById",{id: id},(res)=> {
         this.toast.showToast("Bilgilendirme",res,"info");
         this.getAll();
       });
     })
   }
 
-  get(item: UserTypeModel){
+  get(item: CategoryModel){
     this.updateModel.set({...item});
   }
 
   update(){
-    this.http.post<string>(`UserTypes/Update`, this.updateModel(),(res)=> {
+    this.http.post<string>(`Categories/Update`, this.updateModel(),(res)=> {
       this.toast.showToast("Bilgilendirme",res,"info");
       this.updateCloseBtn!.nativeElement.click();
       this.getAll();

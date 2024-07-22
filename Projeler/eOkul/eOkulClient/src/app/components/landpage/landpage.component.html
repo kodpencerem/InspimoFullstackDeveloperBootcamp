@@ -17,7 +17,7 @@
                         <span class="my-badge">{{basketCount()}}</span>
                     }
                 </button>
-                <button class="btn btn-dark">
+                <button routerLink="/login" class="btn btn-dark">
                     <i class="fa-solid fa-lock me-1"></i>
                     Giriş Yap
                 </button>
@@ -54,10 +54,22 @@
         <div class="form-group row">
             <div class="col-md-3 col-12">
                 <ul class="list-group">
-                    <li class="list-group-item">Tümü</li>
-                    <li class="list-group-item">1. Sınıf</li>
-                    <li class="list-group-item">2. Sınıf</li>
-                    <li class="list-group-item">3. Sınıf</li>
+                    <li
+                      class="list-group-item"
+                      [ngClass]="selectedCategory() === '' ? 'active' : ''"
+                      (click)="selectCategory('')"
+                      >
+                        Tümü
+                    </li>
+                    @for(category of categories(); track category.id){
+                        <li
+                          class="list-group-item"
+                          [ngClass]="selectedCategory() === category.id ? 'active' : ''"
+                          (click)="selectCategory(category.id)"
+                          >
+                          {{category.name}}
+                        </li>
+                    }
                   </ul>
             </div>
             <div class="col-md-9 col-12">
@@ -74,6 +86,10 @@
                             </div>
                             <div class="card-body">
                                 <h3 class="text-center">Card title</h3>
+                                <ul>
+                                    <li>1. Sınıf</li>
+                                    <li>2. Sınıf</li>
+                                </ul>
                                 <div class="my-alert-title mt-1" style="display: flex; justify-content: space-around;">
                                     <strong>Taner Saydam</strong>
                                     @if(book.discountPrice){

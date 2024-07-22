@@ -1,9 +1,9 @@
-<app-blank pageTitle="Kullanıcı Tipleri" [breadCrumbs]="breadCrumbs()">    
-    <app-section sectionTitle="Kullanıcı Tip Listesi">
+<app-blank pageTitle="Kategoriler" [breadCrumbs]="breadCrumbs()">    
+    <app-section sectionTitle="Kategori Listesi">
         <flexi-grid
-          [data]="userTypes()"
+          [data]="datas()"
           [showCaption]="true"
-          captionTitle="Kullanıcı Tipleri"
+          captionTitle="Kategoriler"
           [showIndex]="true"
           [sortable]="true"
           [filterable]="true"
@@ -15,7 +15,7 @@
             <ng-template #captionTemplate>
                 <button
                   class="btn btn-primary"
-                  title="Kullanıcı Tipi Ekle"
+                  title="Kategori Ekle"
                   data-bs-toggle="modal"
                   data-bs-target="#addModal"
                   >
@@ -23,7 +23,7 @@
                 </button>
             </ng-template>
             <flexi-grid-column field="id" title="Id" width="40%"></flexi-grid-column>
-            <flexi-grid-column field="name" title="Kullanıcı Tipi" width="30%"></flexi-grid-column>
+            <flexi-grid-column field="name" title="Kategori" width="30%"></flexi-grid-column>
             <flexi-grid-column field="isActive" title="Aktif Mi?" width="15%" [filterable]="false"
                 [columnTemplate]="isActiveColumnTemplate" textAlign="center">
                 <ng-template #isActiveColumnTemplate let-item="item">
@@ -61,15 +61,15 @@
         <div class="modal-content">
             <div class="modal-header">
                 <div>
-                    <h1 class="modal-title fs-5">Kullanıcı Tipi Ekle</h1>
-                    <p>Kullanıcı tipi eklemek için aşağıdaki bilgileri doldurun</p>
+                    <h1 class="modal-title fs-5">Kategori Ekle</h1>
+                    <p>Kategori eklemek için aşağıdaki bilgileri doldurun</p>
                 </div>
                 <button type="button" #addModalCloseBtn class="btn-close" data-bs-dismiss="modal"
                     aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <div class="form-group">
-                    <label>Kullanıcı Tipi</label>
+                    <label>Kategori</label>
                     <input [(ngModel)]="addModel().name" type="text" class="form-control">
                 </div>
             </div>
@@ -86,15 +86,15 @@
         <div class="modal-content">
             <div class="modal-header">
                 <div>
-                    <h1 class="modal-title fs-5">Kullanıcı Tipi Güncelleme</h1>
-                    <p>Kullanıcı tipi güncellemek için aşağıdaki bilgileri doldurun</p>
+                    <h1 class="modal-title fs-5">Kategori Güncelleme</h1>
+                    <p>Kategori güncellemek için aşağıdaki bilgileri doldurun</p>
                 </div>
                 <button type="button" #updateModalCloseBtn class="btn-close" data-bs-dismiss="modal"
                     aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <div class="form-group">
-                    <label>Kullanıcı Tipi</label>
+                    <label>Kategori</label>
                     <input [(ngModel)]="updateModel().name" type="text" class="form-control">
                 </div>
                 <div class="form-check">

@@ -18,7 +18,7 @@ internal sealed class CreateUserTypeCommandHandler(
 
         if (isUserTypeExists)
         {
-            return Result<string>.Failure("User type daha önce oluşturulmuş");
+            return Result<string>.Failure("Kullanıcı tipi daha önce oluşturulmuş");
         }
 
         UserType userType = mapper.Map<UserType>(request);
@@ -26,6 +26,6 @@ internal sealed class CreateUserTypeCommandHandler(
         await userTypeRepository.CreateAsync(userType, cancellationToken);
         await unitOfWork.SaveChangesAsync(cancellationToken);
 
-        return userType.Id.ToString();
+        return "Kullanıcı tipi kaydı başarıyla tamamlandı";
     }
 }

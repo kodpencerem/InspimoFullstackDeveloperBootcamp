@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { BlankComponent } from './components/blank/blank.component';
 import { SectionComponent } from './components/blank/section/section.component';
 import { FlexiGridModule } from 'flexi-grid';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -12,13 +13,15 @@ import { FlexiGridModule } from 'flexi-grid';
     CommonModule,
     BlankComponent,
     SectionComponent,
-    FlexiGridModule
+    FlexiGridModule,
+    FormsModule
   ],
   exports: [
     CommonModule,
     BlankComponent,
     SectionComponent,
-    FlexiGridModule
+    FlexiGridModule,
+    FormsModule
   ]
 })
 export class SharedModule { }

@@ -6,6 +6,6 @@ public sealed class UpdateUserTypeCommandValidator : AbstractValidator<UpdateUse
 {
     public UpdateUserTypeCommandValidator()
     {
-        RuleFor(p => p.Name).MinimumLength(3).WithMessage("Name must be at least 3 characters");
+        RuleFor(p => p.Name).MinimumLength(3).WithMessage("Kullanıcı Tipi en az 3 karakter olmalıdır");
     }
 }
