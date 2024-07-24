@@ -24,7 +24,7 @@ export class ErrorService {
         break;
 
       case 500:
-        for (const errorMessage of err.error.ErrorMessages) {
+        for (const errorMessage of err.error.errorMessages) {
           this.toast.showToast("Hata", errorMessage, "error");
         }
         break;

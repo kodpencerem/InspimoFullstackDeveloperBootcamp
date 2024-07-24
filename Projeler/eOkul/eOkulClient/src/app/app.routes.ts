@@ -24,6 +24,10 @@ export const routes: Routes = [
             {
                 path: "categories",
                 loadComponent: ()=> import("./components/categories/categories.component")
+            },
+            {
+                path: "books",
+                loadComponent: ()=> import("./components/books/books.component")
             }
         ]
     },

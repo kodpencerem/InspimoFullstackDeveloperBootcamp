@@ -19,5 +19,10 @@ export const Navigations: NavigationModel[] = [
         name: "Kategories",
         route: "/admin/categories",
         icon: "fa-solid fa-list"
+    },
+    {
+        name: "Kitaplar",
+        route: "/admin/books",
+        icon: "fa-solid fa-book"
     }
 ]

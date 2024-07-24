@@ -1,8 +1,7 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 24.07.2024 (Sonraki ders)
-- Book için bir seeddata metodu yazacağız
-- Book CRUD işlemleri yazacağız tamamlayacağız
+## 26.07.2024 (Sonraki ders)
+- Book Update, Delete sayfalarını yapacağız
 - Land page de booklarımızı db den çekip gösterelim
 - Land page de book için paginationu js kütüphanesi ile yapacağız
 - Booklar için detay sayfası yapalım
@@ -12,6 +11,9 @@
 - User için Backend de CRUD işlemleri yazacağız
 - User için Angular da CRUD işlemleri sayfası tasarlayacağız
 - Domain Events
+
+## 24.07.2024
+- Book Create, Read, Change Cover Image, Add Image ve Remove Image metot ve sayfalarını tasarladık
 
 ## 22.07.2024
 - Category CRUD işlemlerini frontend de yazacağız
