@@ -1,0 +1,86 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand">Taner Saydam</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" *transloco="let t">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">          
+          <li
+            routerLink="/"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact:true}"
+            class="nav-item active">
+            <a class="nav-link" aria-current="page">{{t('Layouts.Home')}}</a>
+          </li>
+          <li
+            class="nav-item"
+            routerLink="/about-me"
+            routerLinkActive="active">
+            <a class="nav-link">{{t('Layouts.AboutMe')}}</a>
+          </li>
+          <li
+            class="nav-item"
+            routerLink="/contact"
+            routerLinkActive="active">
+            <a class="nav-link">{{t('Layouts.Contact')}}</a>
+          </li>
+          <li
+            class="nav-item"
+            routerLink="/blogs"
+            routerLinkActive="active">
+            <a class="nav-link">{{t('Layouts.Blogs')}}</a>
+          </li>
+        </ul>
+        <ul class="nav-social-medias">
+          <li>
+            <a href="/cv.pdf" style="text-decoration: none;">
+              <span>CV</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/taner-saydam-b26336222/" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://x.com/TanerSayda3308" target="_blank">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>            
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UC6Pw9YDMHq3EeNhIF8FMemw" target="_blank">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/tanersaydam" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+        </ul>
+        <div class="dropdown">
+          <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="/flags/{{this.lang()}}.png" width="32">
+          </button>
+          <ul class="dropdown-menu" style="width: 35px !important;">
+            <li (click)="setLang('tr')" class="dropdown-item" style="cursor: pointer;">
+              <img class="me-1" src="/flags/tr.png" width="32">
+              <span>{{'Layouts.Turkish' | transloco}}</span>
+            </li>
+            <li (click)="setLang('en')" class="dropdown-item" style="cursor: pointer;">
+              <img class="me-1" src="/flags/en.png" width="32">
+              <span>{{'Layouts.English' | transloco}}</span>
+            </li>
+            <li (click)="setLang('de')" class="dropdown-item" style="cursor: pointer;">
+              <img class="me-1" src="/flags/de.png" width="32">
+              <span>{{'Layouts.Deutsch' | transloco}}</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <router-outlet></router-outlet>

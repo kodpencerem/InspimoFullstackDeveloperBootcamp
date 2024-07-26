@@ -1,6 +1,6 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 26.07.2024 (Sonraki ders)
+## 29.07.2024 (Sonraki ders)
 - Book Update, Delete sayfalarını yapacağız
 - Land page de booklarımızı db den çekip gösterelim
 - Land page de book için paginationu js kütüphanesi ile yapacağız
@@ -11,6 +11,9 @@
 - User için Backend de CRUD işlemleri yazacağız
 - User için Angular da CRUD işlemleri sayfası tasarlayacağız
 - Domain Events
+
+## 26.07.2024
+- Angular ile Blog sitesi yaptık
 
 ## 24.07.2024
 - Book Create, Read, Change Cover Image, Add Image ve Remove Image metot ve sayfalarını tasarladık

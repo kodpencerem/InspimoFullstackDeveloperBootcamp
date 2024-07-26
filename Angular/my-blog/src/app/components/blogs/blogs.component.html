@@ -1,0 +1,21 @@
+<div class="blogs-header-main">
+    <img src="logo2.jpg" width="200" style="border-radius: 200px;">
+    <h1>{{'Blogs.Title' | transloco}}</h1>
+</div>
+
+<div>
+    @for(blog of blogs(); track blog){
+        <div class="blog-content">
+            <div class="blog-content-header">
+                <h3>Blog Title</h3>
+                <p>26.07.2024 21:54</p>
+            </div>
+            <div class="blog-content-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, omnis vitae! Neque repudiandae quis laborum temporibus, voluptate minima itaque hic porro reiciendis numquam dignissimos repellendus rem deleniti tempora molestias eaque?</p>            
+            </div>
+            <div class="blog-content-footer">
+                <a>Devamı...</a>
+            </div>
+        </div>
+    }
+</div>

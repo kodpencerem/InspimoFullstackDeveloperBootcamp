@@ -1,0 +1,30 @@
+{
+    "Layouts": {
+        "Home": "Ana Sayfa",
+        "AboutMe": "Hakkımda",
+        "Contact": "İletişim",
+        "Blogs": "Blog Yazılarım",
+        "Turkish": "Türkçe",
+        "English": "İngilizce",
+        "Deutsch": "Almanca"
+    },
+    "Home": {
+        "Title": "Ben Taner Saydam",
+        "Description": "Software Engineer | Instructor | Education",
+        "MyBlogs": "Blog Yazılarım"
+    },
+    "AboutMe": {
+        "Title": "Hakkımda",
+        "Content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo omnis pariatur facere nulla maxime vitae dicta eos in veritatis, nostrum laudantium recusandae explicabo quia suscipit reprehenderit cum error quidem amet.Temporibus, nesciunt voluptatem? Rem beatae harum sit voluptate consequuntur sed doloribus quos quasi debitis ab odit dolor quo necessitatibus nostrum eaque assumenda, porro ducimus suscipit corrupti maiores aliquam, deserunt ut.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo omnis pariatur facere nulla maxime vitae dicta eos in veritatis, nostrum laudantium recusandae explicabo quia suscipit reprehenderit cum error quidem amet.Temporibus, nesciunt voluptatem? Rem beatae harum sit voluptate consequuntur sed doloribus quos quasi debitis ab odit dolor quo necessitatibus nostrum eaque assumenda, porro ducimus suscipit corrupti maiores aliquam, deserunt ut.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo omnis pariatur facere nulla maxime vitae dicta eos in veritatis, nostrum laudantium recusandae explicabo quia suscipit reprehenderit cum error quidem amet.Temporibus, nesciunt voluptatem? Rem beatae harum sit voluptate consequuntur sed doloribus quos quasi debitis ab odit dolor quo necessitatibus nostrum eaque assumenda, porro ducimus suscipit corrupti maiores aliquam, deserunt ut."
+    },
+    "Contact": {
+        "Title": "İletişim",
+        "Subject": "Konu",
+        "Email": "Mail Adiresi",
+        "Body": "İçerik",
+        "Send": "Gönder"
+    },
+    "Blogs": {
+        "Title": "Blog Yazılarım"
+    }
+}

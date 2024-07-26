@@ -1,0 +1,9 @@
+.contact-header-main{
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    border-bottom: 1px solid #ccc;
+}

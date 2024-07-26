@@ -1,0 +1,30 @@
+{
+    "Layouts": {
+        "Home": "Startseite",
+        "AboutMe": "Über mich",
+        "Contact": "Kontakt",
+        "Blogs": "Meine Blogs",
+        "Turkish": "Türkisch",
+        "English": "Englisch",
+        "Deutsch": "Deutsch"
+    },
+    "Home": {
+        "Title": "Ich bin Taner Saydam",
+        "Description": "Software Ingenieur | Dozent | Ausbildung",
+        "MyBlogs": "Meine Blogs"
+    },
+    "AboutMe": {
+        "Title": "Über mich",
+        "Content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo omnis pariatur facere nulla maxime vitae dicta eos in veritatis, nostrum laudantium recusandae explicabo quia suscipit reprehenderit cum error quidem amet. Temporibus, nesciunt voluptatem? Rem beatae harum sit voluptate consequuntur sed doloribus quos quasi debitis ab odit dolor quo necessitatibus nostrum eaque assumenda, porro ducimus suscipit corrupti maiores aliquam, deserunt ut. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo omnis pariatur facere nulla maxime vitae dicta eos in veritatis, nostrum laudantium recusandae explicabo quia suscipit reprehenderit cum error quidem amet. Temporibus, nesciunt voluptatem? Rem beatae harum sit voluptate consequuntur sed doloribus quos quasi debitis ab odit dolor quo necessitatibus nostrum eaque assumenda, porro ducimus suscipit corrupti maiores aliquam, deserunt ut. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo omnis pariatur facere nulla maxime vitae dicta eos in veritatis, nostrum laudantium recusandae explicabo quia suscipit reprehenderit cum error quidem amet. Temporibus, nesciunt voluptatem? Rem beatae harum sit voluptate consequuntur sed doloribus quos quasi debitis ab odit dolor quo necessitatibus nostrum eaque assumenda, porro ducimus suscipit corrupti maiores aliquam, deserunt ut."
+    },
+    "Contact": {
+        "Title": "Kontakt",
+        "Subject": "Betreff",
+        "Email": "E-Mail Adresse",
+        "Body": "Inhalt",
+        "Send": "Senden"
+    },
+    "Blogs": {
+        "Title": "Meine Blogs"
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "Layouts": {
+        "Home": "Home",
+        "AboutMe": "About Me",
+        "Contact": "Contact",
+        "Blogs": "My Blogs",
+        "Turkish": "Turkish",
+        "English": "English",
+        "Deutsch": "German"
+    },
+    "Home": {
+        "Title": "I am Taner Saydam",
+        "Description": "Software Engineer | Instructor | Education",
+        "MyBlogs": "My Blogs"
+    },
+    "AboutMe": {
+        "Title": "About Me",
+        "Content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo omnis pariatur facere nulla maxime vitae dicta eos in veritatis, nostrum laudantium recusandae explicabo quia suscipit reprehenderit cum error quidem amet. Temporibus, nesciunt voluptatem? Rem beatae harum sit voluptate consequuntur sed doloribus quos quasi debitis ab odit dolor quo necessitatibus nostrum eaque assumenda, porro ducimus suscipit corrupti maiores aliquam, deserunt ut. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo omnis pariatur facere nulla maxime vitae dicta eos in veritatis, nostrum laudantium recusandae explicabo quia suscipit reprehenderit cum error quidem amet. Temporibus, nesciunt voluptatem? Rem beatae harum sit voluptate consequuntur sed doloribus quos quasi debitis ab odit dolor quo necessitatibus nostrum eaque assumenda, porro ducimus suscipit corrupti maiores aliquam, deserunt ut. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo omnis pariatur facere nulla maxime vitae dicta eos in veritatis, nostrum laudantium recusandae explicabo quia suscipit reprehenderit cum error quidem amet. Temporibus, nesciunt voluptatem? Rem beatae harum sit voluptate consequuntur sed doloribus quos quasi debitis ab odit dolor quo necessitatibus nostrum eaque assumenda, porro ducimus suscipit corrupti maiores aliquam, deserunt ut."
+    },
+    "Contact": {
+        "Title": "Contact",
+        "Subject": "Subject",
+        "Email": "Email Address",
+        "Body": "Content",
+        "Send": "Send"
+    },
+    "Blogs": {
+        "Title": "My Blogs"
+    }
+}
