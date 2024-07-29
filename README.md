@@ -1,6 +1,6 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 29.07.2024 (Sonraki ders)
+## Sonra...
 - Book Update, Delete sayfalarını yapacağız
 - Land page de booklarımızı db den çekip gösterelim
 - Land page de book için paginationu js kütüphanesi ile yapacağız
@@ -11,6 +11,18 @@
 - User için Backend de CRUD işlemleri yazacağız
 - User için Angular da CRUD işlemleri sayfası tasarlayacağız
 - Domain Events
+
+## 31.07.2024
+- ElasticSearch CRUD işlemleri
+- ElasticSearch veri yüklemesi ve performans testi
+- MSSQL'e aynı verinin yüklenmesi ve ElasticSearch ile performans karşılaştırması
+- RabbitMQ
+
+## 29.07.2024
+- Docker
+- Elasticsearch
+- Kibana
+- Dotnet Nest Kütühanesi ile Elasticsearch'e CRUD işlemleri yapmaya çalıştık ama Nest kütüphanesi decrecated olduğu için yapamadık. Sonraki der yeni kütüphanesiyle deneyeceğiz
 
 ## 26.07.2024
 - Angular ile Blog sitesi yaptık
