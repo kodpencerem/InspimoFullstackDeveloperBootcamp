@@ -16,6 +16,7 @@
 - ElasticSearch CRUD işlemleri
 - ElasticSearch veri yüklemesi ve performans testi
 - MSSQL'e aynı verinin yüklenmesi ve ElasticSearch ile performans karşılaştırması
+- Serilog
 - RabbitMQ
 
 ## 29.07.2024
