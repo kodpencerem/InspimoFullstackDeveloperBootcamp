@@ -12,12 +12,17 @@
 - User için Angular da CRUD işlemleri sayfası tasarlayacağız
 - Domain Events
 
+## 02.08.2024 (Sonraki ders)
+- eCommerce Clean Architecture Projemizde Elastic search ile CRUD devam
+- Aynı projeyi Db olarak EF Core Mssql'e çevireceğiz
+- RabbitMQ
+- Serilog
+
 ## 31.07.2024
 - ElasticSearch CRUD işlemleri
 - ElasticSearch veri yüklemesi ve performans testi
 - MSSQL'e aynı verinin yüklenmesi ve ElasticSearch ile performans karşılaştırması
-- Serilog
-- RabbitMQ
+
 
 ## 29.07.2024
 - Docker
