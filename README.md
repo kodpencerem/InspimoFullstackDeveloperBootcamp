@@ -12,11 +12,19 @@
 - User için Angular da CRUD işlemleri sayfası tasarlayacağız
 - Domain Events
 
-## 02.08.2024 (Sonraki ders)
+## 05.08.2024 (Sonraki ders)
+- Role kontrolü için kendi attribute'müzü oluşturalım
 - eCommerce Clean Architecture Projemizde Elastic search ile CRUD devam
 - Aynı projeyi Db olarak EF Core Mssql'e çevireceğiz
 - RabbitMQ
 - Serilog
+
+## 02.08.2024
+- User tablosu oluşturalım
+- Register / Login metotları yazalım
+- JWT yapısı kuralım ve girişte token dönelim
+- Authorize attribute ile giriş kontrolü yapalım
+- Role kontrolü yapalım
 
 ## 31.07.2024
 - ElasticSearch CRUD işlemleri
