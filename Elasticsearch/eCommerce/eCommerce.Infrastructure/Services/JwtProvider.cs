@@ -14,7 +14,7 @@ internal sealed class JwtProvider(
 {
     public string CreateToken(User user)
     {
-        List<string> roles = new() { "Products.Create", "Products.Update" };
+        List<string> roles = new() { "Products.Create", "Products.Update", "Products.GetAll" };
 
         List<Claim> claims = new()
         {

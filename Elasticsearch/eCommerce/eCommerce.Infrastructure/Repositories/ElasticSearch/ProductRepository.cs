@@ -2,16 +2,19 @@
 using eCommerce.Domain.Repositories;
 using Elastic.Clients.Elasticsearch;
 
-namespace eCommerce.Infrastructure.Repositories;
-internal sealed class ProductElasticSearchRepository : IProductRepository, IElasticSearchRepository
+namespace eCommerce.Infrastructure.Repositories.ElasticSearch;
+internal sealed class ProductRepository : IProductRepository, IElasticSearchRepository
 {
     private readonly ElasticsearchClient _client;
 
-    public ProductElasticSearchRepository()
+    public ProductRepository()
     {
-        _client = new ElasticsearchClient(new Uri("http://localhost:9200"));
-        CreateIndexAsync("products", default).Wait();
+        var settings = new ElasticsearchClientSettings(
+            new Uri("http://localhost:9200"))
+            .DefaultIndex("products");
 
+        _client = new ElasticsearchClient(settings);
+        CreateIndexAsync("products", default).Wait();
     }
     public async Task CreateIndexAsync(string indexName, CancellationToken cancellationToken = default)
     {

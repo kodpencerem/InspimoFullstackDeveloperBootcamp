@@ -12,12 +12,15 @@
 - User için Angular da CRUD işlemleri sayfası tasarlayacağız
 - Domain Events
 
-## 05.08.2024 (Sonraki ders)
-- Role kontrolü için kendi attribute'müzü oluşturalım
-- eCommerce Clean Architecture Projemizde Elastic search ile CRUD devam
-- Aynı projeyi Db olarak EF Core Mssql'e çevireceğiz
+## 07.08.2024 (Sonraki ders)
+- Memory Cache - Redis Cache
 - RabbitMQ
 - Serilog
+
+## 05.08.2024
+- Role kontrolü için kendi attribute'müzü oluşturalım
+- eCommerce Clean Architecture Projemizde Elastic search ile CRUD devam
+- Aynı projeyi Db olarak MongoDb'ye çevirdik
 
 ## 02.08.2024
 - User tablosu oluşturalım

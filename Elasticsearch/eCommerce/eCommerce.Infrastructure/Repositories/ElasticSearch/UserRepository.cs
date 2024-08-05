@@ -2,17 +2,19 @@
 using eCommerce.Domain.Repositories;
 using Elastic.Clients.Elasticsearch;
 
-namespace eCommerce.Infrastructure.Repositories;
+namespace eCommerce.Infrastructure.Repositories.ElasticSearch;
 
-internal sealed class UserElasticSearchRepository : IUserRepository, IElasticSearchRepository
+internal sealed class UserRepository : IUserRepository, IElasticSearchRepository
 {
     private readonly ElasticsearchClient _client;
 
-    public UserElasticSearchRepository()
+    public UserRepository()
     {
-        var settings = new ElasticsearchClientSettings(new Uri("http://localhost:9200"))
+        var settings = new ElasticsearchClientSettings(
+            new Uri("http://localhost:9200"))
             .DefaultIndex("users");
         _client = new ElasticsearchClient(settings);
+
         CreateIndexAsync("users", default).Wait();
     }
     public async Task CreateIndexAsync(string indexName, CancellationToken cancellationToken = default)
