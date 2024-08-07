@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Serilog;
+using Serilog.Sinks.Elasticsearch;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -44,6 +46,8 @@ builder.Services.AddSwaggerGen(setup =>
 });
 builder.Services.AddEndpointsApiExplorer();
 
+builder.Services.AddMemoryCache();
+
 builder.Services.ConfigureOptions<JwtOptionsSetup>();
 
 builder.Services.AddAuthentication().AddJwtBearer(options =>
@@ -71,6 +75,26 @@ builder.Services.AddAuthorization();
 
 builder.Services.AddExceptionHandler<ExceptionHandler>().AddProblemDetails();
 
+
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.Console(Serilog.Events.LogEventLevel.Information)
+    .WriteTo.File("./log.txt", Serilog.Events.LogEventLevel.Information, rollingInterval: RollingInterval.Minute)
+    .WriteTo.Elasticsearch(new ElasticsearchSinkOptions(new Uri("http://localhost:9200")) // Elasticsearch URI'nizi burada belirtin
+    {
+        MinimumLogEventLevel = Serilog.Events.LogEventLevel.Error,
+        AutoRegisterTemplate = true, // Elasticsearch þablonlarýný otomatik olarak kaydet
+        IndexFormat = "logstash-{0:yyyy.MM.dd}", // Loglarýn indekslenme formatý
+        FailureCallback = (e, ex) => Console.WriteLine("Unable to submit event " + e.MessageTemplate), // Hata durumunda geribildirim
+        EmitEventFailure = EmitEventFailureHandling.WriteToSelfLog |
+                           EmitEventFailureHandling.RaiseCallback |
+                           EmitEventFailureHandling.ThrowException
+
+    })
+    .CreateLogger();
+
+
+builder.Host.UseSerilog();
+
 var app = builder.Build();
 
 app.UseSwagger();
@@ -94,7 +118,6 @@ app.UseStaticFiles();
 app.UseExceptionHandler();
 
 app.MapControllers();
-
 
 
 app.Run();

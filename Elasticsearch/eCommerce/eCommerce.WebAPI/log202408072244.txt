@@ -1,0 +1,5 @@
+2024-08-07 22:44:48.152 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7104/api/Products/GetAll - null null
+2024-08-07 22:44:48.181 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-08-07 22:44:48.184 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-08-07 22:44:48.185 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7104/api/Products/GetAll - 401 0 null 33.2097ms

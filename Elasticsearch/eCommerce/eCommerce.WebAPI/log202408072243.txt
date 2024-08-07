@@ -1,0 +1,16 @@
+2024-08-07 22:43:54.032 +03:00 [INF] User profile is available. Using 'C:\Users\taner\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-07 22:43:54.185 +03:00 [INF] Now listening on: https://localhost:7104
+2024-08-07 22:43:54.186 +03:00 [INF] Now listening on: http://localhost:5253
+2024-08-07 22:43:54.189 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-07 22:43:54.190 +03:00 [INF] Hosting environment: Development
+2024-08-07 22:43:54.191 +03:00 [INF] Content root path: C:\InspimoFullstackDeveloperBootcamp\Elasticsearch\eCommerce\eCommerce.WebAPI
+2024-08-07 22:43:54.898 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7104/swagger/index.html - null null
+2024-08-07 22:43:55.036 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7104/swagger/index.html - 200 null text/html;charset=utf-8 139.5024ms
+2024-08-07 22:43:55.066 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7104/swagger/index.js - null null
+2024-08-07 22:43:55.066 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7104/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-07 22:43:55.069 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7104/_vs/browserLink - null null
+2024-08-07 22:43:55.071 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7104/swagger/index.js - 200 null application/javascript;charset=utf-8 5.4276ms
+2024-08-07 22:43:55.082 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7104/_framework/aspnetcore-browser-refresh.js - 200 13768 application/javascript; charset=utf-8 15.9186ms
+2024-08-07 22:43:55.103 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7104/_vs/browserLink - 200 null text/javascript; charset=UTF-8 34.2047ms
+2024-08-07 22:43:55.392 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7104/swagger/v1/swagger.json - null null
+2024-08-07 22:43:55.493 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 101.7069ms

@@ -1,5 +1,6 @@
 ﻿using eCommerce.Application.Products.CreateProduct;
 using eCommerce.Application.Products.GetAllProducts;
+using eCommerce.Application.Products.SeedDataProduct;
 using eCommerce.WebAPI.AOP;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
@@ -10,6 +11,7 @@ namespace eCommerce.WebAPI.Controllers;
 [ApiController]
 [Authorize]
 public class ProductsController(
+    ILogger<ProductsController> logger,
     IMediator mediator) : ControllerBase
 {
     [HttpPost]
@@ -27,7 +29,15 @@ public class ProductsController(
     {
         GetAllProductsQuery request = new();
         var response = await mediator.Send(request, cancellationToken);
-
         return Ok(response);
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> SeedData(CancellationToken cancellationToken)
+    {
+        SeedDataProductCommand request = new();
+        var response = await mediator.Send(request, cancellationToken);
+
+        return Ok(new { Message = response });
     }
 }

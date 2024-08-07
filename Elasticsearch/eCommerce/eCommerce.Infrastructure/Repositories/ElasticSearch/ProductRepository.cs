@@ -1,4 +1,5 @@
-﻿using eCommerce.Domain.Entities;
+﻿using eCommerce.Application.Services;
+using eCommerce.Domain.Entities;
 using eCommerce.Domain.Repositories;
 using Elastic.Clients.Elasticsearch;
 
@@ -6,8 +7,8 @@ namespace eCommerce.Infrastructure.Repositories.ElasticSearch;
 internal sealed class ProductRepository : IProductRepository, IElasticSearchRepository
 {
     private readonly ElasticsearchClient _client;
-
-    public ProductRepository()
+    private readonly ICacheService _cache;
+    public ProductRepository(ICacheService cache)
     {
         var settings = new ElasticsearchClientSettings(
             new Uri("http://localhost:9200"))
@@ -15,6 +16,7 @@ internal sealed class ProductRepository : IProductRepository, IElasticSearchRepo
 
         _client = new ElasticsearchClient(settings);
         CreateIndexAsync("products", default).Wait();
+        _cache = cache;
     }
     public async Task CreateIndexAsync(string indexName, CancellationToken cancellationToken = default)
     {
@@ -23,23 +25,39 @@ internal sealed class ProductRepository : IProductRepository, IElasticSearchRepo
 
     public async Task<Guid> CreateAsync(Product product, CancellationToken cancellationToken = default)
     {
-        IndexResponse indexResponse = await _client.IndexAsync(product, cancellationToken);
+        CreateRequest<Product> createRequest = new("products", product.Id)
+        {
+            Document = product
+        };
 
-        return Guid.Parse(indexResponse.Id);
+        CreateResponse createResponse = await _client.CreateAsync(createRequest, cancellationToken);
+
+        if (createResponse.IsSuccess())
+        {
+            _cache.Remove("products");
+        }
+
+        return Guid.Parse(createResponse.Id);
     }
 
     public async Task<List<Product>> GetAllAsync(CancellationToken cancellationToken = default)
     {
-        var response = await _client.SearchAsync<Product>(s =>
+        _cache.Get("products", out List<Product>? products);
+
+        if (products is null)
+        {
+            var response = await _client.SearchAsync<Product>(s =>
             s.Index("products").Size(1000));
 
-        if (response.IsSuccess())
-        {
-            var doc = response.Documents.ToList();
-            return doc;
+            if (response.IsSuccess())
+            {
+                products = response.Documents.ToList();
+
+                _cache.Set("products", products);
+            }
         }
 
-        return new List<Product>();
+        return products!;
     }
 
     public async Task<bool> IsNameExistsAsync(string name, CancellationToken cancellationToken)

@@ -1,0 +1,28 @@
+2024-08-07 22:56:25.618 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7104/api/Products/GetAll - null null
+2024-08-07 22:56:25.627 +03:00 [INF] Executing endpoint 'eCommerce.WebAPI.Controllers.ProductsController.GetAll (eCommerce.WebAPI)'
+2024-08-07 22:56:25.629 +03:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.Threading.CancellationToken) on controller eCommerce.WebAPI.Controllers.ProductsController (eCommerce.WebAPI).
+2024-08-07 22:56:25.672 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Domain.Entities.Product, eCommerce.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-07 22:56:25.678 +03:00 [INF] Executed action eCommerce.WebAPI.Controllers.ProductsController.GetAll (eCommerce.WebAPI) in 46.584ms
+2024-08-07 22:56:25.682 +03:00 [INF] Executed endpoint 'eCommerce.WebAPI.Controllers.ProductsController.GetAll (eCommerce.WebAPI)'
+2024-08-07 22:56:25.683 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7104/api/Products/GetAll - 200 null application/json; charset=utf-8 64.2193ms
+2024-08-07 22:56:29.185 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7104/api/Products/GetAll - null null
+2024-08-07 22:56:29.189 +03:00 [INF] Executing endpoint 'eCommerce.WebAPI.Controllers.ProductsController.GetAll (eCommerce.WebAPI)'
+2024-08-07 22:56:29.191 +03:00 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.Threading.CancellationToken) on controller eCommerce.WebAPI.Controllers.ProductsController (eCommerce.WebAPI).
+2024-08-07 22:56:29.215 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Domain.Entities.Product, eCommerce.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-07 22:56:29.219 +03:00 [INF] Executed action eCommerce.WebAPI.Controllers.ProductsController.GetAll (eCommerce.WebAPI) in 26.7702ms
+2024-08-07 22:56:29.220 +03:00 [INF] Executed endpoint 'eCommerce.WebAPI.Controllers.ProductsController.GetAll (eCommerce.WebAPI)'
+2024-08-07 22:56:29.221 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7104/api/Products/GetAll - 200 null application/json; charset=utf-8 36.0893ms
+2024-08-07 22:56:43.539 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7104/api/Auth/Login - application/json 50
+2024-08-07 22:56:43.541 +03:00 [INF] Executing endpoint 'eCommerce.WebAPI.Controllers.AuthController.Login (eCommerce.WebAPI)'
+2024-08-07 22:56:43.545 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(eCommerce.Application.Auth.Login.LoginCommand, System.Threading.CancellationToken) on controller eCommerce.WebAPI.Controllers.AuthController (eCommerce.WebAPI).
+2024-08-07 22:56:43.654 +03:00 [INF] Executing OkObjectResult, writing value of type 'eCommerce.Application.Auth.Login.LoginCommandResponse'.
+2024-08-07 22:56:43.656 +03:00 [INF] Executed action eCommerce.WebAPI.Controllers.AuthController.Login (eCommerce.WebAPI) in 110.1446ms
+2024-08-07 22:56:43.657 +03:00 [INF] Executed endpoint 'eCommerce.WebAPI.Controllers.AuthController.Login (eCommerce.WebAPI)'
+2024-08-07 22:56:43.658 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7104/api/Auth/Login - 200 null application/json; charset=utf-8 119.7571ms
+2024-08-07 22:56:47.689 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7104/api/Auth/Login - application/json 50
+2024-08-07 22:56:47.692 +03:00 [INF] Executing endpoint 'eCommerce.WebAPI.Controllers.AuthController.Login (eCommerce.WebAPI)'
+2024-08-07 22:56:47.693 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(eCommerce.Application.Auth.Login.LoginCommand, System.Threading.CancellationToken) on controller eCommerce.WebAPI.Controllers.AuthController (eCommerce.WebAPI).
+2024-08-07 22:56:47.725 +03:00 [INF] Executing OkObjectResult, writing value of type 'eCommerce.Application.Auth.Login.LoginCommandResponse'.
+2024-08-07 22:56:47.726 +03:00 [INF] Executed action eCommerce.WebAPI.Controllers.AuthController.Login (eCommerce.WebAPI) in 32.1222ms
+2024-08-07 22:56:47.727 +03:00 [INF] Executed endpoint 'eCommerce.WebAPI.Controllers.AuthController.Login (eCommerce.WebAPI)'
+2024-08-07 22:56:47.728 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7104/api/Auth/Login - 200 null application/json; charset=utf-8 38.6237ms
