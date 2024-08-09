@@ -11,7 +11,6 @@ namespace eCommerce.WebAPI.Controllers;
 [ApiController]
 [Authorize]
 public class ProductsController(
-    ILogger<ProductsController> logger,
     IMediator mediator) : ControllerBase
 {
     [HttpPost]

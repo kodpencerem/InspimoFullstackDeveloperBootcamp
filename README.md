@@ -12,9 +12,12 @@
 - User için Angular da CRUD işlemleri sayfası tasarlayacağız
 - Domain Events
 
-## 09.08.2024 (Sonraki ders)
-- RabbitMQ
+## 12.08.2024 (Sonraki ders)
+- RabbitMQ devam ediyoruz
 - SignalR
+
+## 09.08.2024
+- RabbitMQ başladık
 
 ## 07.08.2024
 - Memory Cache - Redis Cache

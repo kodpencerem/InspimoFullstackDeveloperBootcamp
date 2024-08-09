@@ -1,0 +1,7 @@
+2024-08-09 20:34:08.146 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7104/api/Auth/Login - application/json 50
+2024-08-09 20:34:08.174 +03:00 [INF] Executing endpoint 'eCommerce.WebAPI.Controllers.AuthController.Login (eCommerce.WebAPI)'
+2024-08-09 20:34:08.185 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(eCommerce.Application.Auth.Login.LoginCommand, System.Threading.CancellationToken) on controller eCommerce.WebAPI.Controllers.AuthController (eCommerce.WebAPI).
+2024-08-09 20:34:08.385 +03:00 [INF] Executing OkObjectResult, writing value of type 'eCommerce.Application.Auth.Login.LoginCommandResponse'.
+2024-08-09 20:34:08.395 +03:00 [INF] Executed action eCommerce.WebAPI.Controllers.AuthController.Login (eCommerce.WebAPI) in 201.8691ms
+2024-08-09 20:34:08.397 +03:00 [INF] Executed endpoint 'eCommerce.WebAPI.Controllers.AuthController.Login (eCommerce.WebAPI)'
+2024-08-09 20:34:08.398 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7104/api/Auth/Login - 200 null application/json; charset=utf-8 252.5282ms

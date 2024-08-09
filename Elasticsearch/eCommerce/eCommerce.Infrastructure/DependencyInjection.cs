@@ -11,7 +11,7 @@ public static class DependencyInjection
     {
         services.TryAddTransient<IProductRepository, Repositories.ElasticSearch.ProductRepository>();
         services.TryAddTransient<IUserRepository, Repositories.ElasticSearch.UserRepository>();
-        services.TryAddTransient<ICacheService, RedisCacheService>();
+        services.TryAddTransient<ICacheService, MemoryCacheService>();
         services.TryAddTransient<IJwtProvider, JwtProvider>();
         return services;
     }

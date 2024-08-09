@@ -78,13 +78,13 @@ builder.Services.AddExceptionHandler<ExceptionHandler>().AddProblemDetails();
 
 Log.Logger = new LoggerConfiguration()
     .WriteTo.Console(Serilog.Events.LogEventLevel.Information)
-    .WriteTo.File("./log.txt", Serilog.Events.LogEventLevel.Information, rollingInterval: RollingInterval.Minute)
-    .WriteTo.Elasticsearch(new ElasticsearchSinkOptions(new Uri("http://localhost:9200")) // Elasticsearch URI'nizi burada belirtin
+    //.WriteTo.File("./log.txt", Serilog.Events.LogEventLevel.Information, rollingInterval: RollingInterval.Minute)
+    .WriteTo.Elasticsearch(new ElasticsearchSinkOptions(new Uri("http://localhost:9200"))
     {
         MinimumLogEventLevel = Serilog.Events.LogEventLevel.Error,
-        AutoRegisterTemplate = true, // Elasticsearch þablonlarýný otomatik olarak kaydet
-        IndexFormat = "logstash-{0:yyyy.MM.dd}", // Loglarýn indekslenme formatý
-        FailureCallback = (e, ex) => Console.WriteLine("Unable to submit event " + e.MessageTemplate), // Hata durumunda geribildirim
+        AutoRegisterTemplate = true,
+        IndexFormat = "logstash-{0:yyyy.MM.dd}",
+        FailureCallback = (e, ex) => Console.WriteLine("Unable to submit event " + e.MessageTemplate),
         EmitEventFailure = EmitEventFailureHandling.WriteToSelfLog |
                            EmitEventFailureHandling.RaiseCallback |
                            EmitEventFailureHandling.ThrowException
