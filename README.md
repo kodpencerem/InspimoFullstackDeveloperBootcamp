@@ -12,9 +12,11 @@
 - User için Angular da CRUD işlemleri sayfası tasarlayacağız
 - Domain Events
 
-## 12.08.2024 (Sonraki ders)
-- RabbitMQ devam ediyoruz
+## 14.08.2024 (Sonraki ders)
 - SignalR
+
+## 12.08.2024
+- RabbitMQ devam ediyoruz
 
 ## 09.08.2024
 - RabbitMQ başladık

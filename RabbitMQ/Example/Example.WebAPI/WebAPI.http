@@ -1,0 +1,12 @@
+GET http://localhost:5262/api/Customers/GetAll
+
+###
+
+POST http://localhost:5262/api/Customers/Create
+Content-Type:application/json
+
+{
+  "firstName": "Taner",
+  "lastName": "Saydam",
+  "email":"tanersaydam@gmail.com"
+}

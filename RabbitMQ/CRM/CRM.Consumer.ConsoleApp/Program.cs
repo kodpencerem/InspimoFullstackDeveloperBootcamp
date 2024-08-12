@@ -14,15 +14,22 @@ var srv = services.BuildServiceProvider();
 
 var factory = new ConnectionFactory
 {
-    HostName = "localhost",
-    UserName = "admin",
-    Password = "admin"
+    HostName = "localhost"
 };
 var connection = factory.CreateConnection();
 var channel = connection.CreateModel();
 
+channel.ExchangeDeclare(exchange: "emails", type: ExchangeType.Fanout);
+
+var queueName = channel.QueueDeclare().QueueName;
+
+channel.QueueBind(
+    queue: queueName,
+    exchange: "emails",
+    routingKey: string.Empty);
+
 var consumer = new EventingBasicConsumer(channel);
-consumer.Received += (model, ea) =>
+consumer.Received += async (model, ea) =>
 {
     var body = ea.Body.ToArray();
     var message = Encoding.UTF8.GetString(body);
@@ -38,10 +45,12 @@ consumer.Received += (model, ea) =>
         .Send();
 
         Console.WriteLine($"{customer.Name} adlı müşterinin {customer.Email} mail adresine bayram mesajı başarıyla gönderildi");
+
+        await Task.Delay(500);
     }
 };
 
-channel.BasicConsume(queue: "holiday-mail", autoAck: true, consumer: consumer);
+channel.BasicConsume(queue: queueName, autoAck: true, consumer: consumer);
 
 
 Console.ReadLine();

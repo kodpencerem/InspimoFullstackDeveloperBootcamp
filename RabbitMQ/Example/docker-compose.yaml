@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:latest
+    ports:
+        - 5432:5432
+    environment:
+        - POSTGRES_PASSWORD=1
+        - POSTGRES_DB=customerdb
+
+  postgres2:
+    image: postgres:latest
+    ports:
+        - 5433:5432
+    environment:
+        - POSTGRES_PASSWORD=1
+        - POSTGRES_DB=testdb
+
+  welcome:
+    image: docker/welcome-to-docker  
+    ports:
+        - 8080:80
