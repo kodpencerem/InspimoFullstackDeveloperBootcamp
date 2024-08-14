@@ -1,0 +1,14 @@
+<h1>Main Chat Room</h1>
+<button routerLink="/groups/{{name()}}">Go to group chat room</button>
+<input type="text" [(ngModel)]="name" placeholder="What is your name?">
+<hr>
+<div style="height: 500px; width: 80vw; border: 1px solid #ccc; border-radius: 10px;">
+  <h3 style="text-align: center;">Welcome to our first chat app!</h3>
+  @for(chat of chats(); track $index){
+    <p class="alert">{{chat.name}} - {{chat.message}}</p>
+  }
+</div>
+
+<hr>
+<textarea [(ngModel)]="message" style="width: 80%;" rows="5" placeholder="Say hi everyone!"></textarea>
+<button (click)="sendMessage()" style="margin-left: 5px; font-size: 30px;">Send</button>

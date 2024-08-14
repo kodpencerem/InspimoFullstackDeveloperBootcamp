@@ -12,8 +12,12 @@
 - User için Angular da CRUD işlemleri sayfası tasarlayacağız
 - Domain Events
 
-## 14.08.2024 (Sonraki ders)
-- SignalR
+## 16.08.2024 (Sonraki ders)
+- SignalR ile birebir sohbet yapacağız
+- SignalR ve RabbitMQ ile Mini Sosyal Media uygulaması yapacağız
+
+## 14.08.2024
+- SignalR başladık
 
 ## 12.08.2024
 - RabbitMQ devam ediyoruz
