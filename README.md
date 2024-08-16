@@ -1,20 +1,18 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## Sonra...
-- Book Update, Delete sayfalarını yapacağız
-- Land page de booklarımızı db den çekip gösterelim
-- Land page de book için paginationu js kütüphanesi ile yapacağız
-- Booklar için detay sayfası yapalım
-- Bookları sepete ekleyebilelim
-- Sepetten ödeme ile satın alalım
-- UserTypes için Angularda CRUD için sayfasını tasarlayacağız
-- User için Backend de CRUD işlemleri yazacağız
-- User için Angular da CRUD işlemleri sayfası tasarlayacağız
-- Domain Events
+## 19.08.2024 (Sonraki ders)
+- Backend de Login metodu ve JWT üretimi yapacağız
+- Authentication
+- Angular da endpointlerimizi bağlayıp test edeceğiz
+- Ana sayfada kullanıcıları göstereceğiz
+- Ana sayfada giriş çıkış yapan kullanıcıların bililerini (aktif / pasif ve çıkış süresi gibi) canlı olarak göstereceğiz (signalR ile besleyeceğiz)
+- Chat sayfasını tasarlayacağız
+- Bir kişi başka biriyle chat yapabilecek şekilde kodlayacağız
 
-## 16.08.2024 (Sonraki ders)
-- SignalR ile birebir sohbet yapacağız
-- SignalR ve RabbitMQ ile Mini Sosyal Media uygulaması yapacağız
+## 16.08.2024
+- SignalR ile birebir sohbet uygulaması için TSChat yapmaya başladık
+- Angular ile Frontend'i tasarladık bir Chat sayfası kaldı
+- Backend tasarlamaya başladık. ElasticSearch Db kullandık ve Register metodu yazdık
 
 ## 14.08.2024
 - SignalR başladık

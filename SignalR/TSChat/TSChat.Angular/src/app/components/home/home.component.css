@@ -1,0 +1,14 @@
+.search{
+    position: absolute;
+    top: 11px;
+    left: 10px;
+}
+
+.search-input{
+    padding-left: 27px;
+}
+
+.connection-information{
+    display: block;
+    font-size: 10px;
+}
