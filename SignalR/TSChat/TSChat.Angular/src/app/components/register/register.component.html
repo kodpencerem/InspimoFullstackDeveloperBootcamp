@@ -3,39 +3,46 @@
         <div class="container container-tight py-4">
             <div class="text-center mb-4">
                 <a routerLink="/register" class="navbar-brand navbar-brand-autodark">
-                    <img src="/logo.jpg" height="36" alt="">
+                    <img src="/logo.jpg" style="width: 36px; height: 36px;">
                     <span style="font-size: 20px;">TS Chat</span>
                 </a>
             </div>
             <div class="card card-md">
                 <div class="card-body">
-                    <h2 class="h2 text-center mb-4">Create your account</h2>
-                    <div class="mb-3">
-                        <label class="form-label">User Name</label>
-                        <input [(ngModel)]="model().userName" type="text" class="form-control" placeholder="jhondoe" autocomplete="off">
-                    </div>
+                    <h2 class="h2 text-center mb-4">Create your account</h2>                    
                     <div class="mb-3">
                         <label class="form-label">First Name</label>
-                        <input [(ngModel)]="model().firstName" type="text" class="form-control" placeholder="Jhon" autocomplete="off">
+                        <input #firstNameInput [(ngModel)]="model().firstName" type="text" class="form-control" placeholder="Jhon" autocomplete="off" tabindex="1">
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Last Name</label>
-                        <input [(ngModel)]="model().lastName" type="text" class="form-control" placeholder="Doe" autocomplete="off">
+                        <input [(ngModel)]="model().lastName" type="text" class="form-control" placeholder="Doe" autocomplete="off" tabindex="2">
                     </div>
                     <div class="mb-3">
                         <label class="form-label">What is your profession</label>
-                        <input [(ngModel)]="model().profession" type="text" class="form-control" placeholder="Software" autocomplete="off">
+                        <flexi-select
+                          [data]="professions()"
+                          label="value"
+                          value="value"
+                          [(ngModel)]="model().profession"
+                          tabindex="3"
+                          >
+                        </flexi-select>                       
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Choose your avatar</label>
-                        <input [(ngModel)]="model().file" type="file" class="form-control">
+                        <input (change)="setFile($event)" type="file" class="form-control" tabindex="4">
                     </div>
-                    <div class="mb-2">
+                    <div class="mb-3">
+                        <label class="form-label">User Name</label>
+                        <input [(ngModel)]="model().userName" type="text" class="form-control" placeholder="jhondoe" autocomplete="off" tabindex="5">
+                    </div>
+                    <div class="mb-3">
                         <label class="form-label">
                             Password                               
                         </label>
                         <div class="p-relative">
-                            <input [(ngModel)]="model().password" #passwordInput type="password" class="form-control" placeholder="Your password" autocomplete="off">
+                            <input [(ngModel)]="model().password" #passwordInput type="password" class="form-control" placeholder="Your password" autocomplete="off" tabindex="6">
                             @if(showPassword()){
                                 <i (click)="showOrHidePassword()" class="fa-solid fa-eye-slash password"></i>
                             }@else{
@@ -44,7 +51,7 @@
                         </div>
                     </div>                        
                     <div class="form-footer">
-                        <button type="button" (click)="signUp()" class="btn btn-primary w-100">
+                        <button type="button" (click)="signUp()" class="btn btn-primary w-100" tabindex="7">
                             <i class="fa-solid fa-user-lock me-1"></i>
                             Sign up
                         </button>

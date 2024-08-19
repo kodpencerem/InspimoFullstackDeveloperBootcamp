@@ -118,10 +118,10 @@
           </div>
           <div class="nav-item dropdown">
             <a href="#" class="nav-link d-flex lh-1 text-reset p-0" data-bs-toggle="dropdown" aria-label="Open user menu">
-              <span class="avatar avatar-sm" style="background-image: url(./static/avatars/000m.jpg)"></span>
+              <img [src]="user().avatar" class="avatar avatar-sm">              
               <div class="d-none d-xl-block ps-2">
-                <div>Paweł Kuna</div>
-                <div class="mt-1 small text-muted">UI Designer</div>
+                <div>{{user().fullName}}</div>
+                <div class="mt-1 small text-muted">{{user().profession}}</div>
               </div>
             </a>
             <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">             

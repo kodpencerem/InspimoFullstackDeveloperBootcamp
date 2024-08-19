@@ -1,5 +1,6 @@
-import { Component, inject, ViewEncapsulation } from '@angular/core';
+import { Component, computed, inject, ViewEncapsulation } from '@angular/core';
 import { Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { SharedService } from '../../services/shared.service';
 
 @Component({
   selector: 'app-layouts',
@@ -12,6 +13,9 @@ import { Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/rou
 export default class LayoutsComponent {
 
   #router = inject(Router);
+  #shared = inject(SharedService);
+
+  user = computed(()=> this.#shared.user);
 
   logout(){
     localStorage.removeItem("access-token");

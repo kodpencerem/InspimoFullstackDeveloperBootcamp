@@ -1,7 +1,11 @@
 import { Component, ElementRef, signal, ViewChild, ViewEncapsulation } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { UserModel } from '../../models/user.model';
 import { FormsModule } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
+import { api } from '../../constants';
+import { lastValueFrom } from 'rxjs';
+import { ResultModel } from '../../models/result.model';
 
 @Component({
   selector: 'app-login',
@@ -17,6 +21,11 @@ export default class LoginComponent {
 
   model = signal<UserModel>(new UserModel());
 
+  constructor(
+    private http: HttpClient,
+    private router: Router
+  ){}
+
   showOrHidePassword() {
     if (this.passwordInput?.nativeElement.type === "password") {
       this.passwordInput?.nativeElement.setAttribute("type", "text");
@@ -27,7 +36,10 @@ export default class LoginComponent {
     }
   }
 
-  signIn(){
+  async signIn(){
+    const res = await lastValueFrom(this.http.post<ResultModel<string>>(`${api}/Auth/Login`, this.model()));
 
+    localStorage.setItem("access-token",res.data!);
+    this.router.navigateByUrl("/");
   }
 }

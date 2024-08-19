@@ -7,7 +7,8 @@ using TSChat.WebAPI.Repositories;
 namespace TSChat.WebAPI.Services;
 
 public sealed class AuthService(
-    IUserRepository userRepository
+    IUserRepository userRepository,
+    JwtProvider jwtProvider
     )
 {
     public async Task<Result<string>> RegisterAsync(RegisterDto request, CancellationToken cancellationToken)
@@ -20,13 +21,17 @@ public sealed class AuthService(
 
         string fileName = FileService.FileSaveToServer(request.File, "wwwroot/avatars/");
 
+        HashingHelper hashingHelper = new();
+        var password = hashingHelper.CreatePassword(request.Password);
         User user = new()
         {
             FirstName = request.FirstName,
             LastName = request.LastName,
             UserName = request.UserName,
             Avatar = fileName,
-            Password = request.Password
+            PasswordHash = password.passwordHash,
+            PasswordSalt = password.passwordSalt,
+            Profession = request.Profession
         };
 
         var result = await userRepository.CreateAsync(user, cancellationToken);
@@ -34,8 +39,17 @@ public sealed class AuthService(
         return result;
     }
 
-    public async Task LoginAsync()
+    public async Task<Result<string>> LoginAsync(LoginDto request, CancellationToken cancellationToken = default)
     {
-        await Task.CompletedTask;
+        User? user = await userRepository.GetUserByUserNameAndPasswordAsync(request.UserName, request.Password, cancellationToken);
+
+        if (user is null)
+        {
+            return Result<string>.Failure("User name or password is wrong");
+        };
+
+        string token = jwtProvider.CreatToken(user);
+
+        return token;
     }
 }

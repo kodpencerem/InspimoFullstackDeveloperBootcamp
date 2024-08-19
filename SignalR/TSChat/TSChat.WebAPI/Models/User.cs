@@ -9,9 +9,11 @@ public sealed class User
     public Guid Id { get; set; }
     public string FirstName { get; set; } = default!;
     public string LastName { get; set; } = default!;
-    public string FullName => string.Join(", ", FirstName, LastName);
+    public string FullName => string.Join(" ", FirstName, LastName);
     public string UserName { get; set; } = default!;
-    public string Password { get; set; } = default!;
+    public byte[] PasswordHash { get; set; } = default!;
+    public byte[] PasswordSalt { get; set; } = default!;
+    public string Profession { get; set; } = default!;
     public string Avatar { get; set; } = default!;
     public bool IsActive { get; set; }
     public DateTimeOffset? LastActiveDate { get; set; }

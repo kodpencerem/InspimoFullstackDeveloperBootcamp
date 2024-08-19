@@ -1,13 +1,15 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 19.08.2024 (Sonraki ders)
-- Backend de Login metodu ve JWT üretimi yapacağız
-- Authentication
-- Angular da endpointlerimizi bağlayıp test edeceğiz
+## 21.08.2024 (Sonraki ders)
 - Ana sayfada kullanıcıları göstereceğiz
 - Ana sayfada giriş çıkış yapan kullanıcıların bililerini (aktif / pasif ve çıkış süresi gibi) canlı olarak göstereceğiz (signalR ile besleyeceğiz)
 - Chat sayfasını tasarlayacağız
 - Bir kişi başka biriyle chat yapabilecek şekilde kodlayacağız
+
+## 19.08.2024
+- Backend de Login metodu ve JWT üretimi yapacağız
+- Authentication
+- Angular da endpointlerimizi bağlayıp test edeceğiz
 
 ## 16.08.2024
 - SignalR ile birebir sohbet uygulaması için TSChat yapmaya başladık
