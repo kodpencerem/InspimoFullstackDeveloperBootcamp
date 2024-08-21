@@ -1,10 +1,17 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 21.08.2024 (Sonraki ders)
+## 23.08.2024 (Sonraki ders)
+- Kullanıcının send message butonuna bastığında da chat sayfasına gitmesini sağlayacağız
+- Birebir chat için model yapısı kurup CRUD işlemlerini yazacağız
+- Chat sayfasında herkesin chat geçmişi göstereceğiz ve yeni mesaj yollayabileceğiz
+- Yeni mesaj eğer kullanıcı aktif ise otomatik onda gözükecek
+- Yeni mesaj geldiğinde okundu okunmadı kısmı olacak
+- Eğer mesajı okumamışsa layout da toplam okumadığı mesaj sayısı gözükecek
+
+## 21.08.2024 
 - Ana sayfada kullanıcıları göstereceğiz
 - Ana sayfada giriş çıkış yapan kullanıcıların bililerini (aktif / pasif ve çıkış süresi gibi) canlı olarak göstereceğiz (signalR ile besleyeceğiz)
 - Chat sayfasını tasarlayacağız
-- Bir kişi başka biriyle chat yapabilecek şekilde kodlayacağız
 
 ## 19.08.2024
 - Backend de Login metodu ve JWT üretimi yapacağız

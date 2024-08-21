@@ -1,0 +1,50 @@
+<body class=" d-flex flex-column">
+    <div class="page page-center">
+        <div class="container container-tight py-4">
+            <div class="text-center mb-4">
+                <a routerLink="/login" class="navbar-brand navbar-brand-autodark">
+                    <img src="/logo.jpg" height="36" alt="">
+                    <span style="font-size: 20px;">TS Chat</span>
+                </a>
+            </div>
+            <div class="card card-md">
+                <div class="card-body">
+                    <h2 class="h2 text-center mb-4">Login to your account</h2>
+                    <div class="mb-3">
+                        <label class="form-label">User Name</label>
+                        <input [(ngModel)]="model().userName" type="text" class="form-control" placeholder="jhondoe" autocomplete="off">
+                    </div>
+                    <div class="mb-2">
+                        <label class="form-label">
+                            Password                               
+                        </label>
+                        <div class="p-relative">
+                            <input [(ngModel)]="model().password" #passwordInput type="password" class="form-control" placeholder="Your password" autocomplete="off">
+                            @if(showPassword()){
+                                <i (click)="showOrHidePassword()" class="fa-solid fa-eye-slash password"></i>
+                            }@else{
+                                <i (click)="showOrHidePassword()" class="fa-solid fa-eye password"></i>
+                            }
+                        </div>
+                    </div>                        
+                    <div class="form-footer">
+                        @if(!isLoading()){
+                            <button type="button" (click)="signIn()" class="btn btn-primary w-100">
+                                <i class="fa-solid fa-lock me-1"></i>
+                                Sign in
+                            </button>
+                        }@else {
+                            <button class="btn btn-primary w-100" type="button" disabled>
+                                <span class="spinner-border spinner-border-sm me-1" aria-hidden="true"></span>
+                                <span role="status">Loading...</span>
+                            </button>
+                        }
+                    </div>
+                </div>               
+            </div>
+            <div class="text-center text-muted mt-3">
+                Don't have account yet? <a routerLink="/register" tabindex="-1">Sign up</a>
+            </div>
+        </div>
+    </div>
+</body>
