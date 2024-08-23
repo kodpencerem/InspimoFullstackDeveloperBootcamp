@@ -7,13 +7,15 @@ using TSChat.WebAPI.Options;
 using TSChat.WebAPI.Repositories;
 using TSChat.WebAPI.Services;
 
-var builder = WebApplication.CreateBuilder(args);
+WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
 builder.Services.Configure<JwtOptions>(builder.Configuration.GetSection("Jwt"));
 
+builder.Services.AddHttpContextAccessor();
+
 builder.Services.AddSignalR();
 
-var srv = builder.Services.BuildServiceProvider();
+ServiceProvider srv = builder.Services.BuildServiceProvider();
 
 IOptions<JwtOptions> jwtOptions = srv.GetRequiredService<IOptions<JwtOptions>>();
 
@@ -46,12 +48,14 @@ builder.Services.AddControllers();
 builder.Services.AddTransient<AuthService>();
 builder.Services.AddTransient<JwtProvider>();
 builder.Services.AddTransient<UserService>();
+builder.Services.AddTransient<ChatService>();
 builder.Services.AddTransient<IUserRepository, UserElasticSearchRepository>();
+builder.Services.AddTransient<IChatRepository, ChatElasticSearchRepository>();
 
 builder.Services.AddSwaggerGen();
 builder.Services.AddEndpointsApiExplorer();
 
-var app = builder.Build();
+WebApplication app = builder.Build();
 
 app.UseSwagger();
 

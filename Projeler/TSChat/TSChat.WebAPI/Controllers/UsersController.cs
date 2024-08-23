@@ -14,4 +14,12 @@ public sealed class UsersController(
 
         return StatusCode(result.StatusCode, result);
     }
+
+    [HttpGet]
+    public async Task<IActionResult> GetById(Guid id, CancellationToken cancellationToken)
+    {
+        var result = await userService.GetByIdAsync(id, cancellationToken);
+
+        return StatusCode(result.StatusCode, result);
+    }
 }

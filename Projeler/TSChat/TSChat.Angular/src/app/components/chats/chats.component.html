@@ -1,0 +1,117 @@
+<!-- Page header -->
+<div class="page-header d-print-none">
+    <div class="container-xl">
+        <div class="row g-2 align-items-center">
+            <div class="col">
+                <h2 class="page-title">
+                    Chats
+                </h2>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page body -->
+<div class="page-body">
+    <div class="container-xl">
+        <div class="card">
+            <div class="row g-0" style="height: 600px;">
+                <!-- Users -->
+                <div class="col-12 col-lg-5 col-xl-3 border-right">
+
+                    <div class="px-4 d-none d-md-block" style="border-bottom: 1px solid #ccc;height: 70px;">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <input type="text" class="form-control my-3" placeholder="Search...">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user">
+                        <div class="chat-user">
+                            <img src="https://bootdey.com/img/Content/avatar/avatar5.png" class="rounded-circle mr-1"
+                                alt="Vanessa Tucker" width="40" height="40">
+                            <div class="flex-grow-1 ml-3">
+                                Vanessa Tucker
+                                <div class="small"><span class="fas fa-circle chat-online"></span> Online</div>
+                            </div>
+                            <div class="badge bg-success float-right">5</div>
+                        </div>
+                    </div>
+                    <div class="user">
+                        <div class="chat-user">
+                            <img src="https://bootdey.com/img/Content/avatar/avatar5.png" class="rounded-circle mr-1"
+                                alt="Vanessa Tucker" width="40" height="40">
+                            <div class="flex-grow-1 ml-3">
+                                Vanessa Tucker
+                                <div class="small"><span class="fas fa-circle chat-online"></span> Online</div>
+                            </div>
+                            <div class="badge bg-success float-right">5</div>
+                        </div>
+                    </div>
+                    <hr class="d-block d-lg-none mt-1 mb-0">
+                </div>
+
+                <!-- Messages -->
+                <div class="col-12 col-lg-7 col-xl-9">
+                    @if(user()){
+                        <div class="py-2 px-4 border-bottom d-none d-lg-block" style="height: 70px;">
+                            <div class="d-flex" style="align-items: center; gap: 10px;">
+                                <div class="position-relative">
+                                    <img src="{{mainUrl}}/avatars/{{user()!.avatar}}"
+                                        class="rounded-circle mr-1" alt="Sharon Lessman" width="40" height="40">
+                                </div>
+                                <div class="flex-grow-1 pl-3">
+                                    <strong>{{user()!.fullName}}</strong>
+                                    <div class="text-muted small"><em>{{user()!.profession}}</em></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="position-relative">
+                            <div #chatContainer class="chat-messages p-4" style="height: 450px; background-color: #e5e8f967;">
+                                @for(data of chats(); track data.id){
+                                    @if(data.userId !== toUserId()){
+                                        <!-- Benim mesajlarım -->
+                                        <div class="chat-message-right pb-4">
+                                            <div>
+                                                <img src="{{shared.user.avatar}}"
+                                                    class="rounded-circle mr-1" alt="Chris Wood" width="40" height="40">
+                                            </div>
+                                            <div class="message me">
+                                                <span>{{data.message}}</span>
+                                                <br>
+                                                <span class="message-date fl-right">{{data.sendDate | date:'dd.MM.yyyy HH:mm'}}</span>
+                                            </div>
+                                        </div>
+                                    }@else {
+                                        <!-- Senin mesajların -->
+                                        <div class="chat-message-left pb-4">
+                                            <div>
+                                                <img src="{{mainUrl}}/avatars/{{user()!.avatar}}"
+                                                    class="rounded-circle mr-1" alt="Sharon Lessman" width="40" height="40">
+                                            </div>
+                                            <div class="message you">
+                                                <div class="font-weight-bold mb-1">{{user()!.fullName}}</div>
+                                                <span>{{data.message}}</span>
+                                                <br>
+                                                <span class="message-date fl-left">{{data.sendDate | date:'dd.MM.yyyy HH:mm'}}</span>
+                                            </div>
+                                        </div>
+                                    }
+                                }                                
+                                
+                            </div>
+                        </div>
+
+                        <div class="flex-grow-0 py-3 px-4 border-top">
+                            <div class="input-group">
+                                <input type="text" [(ngModel)]="message" class="form-control" placeholder="Type your message">
+                                <button class="btn btn-primary" (click)="sendMessage()">Send</button>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

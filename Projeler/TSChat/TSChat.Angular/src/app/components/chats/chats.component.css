@@ -58,3 +58,36 @@
 .border-right{
     border-right: 1px solid #ccc;
 }
+
+.message {
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+.me{
+    background-color: #d1e7dd !important;
+    margin-right: 0.5rem;    
+}
+
+.you{
+    background-color: white !important;
+    margin-left: 0.5rem;
+}
+
+.message-date{
+    font-size: 10px;    
+    font-weight: 600;
+}
+
+.font-weight-bold{
+    font-weight: 700;
+}
+
+.fl-right{
+    float: right;
+}
+
+.fl-left{
+    float: left;
+}

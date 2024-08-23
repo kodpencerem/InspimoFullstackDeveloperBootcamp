@@ -21,7 +21,11 @@ export const routes: Routes = [
             },
             {
                 path: "chats",
-                loadComponent: ()=> import("./components/chat/chat.component")
+                loadComponent: ()=> import("./components/chats/chats.component")
+            },
+            {
+                path: "chats/:id",
+                loadComponent: ()=> import("./components/chats/chats.component")
             }
         ]
     },

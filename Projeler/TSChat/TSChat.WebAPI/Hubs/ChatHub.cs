@@ -7,6 +7,15 @@ namespace TSChat.WebAPI.Hubs;
 public sealed class ChatHub(
     IUserRepository userRepository) : Hub
 {
+    public static Dictionary<Guid, string> Users = new();
+
+    public void Connection(Guid userId)
+    {
+        Clients.User(userId.ToString());
+        Users.Remove(userId);
+        Users.Add(userId, Context.ConnectionId);
+    }
+
     public async Task Logout(Guid id)
     {
         User? user = await userRepository.GetByIdAsync(id, default);
