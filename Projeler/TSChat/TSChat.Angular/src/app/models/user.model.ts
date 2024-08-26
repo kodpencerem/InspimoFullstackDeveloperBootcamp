@@ -11,4 +11,5 @@ export class UserModel {
     isActive: boolean = false;
     lastActiveDate?: string | null = null;
     isActiveInformation: string = "It was last active 10 minutes ago"; // Right now they here!
+    unReadMessageCount: number = 0;
 }

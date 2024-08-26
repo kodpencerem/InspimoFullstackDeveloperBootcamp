@@ -23,4 +23,13 @@ public class ChatsController(
 
         return StatusCode(result.StatusCode, result);
     }
+
+    [HttpGet]
+    public async Task<IActionResult> GetGetAllChatUsers(CancellationToken cancellationToken)
+    {
+        var result = await chatService.GetAllChatUsers(cancellationToken);
+
+        return StatusCode(result.StatusCode, result);
+    }
+
 }

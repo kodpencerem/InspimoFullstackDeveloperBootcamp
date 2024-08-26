@@ -11,4 +11,6 @@ public sealed class Chat
     public Guid ToUserId { get; set; }
     public DateTime SendDate { get; set; }
     public string Message { get; set; } = default!;
+    public bool IsUserRead { get; set; }
+    public bool IsToUserRead { get; set; }
 }

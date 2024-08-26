@@ -1,13 +1,21 @@
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using TSChat.WebAPI.Context;
 using TSChat.WebAPI.Hubs;
 using TSChat.WebAPI.Options;
 using TSChat.WebAPI.Repositories;
 using TSChat.WebAPI.Services;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+{
+    options.UseNpgsql(builder.Configuration.GetConnectionString("PostgreSQL"));
+    options.UseSnakeCaseNamingConvention();
+});
 
 builder.Services.Configure<JwtOptions>(builder.Configuration.GetSection("Jwt"));
 
@@ -49,8 +57,8 @@ builder.Services.AddTransient<AuthService>();
 builder.Services.AddTransient<JwtProvider>();
 builder.Services.AddTransient<UserService>();
 builder.Services.AddTransient<ChatService>();
-builder.Services.AddTransient<IUserRepository, UserElasticSearchRepository>();
-builder.Services.AddTransient<IChatRepository, ChatElasticSearchRepository>();
+builder.Services.AddTransient<IUserRepository, UserEFCoreRepository>();
+builder.Services.AddTransient<IChatRepository, ChatEFCoreRepository>();
 
 builder.Services.AddSwaggerGen();
 builder.Services.AddEndpointsApiExplorer();

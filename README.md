@@ -1,11 +1,10 @@
 # Inspimo Fullstack Developer Bootcamp Eğitimi
 
-## 26.08.2024 (Sonraki ders)
-- Başkasının mesajları chat ekranında gözüküyor, bu hatayı çözeceğiz
-- Soldaki chat kullanıcı listesine sadece sohbet ettiğimiz kişilerin ismini ekleyeceğiz
-- Yeni mesaj geldiğinde okundu okunmadı kısmı olacak
-- Eğer mesajı okumamışsa layout da toplam okumadığı mesaj sayısı gözükecek
-- Soldaki kullanıcılar gözükürken onların gönderdiği ve okumadığımız mesaj varsa onları da göreceğiz
+## 26.08.2024 (Son ders)
+- Başkasının mesajları chat ekranında gözüküyor, bu hatayı çözeceğiz -- çözüldü
+- Soldaki chat kullanıcı listesine sadece sohbet ettiğimiz kişilerin ismini ekleyeceğiz -- eklendi
+- Yeni mesaj geldiğinde okundu okunmadı kısmı olacak -- rakam olarak yaptık ama mavi tık eklemedik
+- Soldaki kullanıcılar gözükürken onların gönderdiği ve okumadığımız mesaj varsa onları da göreceğiz - yapıldı
 
 ## 23.08.2024
 - Kullanıcının send message butonuna bastığında da chat sayfasına gitmesini sağlayacağız

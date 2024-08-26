@@ -1,6 +1,7 @@
 ﻿using Elastic.Clients.Elasticsearch;
 using Elastic.Clients.Elasticsearch.QueryDsl;
 using TS.Result;
+using TSChat.WebAPI.DTOs;
 using TSChat.WebAPI.Models;
 
 namespace TSChat.WebAPI.Repositories;
@@ -67,6 +68,11 @@ public sealed class ChatElasticSearchRepository : IChatRepository
         return searchResponse.Documents.ToList();
     }
 
+    public Task<List<ChatUserDto>> GetAllChatUsers(Guid userId, CancellationToken cancellationToken)
+    {
+        throw new NotImplementedException();
+    }
+
     public async Task<Result<string>> SendMessageAsync(Chat chat, CancellationToken cancellationToken = default)
     {
         CreateRequest<Chat> createRequest = new("chats", chat.Id)
@@ -83,5 +89,10 @@ public sealed class ChatElasticSearchRepository : IChatRepository
         }
 
         return "Message sent successfully";
+    }
+
+    public Task<int> UnReadChatMessageCount(Guid userId, Guid toUserId, CancellationToken cancellationToken = default)
+    {
+        throw new NotImplementedException();
     }
 }

@@ -16,5 +16,5 @@ public sealed class User
     public string Profession { get; set; } = default!;
     public string Avatar { get; set; } = default!;
     public bool IsActive { get; set; }
-    public DateTimeOffset? LastActiveDate { get; set; }
+    public DateTime? LastActiveDate { get; set; }
 }

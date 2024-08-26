@@ -26,28 +26,21 @@
                         </div>
                     </div>
 
-                    <div class="user">
-                        <div class="chat-user">
-                            <img src="https://bootdey.com/img/Content/avatar/avatar5.png" class="rounded-circle mr-1"
-                                alt="Vanessa Tucker" width="40" height="40">
-                            <div class="flex-grow-1 ml-3">
-                                Vanessa Tucker
-                                <div class="small"><span class="fas fa-circle chat-online"></span> Online</div>
+                    @for(val of users();track val.id){
+                        <div class="user">
+                            <div class="chat-user" (click)="showChat(val.id)">
+                                <img src="{{mainUrl}}/avatars/{{val.avatar}}" class="rounded-circle mr-1"
+                                    alt="Vanessa Tucker" width="40" height="40">
+                                <div class="flex-grow-1 ml-3">
+                                    {{val.fullName}}
+                                    <div class="small">
+                                        <span class="fas fa-circle chat-{{val.isActive ? 'online' : 'offline'}}"></span> {{val.isActive ? 'Online' : 'Offline'}}
+                                    </div>
+                                </div>
+                                <div class="badge bg-success float-right">{{val.unReadMessageCount}}</div>
                             </div>
-                            <div class="badge bg-success float-right">5</div>
                         </div>
-                    </div>
-                    <div class="user">
-                        <div class="chat-user">
-                            <img src="https://bootdey.com/img/Content/avatar/avatar5.png" class="rounded-circle mr-1"
-                                alt="Vanessa Tucker" width="40" height="40">
-                            <div class="flex-grow-1 ml-3">
-                                Vanessa Tucker
-                                <div class="small"><span class="fas fa-circle chat-online"></span> Online</div>
-                            </div>
-                            <div class="badge bg-success float-right">5</div>
-                        </div>
-                    </div>
+                    }
                     <hr class="d-block d-lg-none mt-1 mb-0">
                 </div>
 

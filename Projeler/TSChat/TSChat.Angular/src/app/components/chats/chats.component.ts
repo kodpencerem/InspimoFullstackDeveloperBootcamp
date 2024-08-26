@@ -22,7 +22,7 @@ export default class ChatsComponent {
   toUserId = signal<string>("");
   chats = signal<ChatModel[]>([]);
   message = signal<string>("");
-
+  users = signal<UserModel[]>([]);
   mainUrl = mainUrl;
   
   @ViewChild("chatContainer") chatContainer: ElementRef<HTMLDivElement> | undefined;
@@ -33,6 +33,8 @@ export default class ChatsComponent {
     private http: HttpService,
     private signalR: SignalRService
   ){
+    this.getChatUsers();
+
     this.acitivated.params.subscribe((res)=> {
       this.signalR.connect(()=> {
         this.signalR.builder!.invoke("Connection", this.shared.user.id);
@@ -43,12 +45,22 @@ export default class ChatsComponent {
             this.scrollToBottom();
           }
         });
+
+        this.signalR.builder!.on("chatUser",(res: UserModel)=> {
+          if(!this.users().find(p=> p.id === res.id)){
+            this.users.update(prev => [...prev, res]);
+          }
+        })
       })
       if(res["id"]){
         this.toUserId.set(res["id"]);
         this.getUser();
       }
     });    
+  }
+
+  getChatUsers(){
+    this.http.get<UserModel[]>("Chats/GetGetAllChatUsers",(res)=> this.users.set(res));
   }
 
   scrollToBottom(): void {
@@ -87,4 +99,10 @@ export default class ChatsComponent {
     });
   }
 
+  showChat(userId: string){
+    this.toUserId.set(userId);
+    this.getUser();
+    const user = this.users().find(p=> p.id == userId);
+    user!.unReadMessageCount = 0;
+  }
 }

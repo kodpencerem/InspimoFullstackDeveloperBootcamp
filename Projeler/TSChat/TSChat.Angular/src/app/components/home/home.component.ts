@@ -38,7 +38,12 @@ export default class HomeComponent implements OnInit {
           user.isActiveInformation = this.calculateInActiveTime(res.isActive, user.lastActiveDate!);
           this.#cdr.markForCheck();
         };
-      })
+      });
+
+      this.#signalR.builder?.on("RegisterUserInformation", (res)=> {
+        res.isActiveInformation = this.calculateInActiveTime(res.isActive, res.lastActiveDate!);
+        this.users.update(prev => [...prev, res]);
+      });
     });
   }
 

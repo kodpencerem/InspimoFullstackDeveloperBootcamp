@@ -59,6 +59,7 @@ export default class RegisterComponent implements AfterViewInit {
 
     this.isLoading.set(true);
     this.http.post<string>(`Auth/Register`,formData,(res)=> {
+        this.isLoading.set(false);
         this.toast.showToast("Success",res);
         this.router.navigateByUrl("/login");        
     },()=> this.isLoading.set(false));

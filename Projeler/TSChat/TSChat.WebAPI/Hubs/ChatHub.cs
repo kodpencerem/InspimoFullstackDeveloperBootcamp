@@ -23,7 +23,7 @@ public sealed class ChatHub(
         if (user is not null)
         {
             user.IsActive = false;
-            user.LastActiveDate = DateTimeOffset.Now;
+            user.LastActiveDate = DateTime.UtcNow;
 
             await userRepository.UpdateAsync(user, default);
 

@@ -35,10 +35,26 @@ public sealed class AuthService(
             PasswordHash = password.passwordHash,
             PasswordSalt = password.passwordSalt,
             Profession = request.Profession,
-            LastActiveDate = DateTimeOffset.Now
+            LastActiveDate = DateTime.UtcNow
         };
 
         var result = await userRepository.CreateAsync(user, cancellationToken);
+
+        object data = new
+        {
+            Id = user.Id,
+            FirstName = user.FirstName,
+            LastName = user.LastName,
+            UserName = user.UserName,
+            FullName = user.FullName,
+            Avatar = user.Avatar,
+            Profession = user.Profession,
+            LastActiveDate = user.LastActiveDate,
+            IsActive = user.IsActive,
+            IsActiveInformation = ""
+        };
+
+        await hubContext.Clients.All.SendAsync("RegisterUserInformation", data);
 
         return result;
     }
